@@ -1,0 +1,30 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Voltage Regulators\_LM2595_Switchmode_Regulator.asc
+
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}|v(b)>{{vthresh}}|v(c)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))|v(b)>((vthresh))|v(c)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh)),((vdd)),((vss)))"
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(u1:fb)
+Ignoring empty pin current: Ix(u1:fb)
+
+Date: Sun Aug 09 00:13:35 2020
+Total elapsed time: 0.545 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2171
+traniter = 2163
+tranpoints = 1071
+accept = 1063
+rejected = 8
+matrix size = 101
+fillins = 44
+solver = Normal
+Thread vector: 12.7/7.5[2] 3.3/3.0[2] 3.4/2.4[2] 0.5/1.7[1]  2592/500
+Matrix Compiler1: 4.65 KB object code size  2.2/0.9/[0.6]
+Matrix Compiler2: 7.08 KB object code size  0.8/1.2/[0.7]
+

@@ -1,0 +1,46 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Voltage Regulators\_LM7805_Linear_Regulator.asc
+
+WARNING: Less than two connections to node STIMULUS.  This node is used by V3.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+vernier = 0.5
+vernier = 0.666667
+Gmin = 4.6652e-006
+vernier = 0.888888
+Gmin = 7.9138e-007
+vernier = 1
+Gmin = 8.6905e-008
+Gmin = 9.33136e-009
+Gmin = 1.00195e-009
+Gmin = 1.07583e-010
+Gmin = 1.15517e-011
+Gmin = 1.24035e-012
+Gmin = 1.33182e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Sat Aug 08 21:55:17 2020
+Total elapsed time: 0.952 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 10744
+traniter = 10088
+tranpoints = 5045
+accept = 5045
+rejected = 0
+matrix size = 36
+fillins = 64
+solver = Normal
+Matrix Compiler1: 8.21 KB object code size  3.3/1.9/[1.1]
+Matrix Compiler2: 4.35 KB object code size  1.2/1.4/[1.1]
+
