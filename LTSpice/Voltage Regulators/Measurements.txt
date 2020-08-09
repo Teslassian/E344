@@ -1,6 +1,13 @@
-SM: 1.24ms settling time
-    5.0051976V
-	100.2766mA
+SM: 	1.24ms settling time
+
+In:		
+
+Out:	5.0051976V
+		100.2766mA
 	
-LR: 5.0027671V
-	100.05534mA
+LR: 	
+		
+In:
+
+Out:	5.0027671V
+		100.05534mA
