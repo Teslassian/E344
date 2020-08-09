@@ -1,0 +1,13 @@
+0 deg/C => 0.44V
+delta V => 0.035V
+
+34 deg/C => 0.44 + 0.035(34) = 1.63V
+38 deg/C => 0.44 + 0.035(38) = 1.77V
+42 deg/C => 0.44 + 0.035(42) = 1.91V
+
+delta 8 deg/C => 0.035(8) = 0.28V
+this needs to be amplified to a 3.8V swing
+Thus, gain of approx. 14V/V
+
+0 deg/C => 0.44V
+this offset needs to be removed
