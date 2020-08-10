@@ -11,3 +11,11 @@ Thus, gain of approx. 14V/V
 
 0 deg/C => 0.44V
 this offset needs to be removed
+
+
+
+Select cutoff freq 1Hz:
+
+tau = 1/(2*pi*f) = 0.159155
+
+C = tau/R = 3.183u for R = 50k
