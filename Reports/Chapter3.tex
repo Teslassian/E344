@@ -10,8 +10,60 @@ To this end, a temperature sensor conditioning circuit is required to transform 
 \section{Design}\label{sec:temp_design}
 %**********************************************
 
+The amplifier was designed first, as its gain serves as the determining factor for the amount of noise reduction that is required from the filter. Since the output signal has to be centered around \SI{2.5}{\volt}, a differential amplifier was decided upon, as the negative input can be used to adjust the offset present in the output. Given a zero-reference temperature sensor voltage ($\mathrm{V_{zero}}$) of \SI{440}{\milli \volt}, with an increase ($\mathrm{V_{\Delta}}$) of \SI{35}{\milli \volt} for every 1\degree C. Therefore, temperature sensor voltage levels are calculated as follows:
 
-Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design.
+$$V_{temp} = V_{zero} + V_{\Delta} \times \mathrm{Temp}$$ 
+
+%Table \ref{tab:temp} shows some of the relevant voltage levels:
+
+\begin{table}[h]
+        \centering
+        \footnotesize
+        \caption{Temperatures and Corresponding Voltage Levels}
+         \begin{tabular}{c@{\qquad}rrr}
+          \toprule
+          Temperature [\degree C] 	& 32    & 38	& 42\\
+          Voltage [V] 			& 1.63	& 1.77	& 1.91\\
+          \bottomrule
+        \end{tabular}
+     \label{tab:temp}
+\end{table}
+
+According to table \ref{tab:temp}, the maximum input voltage swing equals $1.91 - 1
+63 = 0.28$V, and has a DC offset of \SI{1.77}{\volt}. Amplification is needed to reach an output voltage swing of \SI{5}{\volt}. Therefore:
+
+$$A_v = \frac{V_{out}}{V_{in}} = \frac{5}{0.28} = 17.86$$
+
+Now, R is selected as \SI{10}{\kilo \Omega}, to prevent a large current from being drawn.  This gives $\mathrm{R_{feedback}} = 178.6$k$\Omega$. 
+
+Two points need to be considered: 
+\begin{enumerate}
+\item The DC offset of the input signal is undesired and has to be removed in order to obtain a zero-mean input signal. This can be achieved by designing another subcircuit that makes use of another op-amp, for example. However, this adds to the cost and complexity of the circuit.
+\item The output signal has to be centered around \SI{2.5}{\volt}. This means that DC offset has to be added in the form of a virtual ground, as the op-amp has rails at 0 and \SI{5}{\volt}. 
+\end{enumerate}
+
+When considered in conjunction with each other, the DC offset alteration can be resolved in one step, thereby reducing cost and complexity significantly. The decision was therefore made to use a differential amplifier, with the input signal connected to the positive input, after which the voltage required at the negative input can be calculated in such a way as to simultaneously subtract the offset and add the virtual ground in one step, thereby producing an output DC offset of \SI{2.5}{\volt} (the lecturer mentions that this is an acceptable approach in Lecture Video 2).  This approach also simplifies the design procedure, as it becomes unnecessary to calculate the virtual ground separately. The differential amplifier, however, has to be non-inverting. The calculation thus reduces to a simple differential amplifier gain formula \cite{opamp}: 
+
+$$\mathrm{V}_{OUT}=\frac{\mathrm{R}_{feedback}}{\mathrm{R}}\left(\mathrm{V}_{in+}-\mathrm{V}_{in-}\right)$$
+
+Taking $\mathrm{V_{OUT}}$ as \SI{2.5}{\volt}, $\mathrm{V_{in+}}$ as \SI{1.77}{\volt} and the resistor values as calculated previously:
+
+$$2.5=\frac{178600}{10000}\left(1.77-\mathrm{V}_{in-}\right)$$
+$$\mathrm{V}_{in-} = 1.63 \; \mathrm{V}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality (similar to the output shown in section \ref{sec:temp_results}. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design. 
 
 
 %**********************************************
