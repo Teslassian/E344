@@ -1,0 +1,36 @@
+
+\chapter{System design}
+	\section{System overview} \label{sec:system}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1\textwidth]{Figures/1.1_block}
+    \caption{System Block Diagram}
+    \label{fig:1.1_block}
+\end{figure}
+
+As part of the health monitoring system which consists of an analogue temperature
+sensor and optic heart rate monitor, a voltage regulation circuit is required, as well as a signal conditioning and amplification system. This report focuses on the design and implementation of the latter two. Figure \ref{fig:1.1_block} gives an overview of the combined system, where the voltage regulator supplies power to the circuital components responsible for filtering the signal, removing its offset, and then amplifying the signal, which is received from a analog temperature sensor.
+
+Two second-order low-pass filters were cascaded to clear the signal of noise. This may seem excessive at first, but the cascaded setup allows for the use of cheaper components (see Section \ref{}), as well as producing an output signal subject to very low noise (see Section \ref{}). 
+
+
+
+
+
+Try to explain \textbf{what} configiation you chose and \textbf{why}. 
+There is no need to specify the capacitor and resistor values here, but you want to capture the higher-level functional arrangement you have opted for. The diagram ties together the other chapters in this report and helps the reader understand how you have connected the different funtional blocks together to produce the outputs. For example, a block could be ``Differential amplifier'' or ``level shifting op-amp'' or ``Low-pass filter'' or ``Linear regulator'' and the like. 
+Please use a drawing application, such as draw.io, MS Visio, or Power Point and export it as a PDF, so it looks good. If you feel brave, draw them in \LaTeX using Inkscape/\texttt{TikZ}.
+Fig.\ \ref{fig:system_diagram} is a bad example that is completely irrelevant and just holds space for your beautiful system diagram. 
+
+
+\vfill
+
+
+
+
+
+
+
+
+
