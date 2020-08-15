@@ -1,3 +1,45 @@
+@manual{lm7805,
+title = "LM78LXXA 3-Terminal 0.1 A Positive Voltage Regulator",
+organization = "Fairchild Semiconductor Corporation",
+howpublished = "LM7805 Datasheet",
+month = March,
+year = 2013,
+}
+
+@manual{lm2595,
+title = "LM2595 SIMPLE SWITCHER® Power Converter 150-kHz 1-A Step-Down Voltage Regulator",
+organization = "Texas Instruments",
+howpublished = "LM2595 Datasheet",
+month = May,
+year = 2016,
+}
+
+@manual{tl081,
+title = "TL08xx: JFET-Input Operational Amplifiers",
+organization = "Texas Instruments",
+howpublished = "TL081 Datasheet",
+month = May,
+year = 2015,
+}
+
+@manual{tlc2272,
+title = "TLC227x: Advanced LinCMOS Rail-to-Rail Operational Amplifiers",
+organization = "Texas Instruments",
+howpublished = "TL2272 Datasheet",
+month = March,
+year = 2016,
+}
+
+@misc{opamp,
+author = {{BBC}},
+title = {Operational Amplifiers},
+url = {https://www.electronics-tutorials.ws/opamp},
+year = {2018}
+}
+
+%--------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
+
 @article{Gerber:2019,
 title = {{Combining grid-tied PV and intelligent water heater control to reduce the energy costs at schools in South Africa}},
 journal = "Energy for Sustainable Development",
@@ -27,4 +69,16 @@ author = {{BBC}},
 title = {How to make opamps amp op},
 url = {www.electronics-tutorials.ws},
 year = {2018}
+}
+
+
+%--------------------------------------------------------------------------------
+
+@manual{pdd,
+title = "E-Design 314 2020 - Project Definition Document",
+author = "Visagie, L. and Barnard, A.",
+howpublished = "Project Definition Document",
+version = "0.5",
+month = May,
+year = 2020,
 }

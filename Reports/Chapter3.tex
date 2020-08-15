@@ -3,10 +3,16 @@
 %**********************************************
 \section{Intro} \label{sec:temp_intro}
 %**********************************************
+The signal obtained from the temperature sensor presents as DC, with a \SI{35}{\milli \volt}, \SI{50}{Hz} AC signal superimposed, which serves no purpose, but creates noise. The DC component increases linearly with respect to the temperature measured by the sensor. However, the sensor outputs a voltage of \SI{440}{\milli \volt} at 0\degree C, which increases by \SI{35}{\milli \volt} for every 1\degree C. These voltage levels are too small for a microcontroller ADC to take as input. Furthermore, as the sensor is only meant to measure human body temperature, the applicable range is only from 34\degree C to 42\degree C. The two aforementioned considerations necessitate amplification of the relevant part of the temperature sensor signal to occupy as much of a \numrange{0}{5} \si{\volt} range as possible, as this is the voltage range used by the ADC.
+To this end, a temperature sensor conditioning circuit is required to transform the given input into the desired output. This conditioning circuit consists of a filter, an offset removing subcircuit, as well as an amplifier. The filter attenuates the AC signal present in the input signal in order to obtain an output signal with a minimal amount of noise. The offset removing subcircuit removes enough of the DC offset to ensure that the output signal is centered around \SI{2.5}{\volt}, which is necessary to obtain the largest possible output swing as discussed previously. Finally, the amplifier increases the magnitude of the input signal in order to be suitable as input for an ADC.
 
 %**********************************************
 \section{Design}\label{sec:temp_design}
 %**********************************************
+
+
+Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design.
+
 
 %**********************************************
 \section{Results} \label{sec:temp_results}

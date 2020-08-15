@@ -5,90 +5,96 @@
 \section{Introduction} \label{sec:voltIntro}
 %**********************************************
 
-
-Introduce the reader to what you want to present in this chapter. Include any references to literature you feel is needed. 
-In this section, you put a very short summary of infrormation you gatherered from literature (papers, web sites, datasheets) that you used to do the design. Be sure to include the references, which you can add in the \texttt{References.bib} file. 
-
-Some examples of how to cite (all in \texttt{References.bib}): 
-It was stated by \cite{Booysen:2013} that ... . Subsequently, he changed his mind and said in  \cite{Gerber:2019} that ... .
-While \cite{WebsiteOpAmp} claims it to be ... .
-
+Given a 9 $V_{DC}$ battery, a voltage regulator is required to reduce the voltage level to 5 $V_{DC}$, as this is the level required by the operational amplifiers used in the rest of the circuit. Two voltage regulators were considered: the LM7805 linear regulator as well as the LM2595 switchmode regulator, which were both analysed with regards to efficiency and noise by means of calculations and simulations. According to the literature, the linear regulator does not really output noise, but has low power efficiency of around $50\%$ for input-output of 9 $V_{DC}$ and 5 $V_{DC}$\cite{lm7805}. The switchmode regulator can provide power efficiency of around $85\%$, but outputs a considerable amount of noise\cite{lm2595}. With the aforementioned in mind, both of the regulators were simulated (Section \ref{sec:voltDesign} to determine the best trade-off between low noise and efficiency. Resistor and capacitor configurations were determined according to the respective datasheets \cite{lm7805} \cite{lm2595}.
 
 %**********************************************
 \section{Design} \label{sec:voltDesign}
 %**********************************************
 
-In this section, you need to capture your design, which should include the following: 
-\begin{itemize}
-  \item Design rationale, i.e. what your thinking was behind the design.
-  \item References to literature/sources as appropriate \cite{WebsiteOpAmp}.  
-  \item You can assume the reader has an E\&E degree, and will not need detail explanations of trivial information (e.g. what a resistor is, or what Ohm's law is).  
-  \item Design calculations, for example to determine resistor values and capacitor values, or to check for allowed voltage and current ranges and levels. These calculations should also give expected outputs, which hopefully matches the simulated values. 
-  \item Analysis of given or expected input conditions. 
-  \item Expected values and ranges based on your design. 
-  \item Explain your choice of supply buy referring to the advantages and disadvantages of each. 
-  \item Circuit diagram like the one in Figure \ref{fig:circuit_diagram}. I used ``print to PDF'' from LTSpice,  but feel free to use a cropped screengrab if you are PDF-challenged and do not have a PDF printer (there are some free PDF creators online). Also have a look at the demo video on SUNLearn. 
-\end{itemize}
+	\subsection{Linear Regulator} \label{sec:linreg}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{Figures/LR.pdf}
+    \caption{Linear Voltage Regulator}
+    \label{fig:LR}
+\end{figure}
 
-For your benefit, here is how to write values with units: \SI{150}{\milli\Omega} or \SI{199}{myUnits}, and this is how we write ranges: \numrange{2}{5} \si{\kilo\volt}.
+The LM7805 chip is shown in Figure \ref{fig:LR}, as well as the required peripheral circuit, which was obtained from the datasheet \cite{lm7805}. For testing purposes, a \SI{50}{\Omega} load was connected to the regulator, drawing \SI{100}{mA}. Measurements are discussed in section \ref{sec:comp}.
 
-Here is an inline equation $ \frac{55}{45+3}$. Here is a numbered equation in Eq. \ref{eq:myNumberedEquation}.
-\begin{equation}
-   a = \frac{55}{45+3}
-   \label{eq:myNumberedEquation}. 
-\end{equation}. 
 
-\begin{figure}
- \footnotesize
-   \centering
-   \begin{subfigure}[]{0.45\textwidth}
-        \includegraphics[width=\linewidth]{./Figures/E344_Ass1VoltRegulator_cct}
-	  \caption{Linear voltage regulator.} \label{subfig:linear_circuit_diagram}	
-   \end{subfigure}
-   \begin{subfigure}[]{0.45\textwidth}
-  	 \includegraphics[width=\linewidth]{./Figures/E344_Ass1VoltRegulator_cct}
-	  \caption{Switchmode voltage regulator.} \label{subfig:switchmode_circuit_diagram}	
-   \end{subfigure}
-   \begin{subfigure}[]{0.95\textwidth}
-  	 \includegraphics[width=\linewidth]{./Figures/CctDia}
-	  \caption{Chargepump voltage regulator.} \label{subfig:chargepump_circuit_diagram}	
-   \end{subfigure}
-   
-   \caption {Circuit diagrams of the two voltage regulators, and another irrelevant one}.
+	\subsection{Switchmode Regulator} \label{sec:smreg}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1\textwidth]{Figures/SM.pdf}
+    \caption{Switchmode Voltage Regulator}
+    \label{fig:SM}
+\end{figure}
 
-      \label{fig:circuit_diagram}
- \end{figure}
+The LM2595 chip is shown in Figure \ref{fig:SM}, built into the required peripheral circuit. Capacitor and inductor values are as shown, and were obtained from the datasheet \cite{lm2595}. Resistor values were calculated as follows:
+
+$$\mathrm{V}_{\mathrm{OUT}}=\mathrm{V}_{\mathrm{REF}}\left(1+\frac{\mathrm{R}_{2}}{\mathrm{R}_{1}}\right) \quad \text { where } \mathrm{V}_{\mathrm{REF}}=1.23 \mathrm{V}$$
+
+Selecting $\mathrm{R_1}$ as \SI{1}{\kilo\Omega}, with $\mathrm{V_{out}}$ as \SI{5}{\volt} gives $\mathrm{R_2}$ as \SI{3065}{\Omega}. For testing purposes, a \SI{50}{\Omega} load was connected to the regulator, drawing \SI{100}{mA}. Measurements are discussed in section \ref{sec:comp}.
+
+
+	\subsection{Voltage Regulator Comparison} \label{sec:comp}
+The input and output power measurements are displayed in table \ref{tab:compvreg}.
+\begin{table}[h]
+        \centering
+        \footnotesize
+        \caption{Comparison of Voltage Regulators}
+         \begin{tabular}{c@{\qquad}rrrrr}
+          \toprule
+             & $I_{in}$ [mA] & $I_{out}$ [mA] & $P_{in}$ [mW] & $P_{out}$ [mW] & $\eta$ [\%] \\
+          \midrule
+          LM7805 	& 105.06 	& 100.05 	& 945.54 	& 500.55 	& 52.93\\
+          LM2595 	& 57.54 	& 99.65 	& 517.86 	& 496.6 	& 95.89\\
+          \bottomrule
+        \end{tabular}
+     \label{tab:compvreg}
+\end{table}
+
+Comparing the efficiency of the respective regulators, it is clear that the switchmode regulator is considerably more efficient. However, simulation results in a settling time of \SI{1.24}{ms}, which is quite slow. Furthermore, the switchmode regulator creates noise levels of up to 950 $\mathrm{mV_{pp}}$ in the output, as can be seen in figure \ref{fig:smnoise}. This is a problem, as the large gain of the differential amplifier, which is fed by the voltage regulator, will result in the noise levels to increase in magnitude and become prevalent in the output. Considering all of the above, the linear regulator was selected for the design, despite being less efficient, as it provides an almost instantaneous settling time, coupled with negligible amounts of noise.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{Figures/smnoise}
+    \caption{Switchmode Voltage Regulator Output}
+    \label{fig:smnoise}
+\end{figure}
+
+\textbf{More vreg calcs, Voltage reg power calcs before sim?}
+
 %**********************************************
 \section{Results} \label{sec:volt_results}
 %**********************************************
 
-
-\begin{figure}
- \footnotesize
- \centering
-    \begin{subfigure}[]{0.55\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/E344_VoltRegulator.pdf}
-		    \caption{} \label{subfig:pwr_simu_rect}
-     \end{subfigure}
-     \begin{subfigure}[]{0.4\textwidth}
-             \centering
-  		\includegraphics[width=1.0\linewidth]{./Figures/Screengrab2}
-		   \caption{ } \label{subfig:pwr_meas_rect}
-     \end{subfigure}
-    \begin{subfigure}[]{0.55\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/E344_VoltRegulator.pdf}
-		    \caption{} \label{subfig:pwr_simu_rect}
-     \end{subfigure}
-    \begin{subfigure}[]{0.4\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/Screengrab2}
-		    \caption{} \label{subfig:pwr_simu_rect}
-     \end{subfigure}
-   \caption[\textcolor{red}{I am the short caption that appears in the List of Figures list}]{Voltage regulation, comparing the linear and switchmode regulators... (a)  Blah blah. (b)  Blah blah.  (c)  Blah blah. (d) Blah blah.   As far as possible, please put input(s) and output(s) on the same plot rather than on separate plots. Based on the datasheet of XXXX in \cite{WebsiteOpAmp}}
-    \label{fig:simulation_results_box}
- \end{figure}
+%\begin{figure}
+% \footnotesize
+% \centering
+%    \begin{subfigure}[]{0.55\textwidth}
+%              \centering
+%  		\includegraphics[width=1\linewidth]{./Figures/E344_VoltRegulator.pdf}
+%		    \caption{} \label{subfig:pwr_simu_rect}
+%     \end{subfigure}
+%     \begin{subfigure}[]{0.4\textwidth}
+%             \centering
+%  		\includegraphics[width=1.0\linewidth]{./Figures/Screengrab2}
+%		   \caption{ } \label{subfig:pwr_meas_rect}
+%     \end{subfigure}
+%    \begin{subfigure}[]{0.55\textwidth}
+%              \centering
+%  		\includegraphics[width=1\linewidth]{./Figures/E344_VoltRegulator.pdf}
+%		    \caption{} \label{subfig:pwr_simu_rect}
+%     \end{subfigure}
+%    \begin{subfigure}[]{0.4\textwidth}
+%              \centering
+%  		\includegraphics[width=1\linewidth]{./Figures/Screengrab2}
+%		    \caption{} \label{subfig:pwr_simu_rect}
+%     \end{subfigure}
+%   \caption[\textcolor{red}{I am the short caption that appears in the List of Figures list}]{Voltage regulation, comparing the linear and switchmode regulators... (a)  Blah blah. (b)  Blah blah.  (c)  Blah blah. (d) Blah blah.   As far as possible, please put input(s) and output(s) on the same plot rather than on separate plots. Based on the datasheet of XXXX in \cite{WebsiteOpAmp}}
+%    \label{fig:simulation_results_box}
+% \end{figure}
 
 In this section, you want to demonstrate, by means of referring to simulation results, using the designed circuit, how your circuit behaves as you designed it in Section \ref{sec:voltDesign}. Present and report on your simulated results in Figure \ref{fig:simulation_results_box} Be absolutely sure that the text and information in your report are readable. 
 
@@ -135,6 +141,6 @@ You can also use tables, example of which are presented in Tables \ref{tab:table
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-State whether your design performs as expected and what the limitations are or things to keep in mind are. 
+Concluding, it has been shown that both regulators behave as expected, but that the levels of noise present in the switchmode regulator make it unsuitable for the design at hand, as input signals, and thus the noise as well, will be amplified to levels of noise in the output signal that are unacceptable for an ADC input. This choice was made despite the fact that the switchmode 
 
 

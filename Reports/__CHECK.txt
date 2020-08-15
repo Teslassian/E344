@@ -1,0 +1,1 @@
+Voltage reg power calcs before sim?
