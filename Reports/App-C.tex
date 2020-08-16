@@ -15,3 +15,6 @@ The bode plot for the low-pass filter is shown in figure \ref{fig:ac}. The -3dB 
     \caption{Cutoff Frequency Measurement}
     \label{fig:ac}
 \end{figure}
+
+Please note:
+It is a good design practice to include a unity gain op-amp to acts as a voltage buffer by clamping $V_{in-}$ against fluctuations. This design practice was considered, but ultimately rejected, as tests with and without the buffer provided outputs of equal quality. This is the case as the signal conditioning circuit already has a very high input resistance. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design.\\

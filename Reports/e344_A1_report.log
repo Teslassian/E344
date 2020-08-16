@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  17 AUG 2020 00:56
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -1017,30 +1017,35 @@ Underfull \hbox (badness 2245) in paragraph at lines 29--30
 [][]\OT1/lmr/m/n/12 (+20) input volt-age swing equals
  []
 
+
+LaTeX Warning: Citation `opamp' on page 5 undefined on input line 33.
+
 [5
 
 
 
 ]
-
-LaTeX Warning: Citation `opamp' on page 6 undefined on input line 33.
-
 <Figures/final.png, id=309, 1358.82657pt x 613.54219pt>
 File: Figures/final.png Graphic file (type png)
 <use Figures/final.png>
 Package pdftex.def Info: Figures/final.png  used on input line 37.
 (pdftex.def)             Requested size: 472.31595pt x 213.25444pt.
 
+
 LaTeX Warning: Citation `vground' on page 6 undefined on input line 48.
 
 
 LaTeX Warning: Citation `opamp' on page 6 undefined on input line 48.
 
-[6 <./Figures/final.png>]
+
+LaTeX Warning: Citation `TLC2272' on page 6 undefined on input line 52.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
+[6 <./Figures/final.png>]
 
 LaTeX Warning: Citation `filter' on page 7 undefined on input line 54.
 
@@ -1053,28 +1058,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
+LaTeX Warning: Citation `tlc2272' on page 7 undefined on input line 58.
 
 
-LaTeX Warning: Citation `tlc2272' on page 7 undefined on input line 60.
+LaTeX Warning: Citation `tlc2272' on page 7 undefined on input line 70.
 
 [7]
-
-LaTeX Warning: Citation `tlc2272' on page 8 undefined on input line 72.
-
 <Figures/vout.png, id=329, 791.20593pt x 392.21532pt>
 File: Figures/vout.png Graphic file (type png)
 <use Figures/vout.png>
-Package pdftex.def Info: Figures/vout.png  used on input line 76.
+Package pdftex.def Info: Figures/vout.png  used on input line 74.
 (pdftex.def)             Requested size: 472.31595pt x 234.14005pt.
-) [8 <./Figures/vout.png>] [9]
+) [8 <./Figures/vout.png>]
 \openout2 = `Chapter4.aux'.
 
  (Chapter4.tex
 Chapter 4.
-) [10
+
+LaTeX Warning: Citation `cs' on page 9 undefined on input line 4.
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 16--17
+[]\OT1/lmr/m/n/12 (+20) Since the noise is [][] at max-i-mum, the quan-ti-sa-ti
+on er-ror (due to noise) is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+) [9
 
 
 
@@ -1082,7 +1096,7 @@ Chapter 4.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-) [11
+) [10
 
 
 ]
@@ -1094,13 +1108,13 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./Figures/SocialContract_signed.pdf): PDF inclus
 ion: found PDF version <1.6>, but at most version <1.5> allowed
-<./Figures/SocialContract_signed.pdf, id=346, 597.62273pt x 845.00691pt>
+<./Figures/SocialContract_signed.pdf, id=342, 597.62273pt x 845.00691pt>
 File: ./Figures/SocialContract_signed.pdf Graphic file (type pdf)
 <use ./Figures/SocialContract_signed.pdf>
 Package pdftex.def Info: ./Figures/SocialContract_signed.pdf  used on input lin
 e 7.
 (pdftex.def)             Requested size: 368.40585pt x 520.92043pt.
-) [12
+) [11
 
 
  <./Figures/SocialContract_signed.pdf>]
@@ -1108,7 +1122,7 @@ e 7.
 
  (App-B.tex
 Appendix B.
-) [13
+) [12
 
 
 
@@ -1118,23 +1132,28 @@ Appendix B.
  (App-C.tex
 Appendix C.
 
-LaTeX Warning: Reference `ts' on page 14 undefined on input line 3.
+LaTeX Warning: Reference `ts' on page 13 undefined on input line 3.
 
-<Figures/ts.png, id=375, 644.4075pt x 305.64188pt>
+<Figures/ts.png, id=371, 644.4075pt x 305.64188pt>
 File: Figures/ts.png Graphic file (type png)
 <use Figures/ts.png>
 Package pdftex.def Info: Figures/ts.png  used on input line 6.
 (pdftex.def)             Requested size: 377.85419pt x 179.22183pt.
-<Figures/ac.png, id=377, 746.03719pt x 368.1253pt>
+<Figures/ac.png, id=373, 746.03719pt x 368.1253pt>
 File: Figures/ac.png Graphic file (type png)
 <use Figures/ac.png>
 Package pdftex.def Info: Figures/ac.png  used on input line 14.
 (pdftex.def)             Requested size: 377.85419pt x 186.44948pt.
-) [14
+)
+Underfull \hbox (badness 10000) in paragraph at lines 19--141
+
+ []
+
+[13
 
 
 
- <./Figures/ts.png> <./Figures/ac.png>]
+ <./Figures/ts.png> <./Figures/ac.png>] [14]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 100.
 See the caption package documentation for explanation.
@@ -1157,11 +1176,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 16770 strings out of 480799
- 296306 string characters out of 2905529
- 701952 words of memory out of 3000000
- 32179 multiletter control sequences out of 15000+200000
- 632709 words of font info for 134 fonts, out of 3000000 for 9000
+ 16769 strings out of 480799
+ 296289 string characters out of 2905529
+ 702952 words of memory out of 3000000
+ 32180 multiletter control sequences out of 15000+200000
+ 632622 words of font info for 133 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,13n,46p,1861b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
@@ -1182,7 +1201,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmsy8.pfb>
-Output written on e344_A1_report.pdf (21 pages, 1355917 bytes).
+Output written on e344_A1_report.pdf (21 pages, 1358219 bytes).
 PDF statistics:
  460 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
