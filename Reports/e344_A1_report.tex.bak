@@ -8,7 +8,7 @@
 
 
 % Page layout
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[left=2.2cm,right=2.2cm,top=2.2cm,bottom=2.2cm]{geometry}
 \setlength{\parindent}{0pt}
 
 % Figures
@@ -29,6 +29,7 @@
 \onehalfspacing
 \usepackage{siunitx}
 \usepackage{lipsum}
+\usepackage{wrapfig}
 
 
 % Headings

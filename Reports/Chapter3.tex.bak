@@ -6,22 +6,10 @@
 The signal obtained from the temperature sensor presents as DC, with a \SI{35}{\milli \volt}, \SI{50}{Hz} AC signal superimposed, which serves no purpose, but creates noise. The DC component increases linearly with respect to the temperature measured by the sensor. However, the sensor outputs a voltage of \SI{440}{\milli \volt} at 0\degree C, which increases by \SI{35}{\milli \volt} for every 1\degree C. These voltage levels are too small for a microcontroller ADC to take as input. Furthermore, as the sensor is only meant to measure human body temperature, the applicable range is only from 34\degree C to 42\degree C. The two aforementioned considerations necessitate amplification of the relevant part of the temperature sensor signal to occupy as much of a \numrange{0}{5} \si{\volt} range as possible, as this is the voltage range used by the ADC.
 To this end, a temperature sensor conditioning circuit is required to transform the given input into the desired output. This conditioning circuit consists of a filter, an offset removing subcircuit, as well as an amplifier. The filter attenuates the AC signal present in the input signal in order to obtain an output signal with a minimal amount of noise. The offset removing subcircuit removes enough of the DC offset to ensure that the output signal is centered around \SI{2.5}{\volt}, which is necessary to obtain the largest possible output swing as discussed previously. Finally, the amplifier increases the magnitude of the input signal in order to be suitable as input for an ADC.
 
-\pagebreak
-
 %**********************************************
 \section{Design}\label{sec:temp_design}
 %**********************************************
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = 1\textwidth]{Figures/final.png}
-    \caption{Temperature Sensor Circuit}
-    \label{fig:final}
-\end{figure}
-
-
-The final design is shown upfront in figure \ref{fig:final} as to aid with the explanation of the design process. The voltage regulator is included in the figure to clarify the integration of the final circuit. The amplifier was designed first, as its gain serves as the determining factor for the amount of noise reduction that is required from the filter. Since the output signal has to be centered around \SI{2.5}{\volt}, a differential amplifier was decided upon, as the negative input can be used to adjust the offset present in the output. Given a zero-reference temperature sensor voltage ($V_{zero}$) of \SI{440}{\milli \volt}, with an increase ($V_{\Delta}$) of \SI{35}{\milli \volt} for every 1\degree C. Therefore, temperature sensor voltage levels are calculated as follows:
-
-$$V_{temp} = V_{zero} + V_{\Delta} \times \mathrm{Temp}$$ 
+The amplifier was designed first, as its gain serves as the determining factor for the amount of noise reduction that is required from the filter. A TLC2272 op-amp was chosen as it allows for an output very close to its rails. Since the output signal has to be centered around \SI{2.5}{\volt}, a differential amplifier was decided upon, as the negative input can be used to adjust the offset present in the output. Given a zero-reference temperature sensor voltage ($V_{zero}$) of \SI{440}{\milli \volt}, with an increase ($V_{\Delta}$) of \SI{35}{\milli \volt} for every 1\degree C. Therefore, temperature sensor voltage levels are calculated as follows: $V_{temp} = V_{zero} + V_{\Delta} \times \mathrm{Temp}$ 
 
 %Table \ref{tab:temp} shows some of the relevant voltage levels:
 
@@ -38,24 +26,30 @@ $$V_{temp} = V_{zero} + V_{\Delta} \times \mathrm{Temp}$$
      \label{tab:temp}
 \end{table}
 
-According to table \ref{tab:temp}, the maximum input voltage swing equals $1.91 - 1
-63 = 0.28$V, and has a DC offset of \SI{1.77}{\volt}. Amplification is needed to reach an output voltage swing of \SI{5}{\volt}. Therefore:
+According to table \ref{tab:temp}, the maximum input voltage swing equals $1.91 - 1.63 = 0.28$V, and has a DC offset of \SI{1.77}{\volt}. Amplification is needed to reach an output voltage swing of \SI{5}{\volt}. Therefore:
 
 $$A_v = \frac{V_{out}}{V_{in}} = \frac{5}{0.28} = 17.86$$
 
-The TLC2272 op-amp was selected for the amplifier, as it can produce an output very close to its rails at 0 and \SI{5}{\volt}. Now, R is selected as \SI{10}{\kilo \Omega}, to prevent a large current from being drawn.  This gives $R_{feedback} = 178.6$k$\Omega$, where R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$.
+Now, R is selected as \SI{10}{\kilo \Omega}, to prevent a large current from being drawn.  This gives $R_{feedback} = 178.6$k$\Omega$, according to $A_v = \frac{{R}_{feedback}}{R}$ \cite{opamp}. R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$ in the final design diagram (figure \ref{fig:final}), which is shown here already to aid with the explanation of the design process. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 1\textwidth]{Figures/final.png}
+    \caption{Temperature Sensor Circuit}
+    \label{fig:final}
+\end{figure}
 
 Two points need to be considered: 
 \begin{enumerate}
 \item The DC offset of the input signal is undesired and has to be removed in order to obtain a zero-mean input signal. This can be achieved by designing another subcircuit that makes use of another op-amp, for example. This adds to the cost and complexity of the circuit.
-\item The output signal has to be centered around \SI{2.5}{\volt}. This means that DC offset has to be added in the form of a virtual ground.
+\item The output signal has to be centered around \SI{2.5}{\volt}. This means that a DC offset has to be added in the form of a virtual ground.
 \end{enumerate}
 
 When considered in conjunction with each other, the DC offset alteration can be resolved in one step, thereby reducing cost and complexity significantly. The decision was therefore made to use a differential amplifier, with the input signal connected to the positive input, after which the voltage required at the negative input can be calculated in such a way as to simultaneously subtract the offset and add the virtual ground in one step, thereby producing an output DC offset of \SI{2.5}{\volt} (the lecturer mentions that this is an acceptable approach in Lecture Video 2).  This approach also simplifies the design procedure, as it becomes unnecessary to calculate the virtual ground separately. The differential amplifier, however, has to be non-inverting. The calculation thus reduces to a simple differential amplifier gain formula \cite{opamp}: 
 
 $$V_{out}=\frac{{R}_{feedback}}{{R}}\left({V}_{in+}-{V}_{in-}\right)$$
 
-Taking $V_{out}$ as \SI{2.5}{\volt}, $V_{in+}$ as \SI{1.77}{\volt} and the resistor values as calculated previously:
+With $V_{out}$ as \SI{2.5}{\volt}, $V_{in+}$ as \SI{1.77}{\volt} and the resistor values as calculated previously:
 
 $$2.5=\frac{178600}{10000}\left(1.77-{V}_{in-}\right)$$
 $${V}_{in-} = 1.63 \; \mathrm{V}$$
@@ -66,7 +60,7 @@ $${V}_{in-} = 5 (\frac{R_{6}}{R_{6}\times R_{5}})$$
 
 Selecting $R_5$ as \SI{10}{\kilo \Omega} gives $R_6 =$ \SI{4.84}{\kilo \Omega}.\\
 
-The filter has to be designed next. Possible design choices included an active/passive first order low-pass filter, a simple RC filter, or a second order low-pass filter. Simulation of the aforementioned filters has shown the following: the RC filter is very simple, but does not meet the design requirements w.r.t. noise. The passive low-pass filter is relatively simple, but does not meet the settling time requirement. The active low-pass filter meets both the noise and settling time requirements, but requires the TLC2272 op-amp to do so. Since a single TLC2272 op-amp is more expensive than multiple TL081 op-amps, the decision was made to rather use cascaded second order low-pass filters, which  make use of the TL081. This is somewhat more complex, but lowers the cost, as the final circuit now only uses three op-amps, two of which are the cheaper TL081 models. The cascaded setup also produces an output signal with extremely low noise.  A filter gain of close to unity is desired; for $\mathrm{R_b} = $ \SI{500}{\kilo\Omega}, a value of \SI{5}{\kilo\Omega} is suitable for $\mathrm{R_a}$, according to
+The filter has to be designed next. Possible design choices included an active/passive first order low-pass filter, a simple RC filter, or a second order low-pass filter. Simulation of the aforementioned filters has shown the following: the RC filter is very simple, but does not meet the design requirements w.r.t. noise. The passive low-pass filter is relatively simple, but does not meet the settling time requirement. The active low-pass filter meets both the noise and settling time requirements, but requires the TLC2272 op-amp to do so. Since a single TLC2272 op-amp is more expensive than multiple TL081 op-amps, the decision was made to rather use cascaded second order low-pass filters, which  make use of the TL081. This is somewhat more complex, but lowers the cost, as the final circuit now only uses three op-amps, two of which are the cheaper TL081 models. The cascaded setup also produces an output signal with extremely low noise.  A filter gain of close to unity is desired; for $R_A = $ \SI{500}{\kilo\Omega}, a value of \SI{5}{\kilo\Omega} is suitable for $R_A$, according to
 
 $${A_v}=1+\frac{{R}_A}{R_B}$$
 
@@ -82,7 +76,7 @@ Under most circumstances, it is a good design practice to include a unity gain o
 %**********************************************
 \section{Results} \label{sec:temp_results}
 %**********************************************
-The designed circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt}, exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{65}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
+The designed circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt}, exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{67}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
 
 \begin{figure}[h]
     \centering
@@ -97,6 +91,6 @@ The designed circuit produces a signal centered at \SI{2.5}{\volt} with an outpu
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-
+Concluding, the circuit performs very well, and successfully amplifies the temperature sensor output to a level that is readable by the microcontroller ADC.
 
 

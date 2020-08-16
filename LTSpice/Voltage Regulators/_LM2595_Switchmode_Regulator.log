@@ -10,20 +10,21 @@ Direct Newton iteration for .op point succeeded.
 Ignoring empty pin current: Ix(u1:fb)
 Ignoring empty pin current: Ix(u1:fb)
 
-Date: Sun Aug 16 13:39:42 2020
-Total elapsed time: 26.699 seconds.
+Date: Sun Aug 16 17:52:12 2020
+Total elapsed time: 41.003 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 1456158
-traniter = 1456150
-tranpoints = 454518
-accept = 337703
-rejected = 116815
+totiter = 1457596
+traniter = 1457588
+tranpoints = 454600
+accept = 337836
+rejected = 116764
 matrix size = 101
 fillins = 44
 solver = Normal
-Matrix Compiler1: 4.62 KB object code size  35.3/2.0/[1.5]
-Matrix Compiler2: 7.09 KB object code size  6.0/4.0/[1.2]
+Thread vector: 16.4/37.9[1] 9.1/48.8[1] 175.4/131.0[2] 0.8/563.1[1]  2592/500
+Matrix Compiler1: 4.62 KB object code size  22.2/2.8/[1.1]
+Matrix Compiler2: 7.09 KB object code size  5.1/11.7/[1.1]
 
