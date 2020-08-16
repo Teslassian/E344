@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 19:49
 entering extended mode
 **./Chapter3.tex
 (Chapter3.tex
@@ -2503,16 +2503,89 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 N
-      ow, R is selected as \SI{10}{\kilo \Omega}, to prevent a large current...
+l.33 C
+      onsidering the current design requirement of \SI{25}{mA} maximum, the ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no N in font nullfont!
+Missing character: There is no C in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+l.33 ...ring the current design requirement of \SI
+                                                  {25}{mA} maximum, the inpu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
 Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
 Missing character: There is no R in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -2527,8 +2600,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.33 Now, R is selected as \SI
-                              {10}{\kilo \Omega}, to prevent a large current...
+l.33 ...m, the input resistor R is selected as \SI
+                                                  {10}{\kilo \Omega}, which ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2538,8 +2611,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
-l.33 Now, R is selected as \SI{10}{\kilo
-                                         \Omega}, to prevent a large current...
+l.33 ...ut resistor R is selected as \SI{10}{\kilo
+                                                   \Omega}, which will there...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2549,25 +2622,52 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.33 Now, R is selected as \SI{10}{\kilo \Omega
-                                               }, to prevent a large current...
+l.33 ...stor R is selected as \SI{10}{\kilo \Omega
+                                                  }, which will therefore, a...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.33 Now, R is selected as \SI{10}{\kilo \Omega}
-                                                , to prevent a large current...
+l.33 ...tor R is selected as \SI{10}{\kilo \Omega}
+                                                  , which will therefore, at...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+! Undefined control sequence.
+l.33 ...at the highest possible voltage level (\SI
+                                                  {5}{\volt}), use \SI{0.5}{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33 ...ghest possible voltage level (\SI{5}{\volt
+                                                  }), use \SI{0.5}{mA} of cu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33 ...ble voltage level (\SI{5}{\volt}), use \SI
+                                                  {0.5}{mA} of current.  Thi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no R in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.33 ... current from being drawn.  This gives $R_
+l.33 ...e \SI{0.5}{mA} of current.  This gives $R_
                                                   {feedback} = 178.6$k$\Omeg...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2746,10 +2846,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 33--34
  []
 
 
-Overfull \hbox (283.29517pt too wide) in paragraph at lines 33--34
+Overfull \hbox (443.8449pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10 
-\OML/cmm/m/it/10 ; topreventalargecurrentfrombeingdrawn:Thisgives$$[] \OT1/cmr/
-m/n/10 =
+\OML/cmm/m/it/10 ; whichwilltherefore; atthehighestpossiblevoltagelevel\OT1/cmr
+/m/n/10 (5[])\OML/cmm/m/it/10 ; use[][]ofcurrent:Thisgives$$[] \OT1/cmr/m/n/10 
+=
  []
 
 

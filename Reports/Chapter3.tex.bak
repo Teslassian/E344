@@ -30,7 +30,7 @@ According to table \ref{tab:temp}, the maximum input voltage swing equals $1.91 
 
 $$A_v = \frac{V_{out}}{V_{in}} = \frac{5}{0.28} = 17.86$$
 
-Now, R is selected as \SI{10}{\kilo \Omega}, to prevent a large current from being drawn.  This gives $R_{feedback} = 178.6$k$\Omega$, according to $A_v = \frac{{R}_{feedback}}{R}$ \cite{opamp}. R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$ in the final design diagram (figure \ref{fig:final}), which is shown here already to aid with the explanation of the design process. 
+Considering the current design requirement of \SI{25}{mA} maximum, the input resistor R is selected as \SI{10}{\kilo \Omega}, which will therefore, at the highest possible voltage level (\SI{5}{\volt}), use \SI{0.5}{mA} of current.  This gives $R_{feedback} = 178.6$k$\Omega$, according to $A_v = \frac{{R}_{feedback}}{R}$ \cite{opamp}. R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$ in the final design diagram (figure \ref{fig:final}), which is shown here already to aid with the explanation of the design process. 
 
 \begin{figure}[H]
     \centering
@@ -47,36 +47,31 @@ Two points need to be considered:
 
 When considered in conjunction with each other, the DC offset alteration can be resolved in one step, thereby reducing cost and complexity significantly. The decision was therefore made to use a differential amplifier, with the input signal connected to the positive input, after which the voltage required at the negative input can be calculated in such a way as to simultaneously subtract the offset and add the virtual ground in one step, thereby producing an output DC offset of \SI{2.5}{\volt} (the lecturer mentions that this is an acceptable approach in Lecture Video 2).  This approach also simplifies the design procedure, as it becomes unnecessary to calculate the virtual ground separately. The differential amplifier, however, has to be non-inverting. The calculation thus reduces to a simple differential amplifier gain formula \cite{opamp}: 
 
-$$V_{out}=\frac{{R}_{feedback}}{{R}}\left({V}_{in+}-{V}_{in-}\right)$$
+$$V_{out}=\frac{{R}_{feedback}}{{R}}\left({V}_{in+}-{V}_{in-}\right) \;\;\; \rightarrow \;\;\; 2.5=\frac{178600}{10000}\left(1.77-{V}_{in-}\right)$$
 
-With $V_{out}$ as \SI{2.5}{\volt}, $V_{in+}$ as \SI{1.77}{\volt} and the resistor values as calculated previously:
-
-$$2.5=\frac{178600}{10000}\left(1.77-{V}_{in-}\right)$$
-$${V}_{in-} = 1.63 \; \mathrm{V}$$
-
-The voltage at ${V}_{in-}$ can be set by means of a voltage divider circuit, which takes \SI{5}{\volt} as input, and is calculated as follows (resistor names in formulae are selected to conform with Figure \ref{fig:final}):
+With $V_{out}$ as \SI{2.5}{\volt}, $V_{in+}$ as \SI{1.77}{\volt} and the resistor values as calculated previously, ${V}_{in-} = 1.63 \; \mathrm{V}$. The voltage at ${V}_{in-}$ can be set by means of a voltage divider circuit, which takes \SI{5}{\volt} as input and is calculated as follows (resistor names in formulae are selected to conform with Figure \ref{fig:final}):
 
 $${V}_{in-} = 5 (\frac{R_{6}}{R_{6}\times R_{5}})$$
 
 Selecting $R_5$ as \SI{10}{\kilo \Omega} gives $R_6 =$ \SI{4.84}{\kilo \Omega}.\\
 
-The filter has to be designed next. Possible design choices included an active/passive first order low-pass filter, a simple RC filter, or a second order low-pass filter. Simulation of the aforementioned filters has shown the following: the RC filter is very simple, but does not meet the design requirements w.r.t. noise. The passive low-pass filter is relatively simple, but does not meet the settling time requirement. The active low-pass filter meets both the noise and settling time requirements, but requires the TLC2272 op-amp to do so. Since a single TLC2272 op-amp is more expensive than multiple TL081 op-amps, the decision was made to rather use cascaded second order low-pass filters, which  make use of the TL081. This is somewhat more complex, but lowers the cost, as the final circuit now only uses three op-amps, two of which are the cheaper TL081 models. The cascaded setup also produces an output signal with extremely low noise.  A filter gain of close to unity is desired; for $R_A = $ \SI{500}{\kilo\Omega}, a value of \SI{5}{\kilo\Omega} is suitable for $R_A$, according to
+The filter has to be designed next. Possible design choices included an active/passive first order low-pass filter, a simple RC filter, or a second order low-pass filter. Simulation of the aforementioned filters has shown the following: the RC filter is very simple, but does not meet the design requirements w.r.t. noise. The passive low-pass filter is relatively simple, but does not meet the settling time requirement. The active low-pass filter meets both the noise and settling time requirements, but requires the TLC2272 op-amp to do so. Since a single TLC2272 op-amp is more expensive than multiple TL081 op-amps, the decision was made to rather use cascaded second order low-pass filters, which  make use of the TL081. This is somewhat more complex, but lowers the cost, as the final circuit now only uses three op-amps, two of which are the cheaper TL081 models. The cascaded setup also produces an output signal with extremely low noise.  A filter gain of close to unity is desired; for $R_A = $ \SI{500}{\kilo\Omega}, a value of \SI{5}{\kilo\Omega} is suitable for $R_A$, according to the formula from \cite{filter}:
 
 $${A_v}=1+\frac{{R}_A}{R_B}$$
 
-The settling time requirement of \SI{100}{ms} means that a cutoff frequency of more than \SI{10}{Hz} is needed, while the attenuation of noise requires a cutoff frequency below \SI{50}{Hz}. In order to minimize noise, the cutoff frequency was selected at \SI{15}{Hz}. Choosing R ($\mathrm{R_7 \; and \; R_9}$ in the diagram) as \SI{100}{\kilo\Omega} gives C ($\mathrm{C_4 \; and \; C_5}$) as \SI{106.1}{nF}, according to
+The settling time requirement of \SI{100}{ms} means that a cutoff frequency of more than \SI{10}{Hz} is needed, while the attenuation of noise requires a cutoff frequency below \SI{50}{Hz}. In order to minimize noise, the cutoff frequency was selected at \SI{15}{Hz} - the bandwidth thus also is \SI{15}{Hz} (only positive frequencies considered). Choosing R ($\mathrm{R_7 \; and \; R_9}$ in the diagram) as \SI{100}{\kilo\Omega} gives C ($\mathrm{C_4 \; and \; C_5}$) as \SI{106.1}{nF}, according to
 
 $$f_c=\frac{1}{2 \pi RC}$$
 
-This filter is then duplicated and connected back-to-back in order to form cascaded second-order low-pass filters, as seen in figure \ref{fig:final}.\\
+The given cutoff frequency implies a rise time of \SI{19.1}{ms} according to $t_{r} \approx \frac{1.8}{w_{n}} = \frac{1.8}{2 \pi (15)}$\cite{cs}. This meets the requirement of \SI{100}{ms}. After design completion, this filter is then duplicated and connected back-to-back in order to form cascaded second-order low-pass filters, as seen in figure \ref{fig:final}.\\
 
-Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality (similar to the output shown in section \ref{sec:temp_results}. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design. 
+Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality (similar to the output shown in section \ref{sec:temp_results}). The reason a buffer is not needed is due to the signal conditioning circuit already having a very high input resistance, following from the choice of resistors. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design. 
 
 
 %**********************************************
 \section{Results} \label{sec:temp_results}
 %**********************************************
-The designed circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt}, exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{67}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
+The designed circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt}, exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{67}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}. The cutoff frequency, obtained via AC analysis simulation, is  Measurements and graphs of settling time, cutoff frequency and current drawn can be seen in Appendix C. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
 
 \begin{figure}[h]
     \centering
@@ -85,12 +80,9 @@ The designed circuit produces a signal centered at \SI{2.5}{\volt} with an outpu
     \label{fig:vout}
 \end{figure}
 
-
-\pagebreak
-
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-Concluding, the circuit performs very well, and successfully amplifies the temperature sensor output to a level that is readable by the microcontroller ADC.
+Concluding, the circuit performs very well, and successfully amplifies the temperature sensor output to a level that is readable by the microcontroller ADC, all the while attenuating almost all noise present in the input. The design is somewhat complex, but also cheaper, as it uses less of the TLC2272 op-amps.
 
 

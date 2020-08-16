@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 18:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 20:35
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -848,11 +848,56 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+(frontmatter/skripsie_title_page.tex
+<USlogo-top.pdf, id=95, 560.0925pt x 183.68625pt>
+File: USlogo-top.pdf Graphic file (type pdf)
+<use USlogo-top.pdf>
+Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
+(pdftex.def)             Requested size: 284.52756pt x 93.31717pt.
+ [1
+
+{C:/Users/dvone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Program 
+Files/MiKTeX 2.9/tex/latex/stellenbosch/logos/USlogo-top.pdf>]) (frontmatter/de
+claration.tex
+File: USlogo-top.pdf Graphic file (type pdf)
+<use USlogo-top.pdf>
+Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
+(pdftex.def)             Requested size: 227.62204pt x 74.65036pt.
+LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <17.28> not available
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 10.
+
+File: frontmatter/fig/Signature.png Graphic file (type png)
+<use frontmatter/fig/Signature.png>
+Package pdftex.def Info: frontmatter/fig/Signature.png  used on input line 43.
+(pdftex.def)             Requested size: 90.38861pt x 42.67912pt.
+) [1 <./frontmatter/fig/Signature.png>] (e344_A1_report.toc)
+\tf@toc=\write4
+\openout4 = `e344_A1_report.toc'.
+
+ [2
+
+] (e344_A1_report.lof)
+\tf@lof=\write5
+\openout5 = `e344_A1_report.lof'.
+
+ [3
+
+]
+(e344_A1_report.lot)
+\tf@lot=\write6
+\openout6 = `e344_A1_report.lot'.
+
+ (frontmatter/nomenclature.tex [4
+
+] [5
+
+]) [6]
 \openout2 = `Chapter1.aux'.
 
  (Chapter1.tex
 Chapter 1.
-<Figures/1.1_block.png, id=79, 2945.0025pt x 1004.75375pt>
+<Figures/1.1_block.png, id=232, 2945.0025pt x 1004.75375pt>
 File: Figures/1.1_block.png Graphic file (type png)
 <use Figures/1.1_block.png>
 Package pdftex.def Info: Figures/1.1_block.png  used on input line 7.
@@ -860,9 +905,7 @@ Package pdftex.def Info: Figures/1.1_block.png  used on input line 7.
 ) [1
 
 
-
-{C:/Users/dvone/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figures/1
-.1_block.png>]
+ <./Figures/1.1_block.png>]
 \openout2 = `Chapter2.aux'.
 
  (Chapter2.tex
@@ -877,7 +920,7 @@ LaTeX Warning: Citation `lm2595' on page 2 undefined on input line 8.
 
 pdfTeX warning: pdflatex (file ./Figures/LR.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Figures/LR.pdf, id=96, 438.1971pt x 176.45926pt>
+<Figures/LR.pdf, id=245, 438.1971pt x 176.45926pt>
 File: Figures/LR.pdf Graphic file (type pdf)
 <use Figures/LR.pdf>
 Package pdftex.def Info: Figures/LR.pdf  used on input line 17.
@@ -911,44 +954,54 @@ LaTeX Warning: Citation `lm2595' on page 2 undefined on input line 24.
 
 pdfTeX warning: pdflatex (file ./Figures/SM.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Figures/SM.pdf, id=122, 441.69016pt x 187.29976pt>
+<Figures/SM.pdf, id=266, 441.69016pt x 187.29976pt>
 File: Figures/SM.pdf Graphic file (type pdf)
 <use Figures/SM.pdf>
 Package pdftex.def Info: Figures/SM.pdf  used on input line 35.
-(pdftex.def)             Requested size: 354.23695pt x 150.21439pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 52.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 52.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 52.
+(pdftex.def)             Requested size: 330.61972pt x 140.20009pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 1009) in paragraph at lines 41--42
+\OT1/lmr/m/n/12 (+20) and the volt-age reg-u-la-
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 [][]\OT1/lmr/m/n/12 (+20) Furthermore, the
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 63--64
+Underfull \hbox (badness 1735) in paragraph at lines 64--65
 \OT1/lmr/m/n/12 (+20) cre-ates noise lev-els
  []
 
-<Figures/smnoise.png, id=125, 1427.3325pt x 328.97906pt>
+
+Underfull \hbox (badness 4181) in paragraph at lines 64--65
+\OT1/lmr/m/n/12 (+20) whereas the lin-ear
+ []
+
+<Figures/smnoise.png, id=270, 1427.3325pt x 328.97906pt>
 File: Figures/smnoise.png Graphic file (type png)
 <use Figures/smnoise.png>
-Package pdftex.def Info: Figures/smnoise.png  used on input line 67.
+Package pdftex.def Info: Figures/smnoise.png  used on input line 68.
 (pdftex.def)             Requested size: 472.31595pt x 108.85959pt.
-<Figures/lmout.png, id=129, 620.3175pt x 150.5625pt>
+<Figures/lmout.png, id=274, 620.3175pt x 150.5625pt>
 File: Figures/lmout.png Graphic file (type png)
 <use Figures/lmout.png>
-Package pdftex.def Info: Figures/lmout.png  used on input line 77.
+Package pdftex.def Info: Figures/lmout.png  used on input line 78.
 (pdftex.def)             Requested size: 377.85419pt x 91.71202pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/smout.png, id=130, 616.55344pt x 151.3153pt>
+<Figures/smout.png, id=275, 616.55344pt x 151.3153pt>
 File: Figures/smout.png Graphic file (type png)
 <use Figures/smout.png>
-Package pdftex.def Info: Figures/smout.png  used on input line 84.
+Package pdftex.def Info: Figures/smout.png  used on input line 85.
 (pdftex.def)             Requested size: 377.85419pt x 92.73627pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -967,7 +1020,7 @@ Chapter 3.
 
 LaTeX Warning: Citation `opamp' on page 6 undefined on input line 33.
 
-<Figures/final.png, id=172, 1358.82657pt x 613.54219pt>
+<Figures/final.png, id=309, 1358.82657pt x 613.54219pt>
 File: Figures/final.png Graphic file (type png)
 <use Figures/final.png>
 Package pdftex.def Info: Figures/final.png  used on input line 37.
@@ -984,22 +1037,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 LaTeX Warning: Citation `filter' on page 7 undefined on input line 58.
 
 
+LaTeX Warning: Citation `cs' on page 7 undefined on input line 66.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 [7]
-<Figures/vout.png, id=191, 791.20593pt x 392.21532pt>
+<Figures/vout.png, id=329, 791.20593pt x 392.21532pt>
 File: Figures/vout.png Graphic file (type png)
 <use Figures/vout.png>
 Package pdftex.def Info: Figures/vout.png  used on input line 78.
 (pdftex.def)             Requested size: 472.31595pt x 234.14005pt.
-) [8 <./Figures/vout.png>]
+ [8 <./Figures/vout.png>]) [9]
 \openout2 = `Chapter4.aux'.
 
  (Chapter4.tex
 Chapter 4.
-) [9
+) [10
 
 
 
@@ -1007,7 +1063,7 @@ Chapter 4.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
-) [10
+) [11
 
 
 ]
@@ -1019,13 +1075,13 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./Figures/SocialContract_signed.pdf): PDF inclus
 ion: found PDF version <1.6>, but at most version <1.5> allowed
-<./Figures/SocialContract_signed.pdf, id=205, 597.62273pt x 845.00691pt>
+<./Figures/SocialContract_signed.pdf, id=346, 597.62273pt x 845.00691pt>
 File: ./Figures/SocialContract_signed.pdf Graphic file (type pdf)
 <use ./Figures/SocialContract_signed.pdf>
 Package pdftex.def Info: ./Figures/SocialContract_signed.pdf  used on input lin
 e 7.
 (pdftex.def)             Requested size: 368.40585pt x 520.92043pt.
-) [11
+) [12
 
 
  <./Figures/SocialContract_signed.pdf>]
@@ -1033,7 +1089,7 @@ e 7.
 
  (App-B.tex
 Appendix B.
-) [12
+) [13
 
 
 
@@ -1043,18 +1099,23 @@ Appendix B.
  (App-C.tex
 Appendix C.
 
-LaTeX Warning: Reference `ts' on page 13 undefined on input line 3.
+LaTeX Warning: Reference `ts' on page 14 undefined on input line 3.
 
-<Figures/ts.png, id=220, 986.9372pt x 653.44125pt>
+<Figures/ts.png, id=375, 644.4075pt x 305.64188pt>
 File: Figures/ts.png Graphic file (type png)
 <use Figures/ts.png>
 Package pdftex.def Info: Figures/ts.png  used on input line 6.
-(pdftex.def)             Requested size: 472.31595pt x 312.72096pt.
-) [13
+(pdftex.def)             Requested size: 330.61972pt x 156.81735pt.
+<Figures/ac.png, id=376, 746.03719pt x 368.1253pt>
+File: Figures/ac.png Graphic file (type png)
+<use Figures/ac.png>
+Package pdftex.def Info: Figures/ac.png  used on input line 13.
+(pdftex.def)             Requested size: 330.61972pt x 163.13838pt.
+) [14
 
 
 
- <./Figures/ts.png>]
+ <./Figures/ts.png> <./Figures/ac.png>]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 100.
 See the caption package documentation for explanation.
@@ -1066,7 +1127,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `e344_A1_report.out' has not changed.
-(rerunfilecheck)             Checksum: 98926722C0A55DE1DDF5CB2F7A5F1B76;1059.
+(rerunfilecheck)             Checksum: D58E0FA2E018FFAFBAEF037E5C8889D8;1258.
 
 
 LaTeX Warning: There were undefined references.
@@ -1077,31 +1138,33 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 16655 strings out of 480799
- 293985 string characters out of 2905529
- 697883 words of memory out of 3000000
- 32124 multiletter control sequences out of 15000+200000
- 608742 words of font info for 120 fonts, out of 3000000 for 9000
+ 16768 strings out of 480799
+ 296284 string characters out of 2905529
+ 701952 words of memory out of 3000000
+ 32177 multiletter control sequences out of 15000+200000
+ 632709 words of font info for 134 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,46p,1861b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,46p,1861b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
-thex.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Prog
+ts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-rm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on e344_A1_report.pdf (13 pages, 970085 bytes).
+mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmsy8.pfb>
+Output written on e344_A1_report.pdf (21 pages, 1331624 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 23755 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 29434 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -30,7 +30,7 @@ According to table \ref{tab:temp}, the maximum input voltage swing equals $1.91 
 
 $$A_v = \frac{V_{out}}{V_{in}} = \frac{5}{0.28} = 17.86$$
 
-Now, R is selected as \SI{10}{\kilo \Omega}, to prevent a large current from being drawn.  This gives $R_{feedback} = 178.6$k$\Omega$, according to $A_v = \frac{{R}_{feedback}}{R}$ \cite{opamp}. R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$ in the final design diagram (figure \ref{fig:final}), which is shown here already to aid with the explanation of the design process. 
+Considering the current design requirement of \SI{25}{mA} maximum, the input resistor R is selected as \SI{10}{\kilo \Omega}, which will therefore, at the highest possible voltage level (\SI{5}{\volt}), use \SI{0.5}{mA} of current.  This gives $R_{feedback} = 178.6$k$\Omega$, according to $A_v = \frac{{R}_{feedback}}{R}$ \cite{opamp}. R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$ in the final design diagram (figure \ref{fig:final}), which is shown here already to aid with the explanation of the design process. 
 
 \begin{figure}[H]
     \centering
@@ -59,19 +59,19 @@ The filter has to be designed next. Possible design choices included an active/p
 
 $${A_v}=1+\frac{{R}_A}{R_B}$$
 
-The settling time requirement of \SI{100}{ms} means that a cutoff frequency of more than \SI{10}{Hz} is needed, while the attenuation of noise requires a cutoff frequency below \SI{50}{Hz}. In order to minimize noise, the cutoff frequency was selected at \SI{15}{Hz}. Choosing R ($\mathrm{R_7 \; and \; R_9}$ in the diagram) as \SI{100}{\kilo\Omega} gives C ($\mathrm{C_4 \; and \; C_5}$) as \SI{106.1}{nF}, according to
+The settling time requirement of \SI{100}{ms} means that a cutoff frequency of more than \SI{10}{Hz} is needed, while the attenuation of noise requires a cutoff frequency below \SI{50}{Hz}. In order to minimize noise, the cutoff frequency was selected at \SI{15}{Hz} - the bandwidth thus also is \SI{15}{Hz} (only positive frequencies considered). Choosing R ($\mathrm{R_7 \; and \; R_9}$ in the diagram) as \SI{100}{\kilo\Omega} gives C ($\mathrm{C_4 \; and \; C_5}$) as \SI{106.1}{nF}, according to
 
 $$f_c=\frac{1}{2 \pi RC}$$
 
-This filter is then duplicated and connected back-to-back in order to form cascaded second-order low-pass filters, as seen in figure \ref{fig:final}.\\
+The given cutoff frequency implies a rise time of \SI{19.1}{ms} according to $t_{r} \approx \frac{1.8}{w_{n}} = \frac{1.8}{2 \pi (15)}$\cite{cs}. This meets the requirement of \SI{100}{ms}. After design completion, this filter is then duplicated and connected back-to-back in order to form cascaded second-order low-pass filters, as seen in figure \ref{fig:final}.\\
 
-Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality (similar to the output shown in section \ref{sec:temp_results}. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design. 
+Under most circumstances, it is a good design practice to include a unity gain op-amp at the input of the op-amp responsible for the correct offset, as it acts as a voltage buffer, thereby clamping the voltage against fluctuations caused by the differential amplifier's other input. This design practice was considered, but ultimately decided against, as tests with and without the buffer provided outputs of equal quality (similar to the output shown in section \ref{sec:temp_results}). The reason a buffer is not needed is due to the signal conditioning circuit already having a very high input resistance, following from the choice of resistors. The only notable differences resulting from the inclusion of a buffer were an increase in current drawn, as well as an increase in cost for the circuit components, as another op-amp is required. Therefore, in order to keep the current consumption below \SI{15}{mA}, as well as to use reduce cost by only using three op-amps, the voltage buffer was omitted in the final design. 
 
 
 %**********************************************
 \section{Results} \label{sec:temp_results}
 %**********************************************
-The designed circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt}, exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{67}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}. Measurements and graphs of settling time, cutoff frequency and current drawn can be seen in Appendix C. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
+The designed circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt} (figure \ref{fig:vout}), exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{67}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}. The cutoff frequency, obtained via AC analysis simulation, is \SI{10.48}{Hz} (figure \ref{fig:ac}). Measurements and graphs of settling time, cutoff frequency and current drawn can be seen in Appendix C. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
 
 \begin{figure}[h]
     \centering

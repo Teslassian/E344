@@ -28,17 +28,18 @@ $$\mathrm{V}_{\mathrm{OUT}}=\mathrm{V}_{\mathrm{REF}}\left(1+\frac{\mathrm{R}_{2
 Selecting $\mathrm{R_1}$ as \SI{1}{\kilo\Omega}, with $\mathrm{V_{out}}$ as \SI{5}{\volt} gives $\mathrm{R_2}$ as \SI{3065}{\Omega}. For testing purposes, a \SI{50}{\Omega} load was connected to the regulator, drawing \SI{100}{mA}.\\
 \pagebreak 
 
-%\begin{wrapfigure}{r}{0.75\textwidth}
-\begin{figure}
+\begin{wrapfigure}{r}{0.7\textwidth}
+%\begin{figure}
 %	\vspace{-2cm}
     \centering
-    \includegraphics[width = 0.75\textwidth]{Figures/SM.pdf}
+    \includegraphics[width = 0.7\textwidth]{Figures/SM.pdf}
     \caption{Switchmode Voltage Regulator}
     \label{fig:SM}
-%\end{wrapfigure}
+\end{wrapfigure}
+%\end{figure}
 
+Since the provided circuit includes a resistor ($R_{sense}$) between the voltage source and the voltage regulator, the voltage drop over the resistor will be $V = IR = (0.01238)(0.01) = 123.8\mu \mathrm{V}$. This is negligible, as it is not nearly enough to approach the dropout voltages of the voltage regulators, which are \SI{6.7}{\volt} for the LM7805 and \SI{5.8}{\volt} for the LM2595 in the case of a \SI{5}{\volt} output.
 
-\end{figure}
 %**********************************************
 \section{Results} \label{sec:volt_results}
 %**********************************************
@@ -60,7 +61,7 @@ The input and output power measurements are displayed in table \ref{tab:compvreg
      \label{tab:compvreg}
 \end{wraptable}
 
-Furthermore, the switchmode regulator creates noise levels of up to 950 $\mathrm{mV_{pp}}$ in the output, as can be seen in figure \ref{fig:smnoise}. This is a problem, as the large gain of the differential amplifier, which is fed by the voltage regulator, will result in the noise levels to increase in magnitude and become prevalent in the output. 
+Furthermore, the switchmode regulator creates noise levels of up to 950 $\mathrm{mV_{pp}}$ in the output, as can be seen in figure \ref{fig:smnoise}, whereas the linear regulator produces almost no noise (figure \ref{fig:lmout}). Noise is a problem, as the large gain of the differential amplifier  will increase the noise levels, which will distort the output. 
 
 \begin{figure}[h]
     \centering
