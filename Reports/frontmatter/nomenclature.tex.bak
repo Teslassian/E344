@@ -4,16 +4,14 @@
 % \vspace*{-3mm}
 \subsubsection*{Variables and functions}
 
-
 \begingroup
 \renewcommand{\arraystretch}{1.2}
 \renewcommand{\tabularxcolumn}[1]{p{#1}}
 \begin{tabularx}{\textwidth}{@{}p{2.5cm}L}
-	$\eta$ & Efficiency\\
-	$\omega_n$ & Natural Frequency\\
-	$f_c$ & Cutoff Frequency\\
-	$A_v$ & Gain\\
-	$t_{r}$ & Rise time (90\%)\\
+	$\eta$ & Efficiency
+	$\omega_n$ & Natural Frequency
+	$f_c$ & Cuto
+	$t_{r}$ & Rise time (90%)
     $V_{ref}$ & Reference Voltage\\
 \end{tabularx}
 \endgroup

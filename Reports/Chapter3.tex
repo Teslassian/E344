@@ -67,18 +67,38 @@ $I_{total} = (3)\frac{2.5}{10k} + (2)\frac{2.5}{178.6k} + (4)\frac{2.5}{100k} + 
 %**********************************************
 \section{Results} \label{sec:temp_results}
 %**********************************************
-The designed circuit receives an input signal ranging from 1.67 to \SI{1.94}{\volt} for $V_{in+}$, which is somewhat higher than the calculated values of 1.63 to \SI{1.91}{\volt}, and is due to the filter adding some offset. This can easily be overcome by adjusting the voltage divider. $V_{in-}$ receives \SI{1.7}{\volt}. Both $V_{in-}$ and $V_{in+}$ thus fall well within the allowable range for the TLC2272, which is from $\mathrm{V}_{\mathrm{DD}-}-0.3 \;\; \mathrm{to} \;\; \mathrm{V}_{\mathrm{DD}+}$\cite{tlc2272}.  The circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt} (figure \ref{fig:vout}), exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt}, and the settling time is \SI{67}{ms}, thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA}, well below the required \SI{15}{mA}, and very close to the calculated \SI{11.39}{mA}. The cutoff frequency, obtained via AC analysis simulation, is \SI{10.48}{Hz} (figure \ref{fig:ac}). Measurements and graphs of settling time, cutoff frequency and current drawn can be seen in Appendix C. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{fig:vout}.
+The designed circuit receives an input signal ranging from 1.67 to \SI{1.94}{\volt} for $V_{in+}$, which is somewhat higher than the calculated values of 1.63 to \SI{1.91}{\volt}, and is due to the filter adding some offset. This can easily be overcome by adjusting the voltage divider. $V_{in-}$ receives \SI{1.7}{\volt}. Both $V_{in-}$ and $V_{in+}$ thus fall well within the allowable range for the TLC2272, which is from $\mathrm{V}_{\mathrm{DD}-}-0.3 \;\; \mathrm{to} \;\; \mathrm{V}_{\mathrm{DD}+}$\cite{tlc2272}.  The circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt} (figure \ref{subfig:vout}), exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt} (figure \ref{subfig:noise}), and the settling time is \SI{67}{ms} (figure \ref{subfig:ts}), thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA} (figure \ref{subfig:current}), well below the required \SI{15}{mA}, and very close to the calculated \SI{11.39}{mA}. The cutoff frequency, obtained via AC analysis simulation, is \SI{10.48}{Hz} (figure \ref{fig:ac}). Measurements and graphs of settling time, cutoff frequency and current drawn can be seen in Appendix C. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{subfig:vout}.
 
 \begin{figure}[h]
-    \centering
-    \includegraphics[width = 1\textwidth]{Figures/vout.png}
-    \caption{Temperature Sensor Conditioning Circuit Output}
-    \label{fig:vout}
-\end{figure}
+ \footnotesize
+ \centering
+    \begin{subfigure}[]{0.4\textwidth}
+              \centering
+  		\includegraphics[width=1\linewidth]{./Figures/vout}
+		    \caption{Full Input and Output Range} \label{subfig:vout}
+     \end{subfigure}
+     \begin{subfigure}[]{0.5\textwidth}
+             \centering
+  		\includegraphics[width=1.0\linewidth]{./Figures/current}
+		   \caption{Total Current of Entire System} \label{subfig:current}
+     \end{subfigure}
+    \begin{subfigure}[]{0.45\textwidth}
+              \centering
+  		\includegraphics[width=1\linewidth]{./Figures/noise}
+		    \caption{Simulated Noise Suppresion} \label{subfig:noise}
+     \end{subfigure}
+    \begin{subfigure}[]{0.45\textwidth}
+              \centering
+  		\includegraphics[width=1\linewidth]{./Figures/ts}
+		    \caption{Simulated Output Rise Time} \label{subfig:ts}
+     \end{subfigure}
+   \caption[\textcolor{red}{Complete Circuit Output}]{Complete Circuit Output (a) Output Range: 0.1 to 4.85V. Input Range: 1.63 to 1.94 V. (b)  Current draw below requirement.  (c)  Noise suppressed to negligible levels. (d) Settling time within 100 ms.}
+    \label{fig:simulation_results_box}
+ \end{figure}
 
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-Concluding, the circuit performs very well, and successfully amplifies the temperature sensor output to a level that is readable by the microcontroller ADC, all the while attenuating almost all noise present in the input. The design is somewhat complex, but also cheaper, as it uses less of the TLC2272 op-amps.
+Concluding, the circuit performs very well, and successfully amplifies the temperature sensor output to a level that is readable by the microcontroller ADC, all the while attenuating almost all noise present in the input. The design is somewhat complex, but also cheaper, as it uses less of the TLC2272 op-amps. It meets all requirements and bonus requirements.
 
 
