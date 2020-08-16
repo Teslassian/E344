@@ -58,7 +58,7 @@ Comparing the efficiency of the respective regulators, it is clear that the swit
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 0.8\textwidth]{Figures/smnoise}
+    \includegraphics[width = 1\textwidth]{Figures/smnoise.png}
     \caption{Switchmode Voltage Regulator Output}
     \label{fig:smnoise}
 \end{figure}
@@ -141,6 +141,6 @@ You can also use tables, example of which are presented in Tables \ref{tab:table
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-Concluding, it has been shown that both regulators behave as expected, but that the levels of noise present in the switchmode regulator make it unsuitable for the design at hand, as input signals, and thus the noise as well, will be amplified to levels of noise in the output signal that are unacceptable for an ADC input. This choice was made despite the fact that the switchmode 
+Concluding, it has been shown that both regulators behave as expected, but that the levels of noise present in the switchmode regulator make it unsuitable for the design at hand, as input signals, and thus the noise as well, will be amplified to levels of noise in the output signal that are unacceptable for an ADC input. This choice was made despite the fact that the switchmode regulator is approximately 40\% more efficient than the linear regulator, influenced thereby that the total current drawn is still very low. However, it should be noted that the current drawn should be re-evaluated after the rest of the components have been connected to the regulator, in order to make sure that the current draw requirement still is met.
 
 

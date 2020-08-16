@@ -1,0 +1,33 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Temperature Sensor Circuits\_Sensor_TLC2272_2ndOrder_TL081 - Copy.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.5165
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0
+Trouble finding operating point....skipping operating point for Transient analysis.
+
+Date: Fri Aug 14 12:48:34 2020
+Total elapsed time: 1.247 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 816
+traniter = 0
+tranpoints = 1
+accept = 1
+rejected = 0
+matrix size = 217
+fillins = 494
+solver = Normal
+
