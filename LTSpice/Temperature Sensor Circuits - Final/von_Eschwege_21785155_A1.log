@@ -3,21 +3,22 @@ Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSp
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
-Gmin = 10
+Increasing initial diagonal Gmin to 100
+Gmin = 100
 vernier = 0.5
 vernier = 0.25
+Gmin = 30.8405
 vernier = 0.125
-Gmin = 5.5165
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
+Gmin = 30.1306
 vernier = 0.0078125
-Gmin = 5.49501
 vernier = 0.00390625
 vernier = 0.00195313
 vernier = 0.000976563
+Gmin = 30.0645
 vernier = 0.000488281
-Gmin = 5.50104
 Gmin = 0
 Gmin stepping failed
 
@@ -107,30 +108,91 @@ Source Step = 72.6498%
 Source Step = 76.4894%
 Source Step = 80.3289%
 Source Step = 84.1685%
+Source Step = 84.5885%
+Source Step = 84.6484%
+Source Step = 84.7084%
+Source Step = 84.7684%
+Source Step = 84.8284%
+vernier = 0.00296966
+Source Step = 84.9004%
+Source Step = 84.9904%
+Source Step = 85.0804%
+Source Step = 85.1704%
+Source Step = 85.2604%
+vernier = 0.00445449
+Source Step = 85.3639%
+Source Step = 85.4988%
+Source Step = 85.6338%
+Source Step = 85.7688%
+Source Step = 85.9038%
+vernier = 0.00668173
+Source Step = 86.0523%
+Source Step = 86.2548%
+Source Step = 86.4572%
+Source Step = 86.6597%
+Source Step = 86.8622%
+vernier = 0.0100226
+Source Step = 87.0748%
+Source Step = 87.3785%
+Source Step = 87.6822%
+Source Step = 87.9859%
+Source Step = 88.2896%
+Source Step = 88.5934%
+vernier = 0.0150339
+Source Step = 89.0489%
+Source Step = 89.5045%
+Source Step = 89.9601%
+Source Step = 90.111%
+Source Step = 90.1395%
+Source Step = 90.1679%
+Source Step = 90.1964%
+Source Step = 90.2249%
+Source Step = 90.2534%
+Source Step = 90.2818%
+Source Step = 90.3103%
+Source Step = 90.3388%
+Source Step = 90.3672%
+Source Step = 90.3957%
+Source Step = 90.4242%
+Source Step = 90.4527%
+Source Step = 90.4811%
 Starting source stepping with srcstepmethod=1
 Source Step = 3.0303%
-Source Step = 14.3939%
-vernier = 0.0625
-Source Step = 14.1927%
+Source Step = 6.25%
+vernier = 0.015625
+Source Step = 6.1553%
 Source stepping failed
 
-Pseudo Transient succeeded in finding the operating point at 586.549 ms.
+Pseudo Transient succeeded in finding the operating point at 677.037 ms.
+Changing Tseed to 1e-007
+Changing Tseed to 1e-009
+Changing Tseed to 1e-006
+Changing Tseed to 1e-010
+Changing Tseed to 1e-005
+Changing Tseed to 1e-011
+Changing Tseed to 0.0001
+Changing Tseed to 1e-012
+Changing Tseed to 0.001
+Changing Tseed to 1e-013
+Changing Tseed to 0.01
+Changing Tseed to 1e-014
+Heightened Def Con from 0 to 2e-009
 
-Date: Sun Aug 16 12:41:52 2020
-Total elapsed time: 7.895 seconds.
+Date: Sun Aug 16 22:31:11 2020
+Total elapsed time: 32.477 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 27476
-traniter = 10111
-tranpoints = 5046
-accept = 5045
-rejected = 231
-matrix size = 217
-fillins = 681
+totiter = 44390
+traniter = 10392
+tranpoints = 5062
+accept = 5046
+rejected = 354
+matrix size = 218
+fillins = 855
 solver = Normal
-Thread vector: 54.2/20.1[4] 17.5/7.0[4] 20.4/10.2[4] 2.5/5.6[1]  2592/500
-Matrix Compiler1: 69.31 KB object code size  36.4/19.4/[10.9]
-Matrix Compiler2: 29.96 KB object code size  15.1/11.7/[3.7]
+Thread vector: 55.9/35.7[4] 18.7/9.8[4] 14.8/7.5[4] 11.3/38.9[1]  2592/500
+Matrix Compiler1: 94.33 KB object code size  42.3/22.6/[13.2]
+Matrix Compiler2: 32.99 KB object code size  12.9/13.0/[8.4]
 

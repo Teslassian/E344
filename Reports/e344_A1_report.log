@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.1)  16 AUG 2020 22:48
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -1012,6 +1012,11 @@ gures/smout.png>]
 
  (Chapter3.tex
 Chapter 3.
+
+Underfull \hbox (badness 2245) in paragraph at lines 29--30
+[][]\OT1/lmr/m/n/12 (+20) input volt-age swing equals
+ []
+
 [5
 
 
@@ -1026,31 +1031,45 @@ File: Figures/final.png Graphic file (type png)
 Package pdftex.def Info: Figures/final.png  used on input line 37.
 (pdftex.def)             Requested size: 472.31595pt x 213.25444pt.
 
+LaTeX Warning: Citation `vground' on page 6 undefined on input line 48.
+
+
 LaTeX Warning: Citation `opamp' on page 6 undefined on input line 48.
 
 [6 <./Figures/final.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+LaTeX Warning: Citation `filter' on page 7 undefined on input line 54.
+
+
+LaTeX Warning: Citation `cs' on page 7 undefined on input line 56.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 
-LaTeX Warning: Citation `filter' on page 7 undefined on input line 58.
-
-
-LaTeX Warning: Citation `cs' on page 7 undefined on input line 66.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
+
+LaTeX Warning: Citation `tlc2272' on page 7 undefined on input line 60.
+
 [7]
+
+LaTeX Warning: Citation `tlc2272' on page 8 undefined on input line 72.
+
 <Figures/vout.png, id=329, 791.20593pt x 392.21532pt>
 File: Figures/vout.png Graphic file (type png)
 <use Figures/vout.png>
-Package pdftex.def Info: Figures/vout.png  used on input line 78.
+Package pdftex.def Info: Figures/vout.png  used on input line 76.
 (pdftex.def)             Requested size: 472.31595pt x 234.14005pt.
- [8 <./Figures/vout.png>]) [9]
+) [8 <./Figures/vout.png>] [9]
 \openout2 = `Chapter4.aux'.
 
  (Chapter4.tex
@@ -1105,12 +1124,12 @@ LaTeX Warning: Reference `ts' on page 14 undefined on input line 3.
 File: Figures/ts.png Graphic file (type png)
 <use Figures/ts.png>
 Package pdftex.def Info: Figures/ts.png  used on input line 6.
-(pdftex.def)             Requested size: 330.61972pt x 156.81735pt.
-<Figures/ac.png, id=376, 746.03719pt x 368.1253pt>
+(pdftex.def)             Requested size: 377.85419pt x 179.22183pt.
+<Figures/ac.png, id=377, 746.03719pt x 368.1253pt>
 File: Figures/ac.png Graphic file (type png)
 <use Figures/ac.png>
-Package pdftex.def Info: Figures/ac.png  used on input line 13.
-(pdftex.def)             Requested size: 330.61972pt x 163.13838pt.
+Package pdftex.def Info: Figures/ac.png  used on input line 14.
+(pdftex.def)             Requested size: 377.85419pt x 186.44948pt.
 ) [14
 
 
@@ -1138,17 +1157,17 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 16768 strings out of 480799
- 296284 string characters out of 2905529
+ 16770 strings out of 480799
+ 296306 string characters out of 2905529
  701952 words of memory out of 3000000
- 32177 multiletter control sequences out of 15000+200000
+ 32179 multiletter control sequences out of 15000+200000
  632709 words of font info for 134 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,13n,46p,1861b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-rm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Prog
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+thex.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pf
@@ -1156,15 +1175,16 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
 mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmsy8.pfb>
-Output written on e344_A1_report.pdf (21 pages, 1331624 bytes).
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
+/lmsy8.pfb>
+Output written on e344_A1_report.pdf (21 pages, 1355917 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
+ 460 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
  29434 words of extra memory for PDF output out of 29859 (max. 10000000)
 
