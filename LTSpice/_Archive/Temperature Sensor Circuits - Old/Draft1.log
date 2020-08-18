@@ -1,0 +1,4 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Temperature Sensor Circuits\Draft1.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 n006 n002 n003 n007 n005 opamp2

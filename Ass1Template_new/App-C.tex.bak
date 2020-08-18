@@ -1,3 +1,0 @@
-     \chapter{Stuff you want to include}
-
-A 1\degree C step input (\SI{35}{\milli\volt}), as shown in figure \ref{fig:ts}, was used to determine the settling time. The settling time is measured at the point where the output steps to 90\% of the final value (\SI{622}{\milli\volt}), which is \SI{560}{\milli\volt}. The settling time was thus measured as \SI{62.07}{ms}, as shown by the cursor difference in figure \ref{tsc
