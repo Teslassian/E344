@@ -1,0 +1,12 @@
+50 BPM		=	0.8 Hz
+150 BPM		=	2.5 Hz
+
+Sine Wave	=	0.222 Hz
+Noise		=	50 Hz
+
+noise isnt a big deal here. Look at less complex designs
+
+BPF:
+
+f_r = 1.75
+f_l = 
