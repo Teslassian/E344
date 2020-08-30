@@ -35,120 +35,161 @@ Source Step = 29.5958%
 Source Step = 29.6254%
 Source Step = 29.6549%
 Source Step = 29.6845%
+Source Step = 29.7141%
 vernier = 0.00146484
-Source Step = 29.7171%
-Source Step = 29.7615%
-Source Step = 29.8059%
-Source Step = 29.8503%
-Source Step = 29.8946%
+Source Step = 29.7585%
+Source Step = 29.8029%
+Source Step = 29.8473%
+Source Step = 29.8917%
+Source Step = 29.9361%
 vernier = 0.00219727
-Source Step = 29.9413%
-Source Step = 30.0078%
-Source Step = 30.0744%
-Source Step = 30.141%
-Source Step = 30.2076%
-Source Step = 30.2742%
+Source Step = 30.0004%
+Source Step = 30.067%
+Source Step = 30.1336%
+Source Step = 30.2002%
+Source Step = 30.2668%
 vernier = 0.0032959
-Source Step = 30.3741%
-Source Step = 30.4739%
-Source Step = 30.5738%
-Source Step = 30.6737%
-Source Step = 30.7736%
+Source Step = 30.36%
+Source Step = 30.4599%
+Source Step = 30.5597%
+Source Step = 30.6596%
+Source Step = 30.7595%
 vernier = 0.00494385
-Source Step = 30.9184%
-Source Step = 31.0682%
-Source Step = 31.218%
-Source Step = 31.3678%
-Source Step = 31.5176%
+Source Step = 30.8943%
+Source Step = 31.0441%
+Source Step = 31.194%
+Source Step = 31.3438%
+Source Step = 31.4936%
 vernier = 0.00741577
-Source Step = 31.7274%
-Source Step = 31.9521%
-Source Step = 32.1768%
-Source Step = 32.4015%
-Source Step = 32.6263%
+Source Step = 31.6883%
+Source Step = 31.9131%
+Source Step = 32.1378%
+Source Step = 32.3625%
+Source Step = 32.5872%
 vernier = 0.0111237
-Source Step = 32.9296%
-Source Step = 33.2667%
-Source Step = 33.6038%
-Source Step = 33.9409%
-Source Step = 34.2779%
+Source Step = 32.8681%
+Source Step = 33.2052%
+Source Step = 33.5423%
+Source Step = 33.8794%
+Source Step = 34.2164%
 vernier = 0.0166855
-Source Step = 34.7161%
-Source Step = 35.2218%
-Source Step = 35.7274%
-Source Step = 36.233%
-Source Step = 36.7386%
+Source Step = 34.6209%
+Source Step = 35.1266%
+Source Step = 35.6322%
+Source Step = 36.1378%
+Source Step = 36.6434%
 vernier = 0.0250282
-Source Step = 37.3707%
-Source Step = 38.1291%
-Source Step = 38.8875%
-Source Step = 39.646%
-Source Step = 40.4044%
+Source Step = 37.2249%
+Source Step = 37.9833%
+Source Step = 38.7418%
+Source Step = 39.5002%
+Source Step = 40.2586%
 vernier = 0.0375423
-Source Step = 41.3145%
-Source Step = 42.4521%
-Source Step = 43.5898%
-Source Step = 44.7274%
-Source Step = 45.8651%
+Source Step = 41.0929%
+Source Step = 42.2305%
+Source Step = 43.3682%
+Source Step = 44.5058%
+Source Step = 45.6435%
 vernier = 0.0563135
-Source Step = 47.1734%
-Source Step = 48.8799%
-Source Step = 50.5863%
-Source Step = 52.2928%
-Source Step = 53.9993%
+Source Step = 46.838%
+Source Step = 48.5445%
+Source Step = 50.2509%
+Source Step = 51.9574%
+Source Step = 53.6639%
+Source Step = 55.3704%
 vernier = 0.0844703
-Source Step = 55.8764%
-Source Step = 58.4361%
-Source Step = 60.9958%
-Source Step = 63.5555%
-Source Step = 66.1152%
+Source Step = 57.9301%
+Source Step = 60.4898%
+Source Step = 63.0495%
+Source Step = 65.6092%
+Source Step = 68.1689%
 vernier = 0.126705
-Source Step = 68.8029%
-Source Step = 72.6424%
-Source Step = 76.482%
-Source Step = 80.3216%
-Source Step = 84.1611%
-Source Step = 88.0007%
+Source Step = 71.8805%
+Source Step = 75.72%
+Source Step = 79.5596%
+Source Step = 83.3991%
+Source Step = 87.2387%
 vernier = 0.190058
-Source Step = 91.4653%
-Source Step = 91.5553%
-Source Step = 91.6453%
-Source Step = 91.7352%
-Source Step = 91.8252%
-Source Step = 91.9152%
-Source Step = 92.0052%
-Source Step = 92.0952%
-Source Step = 92.1852%
-Source Step = 92.2752%
-Source Step = 92.3652%
-Source Step = 92.4552%
-Source Step = 92.5452%
-Source Step = 92.6351%
-Source Step = 92.7251%
-Source Step = 92.8151%
-Source Step = 92.9051%
+Source Step = 92.6141%
+Source Step = 98.3734%
+vernier = 0.0475145
+Source Step = 97.8695%
 Starting source stepping with srcstepmethod=1
 Source Step = 3.0303%
-Source Step = 5.55161%
+Source Step = 3.78788%
+vernier = 0.00390625
 Source stepping failed
 
-Pseudo transient terminated at 100.301 s, solution accepted ready or not!
+Pseudo transient terminated at 102.903 s, solution accepted ready or not!
+Heightened Def Con from 0.00256072 to 0.00256072
+Heightened Def Con from 0.2609 to 0.2609
+Heightened Def Con from 0.41375 to 0.41375
+Heightened Def Con from 0.80975 to 0.80975
+Heightened Def Con from 0.809881 to 0.809881
+Heightened Def Con from 1.20742 to 1.20742
+Heightened Def Con from 1.61419 +++++++++++++++++++++++++++++++to 1.61419
+Heightened Def Con from 2.0225 to 2.0225
+Heightened Def Con from 2.02302 +++++++++++++++++++++++++++++++to 2.02302
+Heightened Def Con from 2.20306 to 2.20306
+Heightened Def Con from 2.20333 to 2.20333
+Heightened Def Con from 2.4327 to 2.4327
+Heightened Def Con from 2.43322 +++++++++++++++++++++++++++++++to 2.43322
+Heightened Def Con from 2.84915 to 2.84915
+Heightened Def Con from 2.84942 to 2.84942
+Heightened Def Con from 2.9675 +++++++++++++++++++++++++++++++to 2.9675
+Heightened Def Con from 3.2475 +++++++++++++++++++++++++++++++to 3.2475
+Heightened Def Con from 3.24777 to 3.24777
+Heightened Def Con from 3.3527 to 3.3527
+Heightened Def Con from 3.35322 +++++++++++++++++++++++++++++++to 3.35322
+Heightened Def Con from 3.639 +++++++++++++++++++++++++++++++to 3.639
+Heightened Def Con from 3.8007 to 3.8007
+Heightened Def Con from 4.0207 to 4.0207
+Heightened Def Con from 4.02096 to 4.02096
+Heightened Def Con from 4.02109 to 4.02109
+Heightened Def Con from 4.2635 +++++++++++++++++++++++++++++++to 4.2635
+Heightened Def Con from 4.4167 to 4.4167
+Heightened Def Con from 4.41696 to 4.41696
+Heightened Def Con from 4.8115 to 4.8115
+Heightened Def Con from 4.81176 to 4.81176
+Heightened Def Con from 5.2087 to 5.2087
+Heightened Def Con from 5.20896 to 5.20896
+Heightened Def Con from 5.20909 to 5.20909
+Heightened Def Con from 5.61515 +++++++++++++++++++++++++++++++to 5.61515
+Heightened Def Con from 6.0215 to 6.0215
+Heightened Def Con from 6.02202 +++++++++++++++++++++++++++++++to 6.02202
+Heightened Def Con from 6.20577 to 6.20577
+Heightened Def Con from 6.4323 to 6.4323
+Heightened Def Con from 6.43256 to 6.43256
+Heightened Def Con from 6.85075 to 6.85075
+Heightened Def Con from 6.85088 to 6.85088
+Heightened Def Con from 6.9687 to 6.9687
+Heightened Def Con from 7.2435 +++++++++++++++++++++++++++++++to 7.2435
+Heightened Def Con from 7.6407 to 7.6407
+Heightened Def Con from 7.64096 to 7.64096
+Heightened Def Con from 7.8047 to 7.8047
+Heightened Def Con from 8.2655 to 8.2655
+Heightened Def Con from 8.26602 +++++++++++++++++++++++++++++++to 8.26602
+Heightened Def Con from 8.4135 to 8.4135
+Heightened Def Con from 8.81048 to 8.81048
+Heightened Def Con from 9.2105 to 9.2105
+Heightened Def Con from 9.61409 +++++++++++++++++++++++++++++++to 9.61409
+Heightened Def Con from 9.8635 +++++++++++++++++++++++++++++++to 9.8635
 
-Date: Sat Aug 29 21:12:57 2020
-Total elapsed time: 21.625 seconds.
+Date: Sat Aug 29 23:09:52 2020
+Total elapsed time: 74.038 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 72578
-traniter = 35120
-tranpoints = 17515
-accept = 17515
-rejected = 498
-matrix size = 214
-fillins = 823
+totiter = 284082
+traniter = 253200
+tranpoints = 65346
+accept = 49580
+rejected = 16809
+matrix size = 245
+fillins = 1662
 solver = Normal
-Thread vector: 28.2/23.1[4] 16.2/7.4[4] 19.9/11.4[4] 2.2/13.6[1]  2592/500
-Matrix Compiler1: 98.69 KB object code size  45.2/21.4/[14.8]
-Matrix Compiler2: 31.85 KB object code size  11.8/11.2/[3.5]
+Thread vector: 74.5/44.4[4] 28.1/22.9[4] 36.4/21.0[3] 4.1/19.5[1]  2592/500
+Matrix Compiler1: 266.92 KB object code size  130.0/64.7/[42.3]
+Matrix Compiler2: 49.21 KB object code size  62.4/25.7/[7.7]
 

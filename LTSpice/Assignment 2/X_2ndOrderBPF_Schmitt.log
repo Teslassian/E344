@@ -1,0 +1,180 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\X_2ndOrderBPF_Schmitt.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.5165
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.49501
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50104
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 7.57576%
+Source Step = 15.1515%
+Source Step = 22.7273%
+Source Step = 30.303%
+vernier = 0.0625
+Source Step = 29.5662%
+Source Step = 29.5958%
+Source Step = 29.6254%
+Source Step = 29.6549%
+Source Step = 29.6845%
+vernier = 0.00146484
+Source Step = 29.7156%
+Source Step = 29.76%
+Source Step = 29.8044%
+Source Step = 29.8488%
+Source Step = 29.8932%
+Source Step = 29.9376%
+vernier = 0.00219727
+Source Step = 30.0041%
+Source Step = 30.0707%
+Source Step = 30.1373%
+Source Step = 30.2039%
+Source Step = 30.2705%
+vernier = 0.0032959
+Source Step = 30.367%
+Source Step = 30.4669%
+Source Step = 30.5668%
+Source Step = 30.6667%
+Source Step = 30.7665%
+vernier = 0.00494385
+Source Step = 30.9064%
+Source Step = 31.0562%
+Source Step = 31.206%
+Source Step = 31.3558%
+Source Step = 31.5056%
+vernier = 0.00741577
+Source Step = 31.7079%
+Source Step = 31.9326%
+Source Step = 32.1573%
+Source Step = 32.382%
+Source Step = 32.6067%
+vernier = 0.0111237
+Source Step = 32.8989%
+Source Step = 33.236%
+Source Step = 33.573%
+Source Step = 33.9101%
+Source Step = 34.2472%
+vernier = 0.0166855
+Source Step = 34.6685%
+Source Step = 35.1742%
+Source Step = 35.6798%
+Source Step = 36.1854%
+Source Step = 36.691%
+vernier = 0.0250282
+Source Step = 37.2978%
+Source Step = 38.0562%
+Source Step = 38.8146%
+Source Step = 39.5731%
+Source Step = 40.3315%
+vernier = 0.0375423
+Source Step = 41.2037%
+Source Step = 42.3413%
+Source Step = 43.479%
+Source Step = 44.6166%
+Source Step = 45.7543%
+vernier = 0.0563135
+Source Step = 47.0057%
+Source Step = 48.7122%
+Source Step = 50.4186%
+Source Step = 52.1251%
+Source Step = 53.8316%
+vernier = 0.0844703
+Source Step = 55.6234%
+Source Step = 58.1831%
+Source Step = 60.7428%
+Source Step = 63.3025%
+Source Step = 65.8622%
+Source Step = 68.4219%
+vernier = 0.126705
+Source Step = 72.2615%
+Source Step = 76.101%
+Source Step = 79.9406%
+Source Step = 83.7801%
+Source Step = 87.6197%
+vernier = 0.190058
+Source Step = 93.187%
+Source Step = 94.3839%
+Source Step = 94.4739%
+Source Step = 94.5639%
+Source Step = 94.6539%
+Source Step = 94.7439%
+Source Step = 94.8339%
+Source Step = 94.9238%
+Source Step = 95.0138%
+Source Step = 95.1038%
+Source Step = 95.1938%
+Source Step = 95.2838%
+Source Step = 95.3738%
+Source Step = 95.4638%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 1.39678%
+vernier = 0.000976563
+Source stepping failed
+
+Pseudo transient terminated at 101.819 s, solution accepted ready or not!
+Heightened Def Con from 0.0647 to 0.0647
+Heightened Def Con from 0.7207 to 0.7207
+Heightened Def Con from 0.721241 to 0.721241
+Heightened Def Con from 1.3905 to 1.3905
+Heightened Def Con from 2.0655 to 2.0655
+Heightened Def Con from 2.7305 to 2.7305
+Heightened Def Con from 3.388 to 3.388
+Heightened Def Con from 3.38802 to 3.38802
+Heightened Def Con from 4.7135 to 4.7135
+Heightened Def Con from 4.71363 to 4.71363
+Heightened Def Con from 4.71366 to 4.71366
+Heightened Def Con from 5.38762 to 5.38762
+Heightened Def Con from 5.38766 to 5.38766
+Heightened Def Con from 5.38767 to 5.38767
+Heightened Def Con from 6.0687 to 6.0687
+Heightened Def Con from 6.06877 to 6.06877
+Heightened Def Con from 6.06879 to 6.06879
+Heightened Def Con from 6.72763 to 6.72763
+Heightened Def Con from 6.72765 to 6.72765
+Heightened Def Con from 7.3887 to 7.3887
+Heightened Def Con from 7.38883 to 7.38883
+Heightened Def Con from 7.3889 to 7.3889
+Heightened Def Con from 8.0465 to 8.0465
+Heightened Def Con from 8.7145 to 8.7145
+Heightened Def Con from 8.71521 to 8.71521
+Heightened Def Con from 8.71526 to 8.71526
+Heightened Def Con from 9.3855 to 9.3855
+Heightened Def Con from 9.38616 to 9.38616
+
+Date: Sun Aug 30 13:58:55 2020
+Total elapsed time: 51.735 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 102416
+traniter = 52709
+tranpoints = 21419
+accept = 20266
+rejected = 2069
+matrix size = 248
+fillins = 1733
+solver = Normal
+Thread vector: 41.0/31.4[4] 22.7/9.7[4] 23.8/14.0[4] 3.1/5.1[1]  2592/500
+Matrix Compiler1: 326.50 KB object code size  135.6/77.5/[49.4]
+Matrix Compiler2: 50.61 KB object code size  15.9/14.3/[4.7]
+

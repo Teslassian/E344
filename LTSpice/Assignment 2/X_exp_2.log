@@ -1,0 +1,231 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\X_exp_2.asc
+
+WARNING: Less than two connections to node NC_01.  This node is used by R1.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 6.68666
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 6.72377
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 6.72131
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.118371%
+Source Step = 0.236742%
+Source Step = 0.355114%
+Source Step = 0.473485%
+Source Step = 0.591856%
+vernier = 0.00585938
+Source Step = 0.73982%
+Source Step = 0.917377%
+Source Step = 1.09493%
+Source Step = 1.27249%
+Source Step = 1.45005%
+vernier = 0.00878906
+Source Step = 1.66312%
+Source Step = 1.92945%
+Source Step = 2.19579%
+Source Step = 2.46212%
+Source Step = 2.72846%
+vernier = 0.0131836
+Source Step = 3.03474%
+Source Step = 3.43424%
+Source Step = 3.83375%
+Source Step = 4.23325%
+Source Step = 4.63275%
+vernier = 0.0197754
+Source Step = 5.07221%
+Source Step = 5.67146%
+Source Step = 6.27071%
+Source Step = 6.86997%
+Source Step = 7.46922%
+vernier = 0.0296631
+Source Step = 8.09844%
+Source Step = 8.99732%
+Source Step = 9.8962%
+Source Step = 10.7951%
+Source Step = 11.694%
+Source Step = 12.5928%
+vernier = 0.0444946
+Source Step = 13.9412%
+Source Step = 15.2895%
+Source Step = 16.6378%
+Source Step = 17.9861%
+Source Step = 19.3345%
+vernier = 0.0667419
+Source Step = 21.2895%
+Source Step = 23.312%
+Source Step = 25.3345%
+Source Step = 27.357%
+Source Step = 29.3795%
+vernier = 0.100113
+Source Step = 32.2109%
+Source Step = 35.2447%
+Source Step = 38.2784%
+Source Step = 41.3121%
+Source Step = 44.3458%
+vernier = 0.150169
+Source Step = 48.4414%
+Source Step = 52.9919%
+Source Step = 57.5425%
+Source Step = 62.0931%
+Source Step = 66.6437%
+vernier = 0.225254
+Source Step = 72.5595%
+Source Step = 79.3854%
+Source Step = 86.2112%
+Source Step = 93.0371%
+Source Step = 99.863%
+Source stepping succeeded in finding the operating point.
+
+Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Heightened Def Con from 1.00078e-007 to 1.00109e-007
+Heightened Def Con from 1.05099e-007 to 1.0524e-007
+Heightened Def Con from 1.05404e-007 to 1.06529e-007
+Heightened Def Con from 2.00841e-007 ++++++++++++++++++++++++++++++++to 2.00859e-007
+Heightened Def Con from 2.00859e-007 ++++++++++++++++++++++++++++++++to 2.00921e-007
+Heightened Def Con from 2.00921e-007 +++++++++++++++++++++++++++++++to 2.02046e-007
+Heightened Def Con from 2.02047e-007 to 2.05049e-007
+Heightened Def Con from 2.05077e-007 to 2.07202e-007
+Heightened Def Con from 2.12568e-007 to 2.12943e-007
+Heightened Def Con from 2.2113e-007 to 2.21132e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 +++++++++++++++++++++++++++++++++++to 2.21133e-007
+Heightened Def Con from 2.21133e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 ++++++++++++++++++++++++++++++++to 2.21135e-007
+Heightened Def Con from 2.21135e-007 +++++++++++++++++++++++++++++++++to 2.21138e-007
+Heightened Def Con from 2.21138e-007 +++++++++++++++++++++++++++++++++to 2.21138e-007
+Heightened Def Con from 2.21138e-007 ++++++++++++++++++++++++++++to 2.21154e-007
+Heightened Def Con from 2.21154e-007 ++++++++++++++++++++++++++++to 2.21154e-007
+Heightened Def Con from 2.21154e-007 ++++++++++++++++++++++++++++to 2.21154e-007
+Heightened Def Con from 2.21154e-007 ++++++++++++++++++++++++++++to 2.21154e-007
+Heightened Def Con from 2.21154e-007 ++++++++++++++++++++++++++++to 2.21154e-007
+Heightened Def Con from 2.21154e-007 ++++++++++++++++++++++++++++++to 2.21193e-007
+Heightened Def Con from 2.21193e-007 ++++++++++++++++++++++++++++++to 2.21193e-007
+Heightened Def Con from 2.21193e-007 ++++++++++++++++++++++++++++++to 2.21211e-007
+Heightened Def Con from 2.21211e-007 ++++++++++++++++++++++++++++++to 2.21258e-007
+Heightened Def Con from 2.21258e-007 +++++++++++++++++++++++++++++to 2.21258e-007
+Heightened Def Con from 2.21258e-007 to 2.24258e-007
+Heightened Def Con from 2.24711e-007 +++++++++++++++++++++++++++++++to 2.24712e-007
+Heightened Def Con from 2.24712e-007 ++++++++++++++++++++++++++++++to 2.24712e-007
+Heightened Def Con from 2.24712e-007 +++++++++++++++++++++++to 2.24714e-007
+Heightened Def Con from 2.24714e-007 +++++++++++++++++++++++++++++++++to 2.24715e-007
+Heightened Def Con from 2.24715e-007 ++++++++++++++++++++++++++++++++to 2.24716e-007
+Heightened Def Con from 2.24716e-007 ++++++++++++++++++++++++++++++++to 2.24716e-007
+Heightened Def Con from 2.24716e-007 ++++++++++++++++++++++++++++++++to 2.24716e-007
+Heightened Def Con from 2.24716e-007 ++++++++++++++++++++++++++++++++to 2.24716e-007
+Heightened Def Con from 2.24716e-007 +++++++++++++++++++++++++++++++++to 2.24718e-007
+Heightened Def Con from 2.24718e-007 +++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 +++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 ++++++++++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 ++++++++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 +++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 ++++++++++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 ++++++++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 +++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 to 2.24719e-007
+Heightened Def Con from 2.24719e-007 ++++++++++++++++++++++++++++++++++++++++to 2.24719e-007
+Heightened Def Con from 2.24719e-007 +++++++++++++++++++++++++++++++++to 2.24721e-007
+Heightened Def Con from 2.24721e-007 +++++++++++++++++++++++++++++++++to 2.24723e-007
+Heightened Def Con from 2.24723e-007 ++++++++++++++++++++++++++++++++to 2.24723e-007
+Heightened Def Con from 2.24723e-007 ++++++++++++++++++++++++++++++++to 2.24723e-007
+Heightened Def Con from 2.24723e-007 ++++++++++++++++++++++++++++++++to 2.24723e-007
+Heightened Def Con from 2.24723e-007 ++++++++++++++++++++++++++++to 2.24739e-007
+Heightened Def Con from 2.24739e-007 ++++++++++++++++++++++++++++to 2.24739e-007
+Heightened Def Con from 2.24739e-007 ++++++++++++++++++++++++++++to 2.24739e-007
+Heightened Def Con from 2.24739e-007 ++++++++++++++++++++++++++++to 2.24739e-007
+Heightened Def Con from 2.24739e-007 ++++++++++++++++++++++++++++++++to 2.25881e-007
+Heightened Def Con from 2.25881e-007 ++++++++++++++++++++++++++++++++to 2.25884e-007
+Heightened Def Con from 2.25884e-007 ++++++++++++++++++++++++++++++++to 2.25884e-007
+Heightened Def Con from 2.25884e-007 +++++++++++++++++++++++++++++++to 2.25884e-007
+Heightened Def Con from 2.25884e-007 to 2.25884e-007
+Heightened Def Con from 2.25884e-007 to 2.25884e-007
+Heightened Def Con from 2.25888e-007 ++++++++++++++++++++++++++++++++to 2.25888e-007
+Heightened Def Con from 2.25888e-007 ++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 +++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++++++++++++++++++to 2.25889e-007
+Heightened Def Con from 2.25889e-007 ++++++++++++++++++++++++
