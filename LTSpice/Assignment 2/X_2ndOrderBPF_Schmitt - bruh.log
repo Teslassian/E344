@@ -1,0 +1,818 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\X_2ndOrderBPF_Schmitt - bruh.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 6.68666
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 6.72377
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 6.72131
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 1.70455%
+Source Step = 3.59848%
+Source Step = 5.49242%
+Source Step = 7.38636%
+Source Step = 9.2803%
+vernier = 0.09375
+Source Step = 11.9318%
+Source Step = 14.7727%
+Source Step = 17.6136%
+Source Step = 18.4837%
+Source Step = 18.5281%
+Source Step = 18.5724%
+Source Step = 18.6168%
+Source Step = 18.6612%
+Source Step = 18.7056%
+vernier = 0.00219727
+Source Step = 18.77%
+Source Step = 18.8366%
+Source Step = 18.9031%
+Source Step = 18.9697%
+Source Step = 19.0363%
+vernier = 0.0032959
+Source Step = 19.1295%
+Source Step = 19.2294%
+Source Step = 19.3293%
+Source Step = 19.4292%
+Source Step = 19.529%
+vernier = 0.00494385
+Source Step = 19.6639%
+Source Step = 19.8137%
+Source Step = 19.9635%
+Source Step = 20.1133%
+Source Step = 20.2631%
+vernier = 0.00741577
+Source Step = 20.4579%
+Source Step = 20.6826%
+Source Step = 20.9073%
+Source Step = 21.132%
+Source Step = 21.3568%
+vernier = 0.0111237
+Source Step = 21.6377%
+Source Step = 21.9747%
+Source Step = 22.3118%
+Source Step = 22.6489%
+Source Step = 22.986%
+vernier = 0.0166855
+Source Step = 23.3905%
+Source Step = 23.8961%
+Source Step = 24.4017%
+Source Step = 24.9073%
+Source Step = 25.413%
+vernier = 0.0250282
+Source Step = 25.9944%
+Source Step = 26.7529%
+Source Step = 27.5113%
+Source Step = 28.2697%
+Source Step = 29.0281%
+vernier = 0.0375423
+Source Step = 29.8624%
+Source Step = 31.0001%
+Source Step = 32.1377%
+Source Step = 33.2754%
+Source Step = 34.413%
+vernier = 0.0563135
+Source Step = 35.6075%
+Source Step = 37.314%
+Source Step = 39.0205%
+Source Step = 40.7269%
+Source Step = 42.4334%
+Source Step = 44.1399%
+vernier = 0.0844703
+Source Step = 46.6996%
+Source Step = 49.2593%
+Source Step = 51.819%
+Source Step = 54.3787%
+Source Step = 56.9384%
+vernier = 0.126705
+Source Step = 60.65%
+Source Step = 64.4895%
+Source Step = 68.3291%
+Source Step = 72.1687%
+Source Step = 76.0082%
+vernier = 0.190058
+Source Step = 81.3836%
+Source Step = 87.1429%
+Source Step = 91.4624%
+Source Step = 91.8044%
+Source Step = 91.8944%
+Source Step = 91.9844%
+Source Step = 92.0744%
+Source Step = 92.1644%
+Source Step = 92.2543%
+Source Step = 92.3443%
+Source Step = 92.4343%
+Source Step = 92.5243%
+Source Step = 92.6143%
+Source Step = 92.7043%
+Source Step = 92.7943%
+Source stepping aborted.
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 46.9697%
+Source Step = 54.5455%
+Source Step = 62.1212%
+Source Step = 69.697%
+Source Step = 77.2727%
+vernier = 0.375
+Source Step = 86.7424%
+Source Step = 94.768%
+vernier = 0.00585938
+Source Step = 94.7369%
+Source stepping failed
+
+Pseudo Transient failed in finding the operating point at 279.13 ms.
+Trouble finding operating point....skipping operating point for Transient analysis.
+Changing Tseed to 1e-007
+Changing Tseed to 1e-009
+Changing Tseed to 1e-006
+Changing Tseed to 1e-010
+Changing Tseed to 1e-005
+Changing Tseed to 1e-011
+Changing Tseed to 0.0001
+Changing Tseed to 1e-012
+Changing Tseed to 0.001
+Changing Tseed to 1e-013
+Changing Tseed to 0.01
+Changing Tseed to 1e-014
+Heightened Def Con from 0 Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
++Changing Tseed to 1e-008
+Changing Tseed to 1e-010
+Changing Tseed to 1e-007
+Changing Tseed to 1e-011
+Changing Tseed to 1e-006
+Changing Tseed to 1e-012
+Changing Tseed to 1e-005
+Changing Tseed to 1e-013
+Changing Tseed to 0.0001
+Changing Tseed to 1e-014
+Changing Tseed to 0.001
+Changing Tseed to 1e-015
+to 1.125e-015
+Heightened Def Con from 1.125e-015 ++++++++++++++++++++++++++++++++++++to 1.4478e-010
+Heightened Def Con from 1.4478e-010 ++++++++++++++++++++to 1.44784e-010
+Heightened Def Con from 1.44784e-010 +++++++++++++++++++to 1.44784e-010
+Heightened Def Con from 1.44784e-010 +++++to 1.44784e-010
+Heightened Def Con from 1.44784e-010 +++++++++++++++++to 1.64316e-010
+Heightened Def Con from 1.64316e-010 +++to 1.6456e-010
+Heightened Def Con from 1.6456e-010 ++to 1.18018e-009
+Heightened Def Con from 1.18018e-009 to 2.19581e-009
+Heightened Def Con from 2.1963e-009 to 2.20021e-009
+Heightened Def Con from 2.20021e-009 to 2.34083e-009
+Heightened Def Con from 2.4504e-009 to 1.84504e-008
+Heightened Def Con from 1.62723e-007 to 1.62739e-007
+Heightened Def Con from 1.62742e-007 to 1.62992e-007
+Heightened Def Con from 1.62993e-007 to 1.63008e-007
+Heightened Def Con from 1.63008e-007 to 1.63012e-007
+Heightened Def Con from 0.2985 to 0.2985
+Heightened Def Con from 0.824 to 0.824
+Heightened Def Con from 1.2207 to 1.2207
+Heightened Def Con from 1.22096 to 1.22096
+Heightened Def Con from 1.2211 to 1.2211
+Heightened Def Con from 1.22111 to 1.22111
+Heightened Def Con from 1.62752 to 1.62752
+Heightened Def Con from 2.0255 to 2.0255
+Heightened Def Con from 2.02615 to 2.02615
+Heightened Def Con from 2.424 to 2.424
+Heightened Def Con from 2.42405 to 2.42405
+Heightened Def Con from 2.8247 to 2.8247
+Heightened Def Con from 2.82483 to 2.82483
+Heightened Def Con from 2.8249 to 2.8249
+Heightened Def Con from 2.82494 to 2.82494
+Heightened Def Con from 3.2247 to 3.2247
+Heightened Def Con from 3.6201 to 3.6201
+Heightened Def Con from 3.62023 to 3.62023
+Heightened Def Con from 3.62026 to 3.62026
+Heightened Def Con from 4.0161 to 4.0161
+Heightened Def Con from 4.01617 to 4.01617
+Heightened Def Con from 4.72733 to 4.72733
+Heightened Def Con from 4.82 to 4.82
+Heightened Def Con from 5.2215 to 5.2215
+Heightened Def Con from 5.22163 to 5.22163
+Heightened Def Con from 5.22166 to 5.22166
+Heightened Def Con from 5.6247 to 5.6247
+Heightened Def Con from 6.0247 to 6.0247
+Heightened Def Con from 6.4247 to 6.4247
+Heightened Def Con from 6.42472 to 6.42472
+Heightened Def Con from 7.21963 to 7.21963
+Heightened Def Con from 7.21973 to 7.21973
+Heightened Def Con from 7.6207 to 7.6207
+Heightened Def Con from 8.0175 to 8.0175
+Heightened Def Con from 8.01804 to 8.01804
+Heightened Def Con from 8.4161 to 8.4161
+Heightened Def Con from 8.72994 to 8.72994
+Heightened Def Con from 8.8207 to 8.8207
+Heightened Def Con from 8.82096 to 8.82096
+Heightened Def Con from 9.22439 to 9.22439
+Heightened Def Con from 9.6207 to 9.6207
+Heightened Def Con from 9.62096 to 9.62096
+Heightened Def Con from 9.62105 to 9.62105
+Heightened Def Con from 9.88722 to 9.88722
+Heightened Def Con from 10.0241 to 10.0241
+Heightened Def Con from 10.4265 to 10.4265
+Heightened Def Con from 10.8255 to 10.8255
+Heightened Def Con from 10.8261 to 10.8261
+Heightened Def Con from 11.2225 to 11.2225
+Heightened Def Con from 11.2226 to 11.2226
+Heightened Def Con from 11.2226 to 11.2226
+Heightened Def Con from 11.2227 to 11.2227
+Heightened Def Con from 11.6191 to 11.6191
+Heightened Def Con from 11.6194 to 11.6194
+Heightened Def Con from 11.6194 to 11.6194
+Heightened Def Con from 12.0185 to 12.0185
+Heightened Def Con from 12.0187 to 12.0187
+Heightened Def Con from 12.4175 to 12.4175
+Heightened Def Con from 12.8207 to 12.8207
+Heightened Def Con from 12.8213 to 12.8213
+Heightened Def Con from 13.2215 to 13.2215
+Heightened Def Con from 13.2216 to 13.2216
+Heightened Def Con from 13.6225 to 13.6225
+Heightened Def Con from 13.6231 to 13.6231
+Heightened Def Con from 14.0287 to 14.0287
+Heightened Def Con from 14.0288 to 14.0288
+Heightened Def Con from 14.0289 to 14.0289
+Heightened Def Con from 14.029 to 14.029
+Heightened Def Con from 14.4247 to 14.4247
+Heightened Def Con from 14.4249 to 14.4249
+Heightened Def Con from 14.425 to 14.425
+Heightened Def Con from 14.8207 to 14.8207
+Heightened Def Con from 15.2244 to 15.2244
+Heightened Def Con from 15.62 to 15.62
+Heightened Def Con from 16.0143 to 16.0143
+Heightened Def Con from 16.0144 to 16.0144
+Heightened Def Con from 16.0144 to 16.0144
+Heightened Def Con from 16.4201 to 16.4201
+Heightened Def Con from 16.8207 to 16.8207
+Heightened Def Con from 16.821 to 16.821
+Heightened Def Con from 17.2185 to 17.2185
+Heightened Def Con from 17.6247 to 17.6247
+Heightened Def Con from 17.625 to 17.625
+Heightened Def Con from 17.6251 to 17.6251
+Heightened Def Con from 17.6252 to 17.6252
+Heightened Def Con from 18.0254 to 18.0254
+Heightened Def Con from 18.0255 to 18.0255
+Heightened Def Con from 18.4335 to 18.4335
+Heightened Def Con from 18.4338 to 18.4338
+Heightened Def Con from 18.4338 to 18.4338
+Heightened Def Con from 18.8265 to 18.8265
+Heightened Def Con from 18.8265 to 18.8265
+Heightened Def Con from 19.2247 to 19.2247
+Heightened Def Con from 19.6183 to 19.6183
+Heightened Def Con from 19.6184 to 19.6184
+Heightened Def Con from 20.0185 to 20.0185
+Heightened Def Con from 20.0188 to 20.0188
+Heightened Def Con from 20.0188 to 20.0188
+Heightened Def Con from 20.2974 to 20.2974
+Heightened Def Con from 20.4232 to 20.4232
+Heightened Def Con from 20.4234 to 20.4234
+Heightened Def Con from 20.4234 to 20.4234
+Heightened Def Con from 20.8145 to 20.8145
+Heightened Def Con from 21.2236 to 21.2236
+Heightened Def Con from 21.6214 to 21.6214
+Heightened Def Con from 21.6214 to 21.6214
+Heightened Def Con from 22.0225 to 22.0225
+Heightened Def Con from 22.4327 to 22.4327
+Heightened Def Con from 22.4327 to 22.4327
+Heightened Def Con from 22.8236 to 22.8236
+Heightened Def Con from 22.8237 to 22.8237
+Heightened Def Con from 23.2236 to 23.2236
+Heightened Def Con from 23.6185 to 23.6185
+Heightened Def Con from 24.0185 to 24.0185
+Heightened Def Con from 24.0192 to 24.0192
+Heightened Def Con from 24.4185 to 24.4185
+Heightened Def Con from 24.4191 to 24.4191
+Heightened Def Con from 24.816 to 24.816
+Heightened Def Con from 25.2215 to 25.2215
+Heightened Def Con from 25.2218 to 25.2218
+Heightened Def Con from 25.2218 to 25.2218
+Heightened Def Con from 26.0405 to 26.0405
+Heightened Def Con from 26.4265 to 26.4265
+Heightened Def Con from 26.4267 to 26.4267
+Heightened Def Con from 26.4268 to 26.4268
+Heightened Def Con from 26.8215 to 26.8215
+Heightened Def Con from 26.8221 to 26.8221
+Heightened Def Con from 26.8221 to 26.8221
+Heightened Def Con from 26.8221 to 26.8221
+Heightened Def Con from 27.6174 to 27.6174
+Heightened Def Con from 27.6175 to 27.6175
+Heightened Def Con from 28.02 to 28.02
+Heightened Def Con from 28.4185 to 28.4185
+Heightened Def Con from 29.2225 to 29.2225
+Heightened Def Con from 29.2231 to 29.2231
+Heightened Def Con from 29.6247 to 29.6247
+Heightened Def Con from 29.8874 +to 29.8874
+
+Date: Sat Sep 19 00:25:53 2020
+Total elapsed time: 126.740 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 725330
+traniter = 698973
+tranpoints = 163351
+accept = 123413
+rejected = 39827
+matrix size = 356
+fillins = 1540
+solver = Normal
+Thread vector: 50.4/32.7[4] 30.7/13.7[4] 27.4/11.4[4] 3.9/4.5[1]  2592/500
+Matrix Compiler1: 197.76 KB object code size  86.9/41.6/[27.4]
+Matrix Compiler2: 56.45 KB object code size  19.1/18.4/[6.0]
+
