@@ -1,0 +1,143 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\X_2ndOrderBPF_Schmitt - DAC.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.5165
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.49501
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50104
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 7.57576%
+Source Step = 15.1515%
+Source Step = 22.7273%
+Source Step = 30.303%
+vernier = 0.0625
+Source Step = 29.6106%
+Source Step = 29.6402%
+Source Step = 29.6697%
+Source Step = 29.6993%
+Source Step = 29.7289%
+Source Step = 29.7585%
+vernier = 0.00146484
+Source Step = 29.8%
+Source Step = 29.8443%
+Source Step = 29.8887%
+Source Step = 29.9331%
+Source Step = 29.9775%
+vernier = 0.00219727
+Source Step = 30.0374%
+Source Step = 30.104%
+Source Step = 30.1706%
+Source Step = 30.2372%
+Source Step = 30.3038%
+vernier = 0.0032959
+Source Step = 30.3903%
+Source Step = 30.4902%
+Source Step = 30.5901%
+Source Step = 30.69%
+Source Step = 30.7898%
+vernier = 0.00494385
+Source Step = 30.9147%
+Source Step = 31.0645%
+Source Step = 31.2143%
+Source Step = 31.3641%
+Source Step = 31.5139%
+vernier = 0.00741577
+Source Step = 31.6937%
+Source Step = 31.9184%
+Source Step = 32.1431%
+Source Step = 32.3679%
+Source Step = 32.5926%
+vernier = 0.0111237
+Source Step = 32.851%
+Source Step = 33.1881%
+Source Step = 33.5252%
+Source Step = 33.8623%
+Source Step = 34.1993%
+vernier = 0.0166855
+Source Step = 34.5701%
+Source Step = 35.0757%
+Source Step = 35.5814%
+Source Step = 36.087%
+Source Step = 36.5926%
+vernier = 0.0250282
+Source Step = 37.1235%
+Source Step = 37.8819%
+Source Step = 38.6404%
+Source Step = 39.3988%
+Source Step = 40.1572%
+Source Step = 40.9157%
+vernier = 0.0375423
+Source Step = 42.0533%
+Source Step = 43.191%
+Source Step = 44.3286%
+Source Step = 45.4663%
+Source Step = 46.6039%
+vernier = 0.0563135
+Source Step = 48.2535%
+Source Step = 49.96%
+Source Step = 51.6664%
+Source Step = 53.3729%
+Source Step = 55.0794%
+vernier = 0.0844703
+Source Step = 57.4684%
+Source Step = 60.0281%
+Source Step = 62.5878%
+Source Step = 65.1475%
+Source Step = 67.7072%
+vernier = 0.126705
+Source Step = 71.1629%
+Source Step = 75.0024%
+Source Step = 78.842%
+Source Step = 82.6815%
+Source Step = 86.5211%
+vernier = 0.190058
+Source Step = 91.5125%
+Source Step = 94.4102%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.260417%
+Source Step = 0.331439%
+Source stepping failed
+
+Pseudo transient terminated at 101.111 s, solution accepted ready or not!
+Heightened Def Con from 0.682759 +to 0.682759
+Heightened Def Con from 1.44571 +to 1.44571
+Heightened Def Con from 2.46978 to 2.46978
+Heightened Def Con from 2.46978 ++to 2.46978
+Heightened Def Con from 2.46978 to 2.46978
+Heightened Def Con from 2.46978 ++to 2.46978
+Heightened Def Con from 2.46978 to 2.46978
+Heightened Def Con from 3.05153 to 3.05153
+Heightened Def Con from 3.26654 +to 3.26654
+Heightened Def Con from 3.26654 +++++to 3.26654
+Heightened Def Con from 3.26654 ++to 3.26654
+Heightened Def Con from 3.26654 +to 3.26654
+Heightened Def Con from 3.26654 +to 3.26654
+Heightened Def Con from 3.26654 +to 3.26654
+Heightened Def Con from 3.26654 ++to 3.26654
+Heightened Def Con from 3.48004 +to 3.48004
+Heightened Def Con from 3.88864 to 3.88864
+Heightened Def Con from 4.69165 to 4.69165
+Heightened Def Con from 5.45417 to 5.45417
+Heightened Def Con from 5.45417 to 5.45417
+Heightened Def Con from 5.84415 ++++++++++++++++++++++++++++++++++++++++++++++++++Fatal Error: Analysis:  Time step too small; time = 5.84415, timestep = 1.69437e-015: trouble with u3:jx-instance j:u3:2
+
