@@ -245,23 +245,50 @@ Heightened Def Con from 21.0353 to 21.0353
 Heightened Def Con from 21.0353 to 21.0353
 Heightened Def Con from 21.0353 to 21.0353
 Heightened Def Con from 21.449 to 21.449
-Heightened Def Con from 21.8499 to 21.8499
+Heightened Def Con from 22.0575 to 22.0575
+Heightened Def Con from 22.0576 to 22.0576
+Heightened Def Con from 23.0535 to 23.0535
+Heightened Def Con from 23.054 to 23.054
+Heightened Def Con from 24.0391 to 24.0391
+Heightened Def Con from 24.0391 to 24.0391
+Heightened Def Con from 24.0395 to 24.0395
+Heightened Def Con from 24.0395 to 24.0395
+Heightened Def Con from 24.0396 to 24.0396
+Heightened Def Con from 24.0396 to 24.0396
+Heightened Def Con from 25.0472 to 25.0472
+Heightened Def Con from 25.0473 to 25.0473
+Heightened Def Con from 25.0473 to 25.0473
+Heightened Def Con from 25.0473 to 25.0473
+Heightened Def Con from 25.0473 to 25.0473
+Heightened Def Con from 25.0474 to 25.0474
+Heightened Def Con from 26.0601 to 26.0601
+Heightened Def Con from 27.0582 to 27.0582
+Heightened Def Con from 27.0587 to 27.0587
+Heightened Def Con from 27.059 to 27.059
+Heightened Def Con from 28.0335 to 28.0335
+Heightened Def Con from 28.0335 to 28.0335
+Heightened Def Con from 28.0335 to 28.0335
+Heightened Def Con from 28.0339 to 28.0339
+Heightened Def Con from 29.0487 to 29.0487
+Heightened Def Con from 29.0491 to 29.0491
+Heightened Def Con from 29.468 to 29.468
+Heightened Def Con from 29.468 to 29.468
 
-Date: Sat Sep 19 12:32:20 2020
-Total elapsed time: 53.864 seconds.
+Date: Sat Sep 19 20:48:34 2020
+Total elapsed time: 66.348 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 307630
-traniter = 282493
-tranpoints = 65796
-accept = 57394
-rejected = 8844
+totiter = 408279
+traniter = 383142
+tranpoints = 89685
+accept = 78402
+rejected = 11752
 matrix size = 250
 fillins = 1718
 solver = Normal
-Thread vector: 37.3/27.4[4] 20.1/15.4[4] 20.4/9.2[4] 3.0/4.1[1]  2592/500
-Matrix Compiler1: 282.82 KB object code size  100.9/56.4/[41.7]
-Matrix Compiler2: 50.34 KB object code size  17.7/16.1/[4.9]
+Thread vector: 38.0/26.4[4] 22.9/9.9[4] 20.1/12.2[4] 2.9/13.7[1]  2592/500
+Matrix Compiler1: 282.82 KB object code size  120.1/69.4/[45.6]
+Matrix Compiler2: 50.34 KB object code size  19.8/16.8/[5.2]
 
