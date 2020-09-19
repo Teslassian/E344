@@ -1,0 +1,16 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\X_2ndOrderBPF_Schmitt_Bruh_FilteredSquare.asc
+
+WARNING: Less than two connections to node 9V.  This node is used by R_SENSE.
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 1e-008
+Heightened Def Con from 0.0258375 to 0.0258375
+Heightened Def Con from 0.4175 to 0.4175
+Heightened Def Con from 0.818675 to 0.818675
+Heightened Def Con from 0.819334 to 0.819334
+Heightened Def Con from 1.2207 to 1.2207
+Heightened Def Con from 1.22097 to 1.22097
+Heightened Def Con from 1.62711 to 1.62711
+Heightened Def Con from 2.02667 to 2.02667
+Heightened Def Con from 2.82544 to 2.82544
+Heightened Def Con from 3.2247 to 3.2247
+Heightened Def Con from 4.01653 to 4.01653
