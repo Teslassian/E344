@@ -1,0 +1,66 @@
+* C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\A.asc
+V2 N010 N009 PWL file=150.csv
+V3 Stimulus N010 SINE({sineOffset} {sineAmplitude} {sineFreq})
+V1 N009 0 {dcAmplitude}
+V4 N014 0 9
+R_Sense 9V N014 0.010
+XU1 9V 0 5V LM7805
+C5 5V 0 10µ
+C6 9V 0 10µ
+R3 N001 0 500k
+R4 5V N001 500k
+XU2 N001 VGround 5V 0 VGround TL081
+R5 N002 N007 350k
+C1 N008 0 110n
+XU4 N008 N004 5V 0 Filtered TL081
+R6 N008 N002 350k
+Ra1 Filtered N004 10k
+Rb1 0 N004 500k
+C2 Filtered N002 110n
+R7 Amplified N003 500k
+R8 N003 VGround 10k
+XU5 N006 N003 5V 0 Amplified TLC2272
+R9 N006 0 500k
+R10 N006 Filtered 10k
+XU7 N005 VGround 5V 0 VoutBeatPulses LT1018
+C8 N007 Stimulus 750n
+R18 N007 VGround 300k
+R21 VoutBeatPulses N005 100k
+R22 N005 Amplified 10k
+A1 /Q 0 VoutBeatPulses N013 0 /Q PWM 0 DFLOP Vhigh 5 Trise 10n
+R1 N013 /Q 500k
+C3 N013 0 1µ
+R2 VoutRateAnalogue N012 500k
+R15 N012 N011 40k
+XU3 N019 N012 5V 0 VoutRateAnalogue TLC2272
+R16 N019 0 500k
+R17 N019 Analogue_Small 40k
+R19 N015 PWM 500k
+C4 N015 0 900n
+R20 N016 N015 500k
+C12 N016 0 900n
+R23 N017 N016 500k
+C13 N017 0 900n
+R24 Analogue_Small N017 500k
+C14 Analogue_Small 0 900n
+XU6 N018 N011 5V 0 N011 TLC2272
+R11 VGround N018 500k tol=60k
+R12 N018 0 150k
+.tran 0 {transtop} 0 {timestep}
+.include E344cfg.txt
+* Don't change these -- used for auto-assessments.\nYou may modify input files while developing.\nFor submission: \n  * Use only 9V supply \n  * Connect "Stimulus" to your input\n  * Connect "VoutXXXX" to your output signals.\n  * Only one label name per net.
+* Config file:
+* Analysis setup:
+* Battery
+* Sensor-\nemulating \nstimulus
+* Assessed nets:\nConnect to your outputs
+* D.H. von Eschwege,  21785155\nDC = 2 V\nHeart rate pk = 38.85 mV
+.incl TLC2272.lib
+.incl LM78XX_RS.lib
+.incl TL081.lib
+.options numdgt = 7
+.options plotwinsize = 0
+.lib LM78XX_RS.lib
+.lib LTC1.lib
+.backanno
+.end
