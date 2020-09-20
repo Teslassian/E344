@@ -1,22 +1,23 @@
 Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\Draft1.asc
 
+WARNING: Less than two connections to node NC_01.  This node is used by R2.
+WARNING: Less than two connections to node 5V.  This node is used by V1.
 Direct Newton iteration for .op point succeeded.
 
-Date: Sat Sep 19 01:08:22 2020
-Total elapsed time: 0.531 seconds.
+Date: Sun Sep 20 23:21:37 2020
+Total elapsed time: 0.372 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 9954
-traniter = 9949
-tranpoints = 2662
-accept = 2216
-rejected = 446
-matrix size = 136
-fillins = 165
+totiter = 2120
+traniter = 2098
+tranpoints = 1050
+accept = 1050
+rejected = 0
+matrix size = 28
+fillins = 31
 solver = Normal
-Thread vector: 12.5/9.0[3] 6.4/3.5[3] 4.5/3.0[3] 1.1/1.8[1]  2592/500
-Matrix Compiler1: 16.13 KB object code size  11.8/6.4/[2.1]
-Matrix Compiler2: 14.12 KB object code size  4.2/5.0/[1.2]
+Matrix Compiler1: 2.77 KB object code size  0.8/0.4/[0.3]
+Matrix Compiler2: 2.72 KB object code size  0.4/0.4/[0.4]
 
