@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  21 SEP 2020 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  21 SEP 2020 23:46
 entering extended mode
 **./von_Eschwege_21785155_A2.tex
 (von_Eschwege_21785155_A2.tex
@@ -881,11 +881,11 @@ Package pdftex.def Info: frontmatter/fig/Signature.png  used on input line 43.
 
 (Chapter1.tex
 Chapter 1.
-<Figures/overview.png, id=175, 2718.155pt x 942.52126pt>
+<Figures/overview.png, id=175, 1643.13875pt x 561.09625pt>
 File: Figures/overview.png Graphic file (type png)
 <use Figures/overview.png>
 Package pdftex.def Info: Figures/overview.png  used on input line 8.
-(pdftex.def)             Requested size: 472.31595pt x 163.76439pt.
+(pdftex.def)             Requested size: 472.31595pt x 161.28395pt.
 
 LaTeX Warning: Reference ` ' on page 1 undefined on input line 14.
 
@@ -1066,7 +1066,7 @@ es/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10
 .pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program File
 s/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on von_Eschwege_21785155_A2.pdf (18 pages, 895978 bytes).
+Output written on von_Eschwege_21785155_A2.pdf (18 pages, 839121 bytes).
 PDF statistics:
  336 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
