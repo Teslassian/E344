@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  23 SEP 2020 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  23 SEP 2020 18:21
 entering extended mode
 **./von_Eschwege_21785155_A2.tex
 (von_Eschwege_21785155_A2.tex
@@ -908,81 +908,108 @@ LaTeX Warning: Citation `filter' on page 2 undefined on input line 22.
 
 LaTeX Warning: Citation `octo' on page 2 undefined on input line 22.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
 [2
 
 
 
  <./Figures/circuit.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-0.
- ("C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd"
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
-LaTeX Warning: Citation `WebsiteOpAmp' on page 3 undefined on input line 51.
+ []
 
 [3]
+! Double subscript.
+<argument> -t_H_
+                1
+l.32 $$V_H = 5\left(1-e^{\frac{-t_H_1}{\tau}
+                                            }\right)$$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Reference `fig:pwm' on page 4 undefined on input line 35.
+
+
 
 pdfTeX warning: pdflatex (file ./Figures/E344_Ass1VoltRegulator_cct.pdf): PDF i
 nclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<./Figures/E344_Ass1VoltRegulator_cct.pdf, id=224, 629.86917pt x 486.63406pt>
+<./Figures/E344_Ass1VoltRegulator_cct.pdf, id=222, 629.86917pt x 486.63406pt>
 File: ./Figures/E344_Ass1VoltRegulator_cct.pdf Graphic file (type pdf)
 <use ./Figures/E344_Ass1VoltRegulator_cct.pdf>
 Package pdftex.def Info: ./Figures/E344_Ass1VoltRegulator_cct.pdf  used on inpu
-t line 72.
+t line 59.
 (pdftex.def)             Requested size: 212.54073pt x 164.20592pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 74.
+(Font)              <10> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 74.
+(Font)              <7> on input line 61.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 74.
+(Font)              <5> on input line 61.
 File: ./Figures/E344_Ass1VoltRegulator_cct.pdf Graphic file (type pdf)
 <use ./Figures/E344_Ass1VoltRegulator_cct.pdf>
 Package pdftex.def Info: ./Figures/E344_Ass1VoltRegulator_cct.pdf  used on inpu
-t line 76.
+t line 63.
 (pdftex.def)             Requested size: 212.54073pt x 164.20592pt.
 
 
 pdfTeX warning: pdflatex (file ./Figures/CctDia.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<./Figures/CctDia.pdf, id=225, 591.63557pt x 157.07082pt>
+<./Figures/CctDia.pdf, id=223, 591.63557pt x 157.07082pt>
 File: ./Figures/CctDia.pdf Graphic file (type pdf)
 <use ./Figures/CctDia.pdf>
-Package pdftex.def Info: ./Figures/CctDia.pdf  used on input line 80.
+Package pdftex.def Info: ./Figures/CctDia.pdf  used on input line 67.
 (pdftex.def)             Requested size: 448.6987pt x 119.1234pt.
 
 
 pdfTeX warning: pdflatex (file ./Figures/E344_VoltRegulator.pdf): PDF inclusion
 : found PDF version <1.6>, but at most version <1.5> allowed
-<./Figures/E344_VoltRegulator.pdf, id=226, 963.6pt x 542.025pt>
+<./Figures/E344_VoltRegulator.pdf, id=224, 963.6pt x 542.025pt>
+File: ./Figures/E344_VoltRegulator.pdf Graphic file (type pdf)
+<use ./Figures/E344_VoltRegulator.pdf>
+Package pdftex.def Info: ./Figures/E344_VoltRegulator.pdf  used on input line 8
+5.
+(pdftex.def)             Requested size: 259.7752pt x 146.11713pt.
+<./Figures/Screengrab2.png, id=225, 395.4775pt x 249.93375pt>
+File: ./Figures/Screengrab2.png Graphic file (type png)
+<use ./Figures/Screengrab2.png>
+Package pdftex.def Info: ./Figures/Screengrab2.png  used on input line 90.
+(pdftex.def)             Requested size: 188.9235pt x 119.39478pt.
 File: ./Figures/E344_VoltRegulator.pdf Graphic file (type pdf)
 <use ./Figures/E344_VoltRegulator.pdf>
 Package pdftex.def Info: ./Figures/E344_VoltRegulator.pdf  used on input line 9
-8.
-(pdftex.def)             Requested size: 259.7752pt x 146.11713pt.
-<./Figures/Screengrab2.png, id=227, 395.4775pt x 249.93375pt>
-File: ./Figures/Screengrab2.png Graphic file (type png)
-<use ./Figures/Screengrab2.png>
-Package pdftex.def Info: ./Figures/Screengrab2.png  used on input line 103.
-(pdftex.def)             Requested size: 188.9235pt x 119.39478pt.
-File: ./Figures/E344_VoltRegulator.pdf Graphic file (type pdf)
-<use ./Figures/E344_VoltRegulator.pdf>
-Package pdftex.def Info: ./Figures/E344_VoltRegulator.pdf  used on input line 1
-08.
+5.
 (pdftex.def)             Requested size: 259.7752pt x 146.11713pt.
 File: ./Figures/Screengrab2.png Graphic file (type png)
 <use ./Figures/Screengrab2.png>
-Package pdftex.def Info: ./Figures/Screengrab2.png  used on input line 113.
+Package pdftex.def Info: ./Figures/Screengrab2.png  used on input line 100.
 (pdftex.def)             Requested size: 188.9235pt x 119.39478pt.
 
-LaTeX Warning: Citation `WebsiteOpAmp' on page 4 undefined on input line 116.
+LaTeX Warning: Citation `WebsiteOpAmp' on page 4 undefined on input line 103.
 
 
-LaTeX Warning: Citation `WebsiteOpAmp' on page 4 undefined on input line 116.
+LaTeX Warning: Citation `WebsiteOpAmp' on page 4 undefined on input line 103.
 
-[4 <./Figures/E344_Ass1VoltRegulator_cct.pdf> <./Figures/CctDia.pdf>] [5 <./Fig
-ures/E344_VoltRegulator.pdf> <./Figures/Screengrab2.png (PNG copy)>]) [6]
+[4 <./Figures/E344_Ass1VoltRegulator_cct.pdf> <./Figures/CctDia.pdf>]) [5 <./Fi
+gures/E344_VoltRegulator.pdf> <./Figures/Screengrab2.png (PNG copy)>] [6]
 \openout2 = `Chapter3.aux'.
 
 
@@ -1045,30 +1072,32 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 16709 strings out of 480790
- 296762 string characters out of 2907055
- 701667 words of memory out of 3000000
- 32166 multiletter control sequences out of 15000+200000
- 635186 words of font info for 129 fonts, out of 3000000 for 9000
+ 16682 strings out of 480790
+ 295952 string characters out of 2907055
+ 705631 words of memory out of 3000000
+ 32136 multiletter control sequences out of 15000+200000
+ 635159 words of font info for 132 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,46p,2327b,820s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,46p,2508b,783s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/M
-iKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm
-/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Progra
-m Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi1
-2.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program File
-s/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/p
-ublic/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/
-fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
-lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx1
-0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on von_Eschwege_21785155_A2.pdf (18 pages, 895196 bytes).
+iKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips
+/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Pro
+gram Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lm
+ex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/typ
+e1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbo
+10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/lm/lmsy6.pfb>
+Output written on von_Eschwege_21785155_A2.pdf (18 pages, 905259 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 30393 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 29881 words of extra memory for PDF output out of 35830 (max. 10000000)
 

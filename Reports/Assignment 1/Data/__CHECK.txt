@@ -1,2 +1,0 @@
-\textbf{More vreg calcs, Voltage reg power calcs before sim?}
-Voltage reg power calcs before sim?

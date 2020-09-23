@@ -27,124 +27,78 @@ Source Step = 33.3333%
 Source Step = 42.4302%
 Starting source stepping with srcstepmethod=1
 Source Step = 3.0303%
-Source Step = 13.0682%
-vernier = 0.015625
 Source stepping failed
 
-Pseudo Transient succeeded in finding the operating point at 31.3294 s.
+Pseudo Transient succeeded in finding the operating point at 15.2587 s.
 Ignoring empty pin current: Ix(u3:1)
 Ignoring empty pin current: Ix(u3:2)
-Ignoring empty pin current: Ix(u8:1)
-Ignoring empty pin current: Ix(u8:2)
 Ignoring empty pin current: Ix(u3:1)
 Ignoring empty pin current: Ix(u3:2)
-Ignoring empty pin current: Ix(u8:1)
-Ignoring empty pin current: Ix(u8:2)
-Heightened Def Con from 0.02275 to 0.02275
-Heightened Def Con from 0.0228799 to 0.0228799
-Heightened Def Con from 0.8483 to 0.8483
-Heightened Def Con from 0.848431 to 0.848431
-Heightened Def Con from 1.2527 to 1.2527
-Heightened Def Con from 1.25336 to 1.25336
-Heightened Def Con from 1.6643 to 1.6643
-Heightened Def Con from 1.66443 to 1.66443
-Heightened Def Con from 2.06175 to 2.06175
-Heightened Def Con from 2.4647 to 2.4647
-Heightened Def Con from 2.86572 to 2.86572
-Heightened Def Con from 2.86585 to 2.86585
-Heightened Def Con from 3.2603 to 3.2603
-Heightened Def Con from 3.26056 to 3.26056
-Heightened Def Con from 3.65375 to 3.65375
-Heightened Def Con from 3.65377 to 3.65377
-Heightened Def Con from 4.4455 to 4.4455
-Heightened Def Con from 4.44576 to 4.44576
-Heightened Def Con from 4.44589 to 4.44589
-Heightened Def Con from 4.44599 to 4.44599
-Heightened Def Con from 4.8465 to 4.8465
-Heightened Def Con from 5.6607 to 5.6607
-Heightened Def Con from 5.66096 to 5.66096
-Heightened Def Con from 5.66107 to 5.66107
-Heightened Def Con from 6.4647 to 6.4647
-Heightened Def Con from 6.46537 to 6.46537
-Heightened Def Con from 7.2564 to 7.2564
-Heightened Def Con from 7.25647 to 7.25647
-Heightened Def Con from 8.0487 to 8.0487
-Heightened Def Con from 8.4407 to 8.4407
-Heightened Def Con from 8.44136 to 8.44136
-Heightened Def Con from 8.44145 to 8.44145
-Heightened Def Con from 10.0657 to 10.0657
-Heightened Def Con from 10.8649 to 10.8649
-Heightened Def Con from 11.2587 to 11.2587
-Heightened Def Con from 11.2588 to 11.2588
-Heightened Def Con from 11.6505 to 11.6505
-Heightened Def Con from 11.6506 to 11.6506
-Heightened Def Con from 12.0497 to 12.0497
-Heightened Def Con from 12.0499 to 12.0499
-Heightened Def Con from 12.8527 to 12.8527
-Heightened Def Con from 12.853 to 12.853
-Heightened Def Con from 13.2547 to 13.2547
-Heightened Def Con from 13.2549 to 13.2549
-Heightened Def Con from 13.2549 to 13.2549
-Heightened Def Con from 13.6585 to 13.6585
-Heightened Def Con from 13.6588 to 13.6588
-Heightened Def Con from 13.6589 to 13.6589
-Heightened Def Con from 14.0647 to 14.0647
-Heightened Def Con from 14.0654 to 14.0654
-Heightened Def Con from 14.4683 to 14.4683
-Heightened Def Con from 14.4684 to 14.4684
-Heightened Def Con from 14.8603 to 14.8603
-Heightened Def Con from 14.8604 to 14.8604
-Heightened Def Con from 14.8605 to 14.8605
-Heightened Def Con from 15.6523 to 15.6523
-Heightened Def Con from 15.6524 to 15.6524
-Heightened Def Con from 16.4467 to 16.4467
-Heightened Def Con from 18.0647 to 18.0647
-Heightened Def Con from 18.4687 to 18.4687
-Heightened Def Con from 18.4693 to 18.4693
-Heightened Def Con from 18.864 to 18.864
-Heightened Def Con from 19.2595 to 19.2595
-Heightened Def Con from 19.6487 to 19.6487
-Heightened Def Con from 19.649 to 19.649
-Heightened Def Con from 19.6491 to 19.6491
-Heightened Def Con from 20.0447 to 20.0447
-Heightened Def Con from 20.0454 to 20.0454
-Heightened Def Con from 20.8447 to 20.8447
-Heightened Def Con from 20.8448 to 20.8448
-Heightened Def Con from 22.0647 to 22.0647
-Heightened Def Con from 22.0654 to 22.0654
-Heightened Def Con from 22.0654 to 22.0654
-Heightened Def Con from 22.4687 to 22.4687
-Heightened Def Con from 22.4688 to 22.4688
-Heightened Def Con from 22.4689 to 22.4689
-Heightened Def Con from 22.86 to 22.86
-Heightened Def Con from 23.2568 to 23.2568
-Heightened Def Con from 23.6527 to 23.6527
-Heightened Def Con from 24.0426 to 24.0426
-Heightened Def Con from 24.8447 to 24.8447
-Heightened Def Con from 24.8447 to 24.8447
-Heightened Def Con from 25.6607 to 25.6607
-Heightened Def Con from 25.6608 to 25.6608
-Heightened Def Con from 25.661 to 25.661
-Heightened Def Con from 26.0676 to 26.0676
-Heightened Def Con from 27.2601 to 27.2601
-Heightened Def Con from 28.8457 to 28.8457
-Heightened Def Con from 28.8459 to 28.8459
+Heightened Def Con from 0.0329 to 0.0329
+Heightened Def Con from 0.453234 to 0.453234
+Heightened Def Con from 0.453332 to 0.453332
+Heightened Def Con from 0.8535 to 0.8535
+Heightened Def Con from 0.853631 to 0.853631
+Heightened Def Con from 0.853724 to 0.853724
+Heightened Def Con from 1.6687 to 1.6687
+Heightened Def Con from 1.66896 to 1.66896
+Heightened Def Con from 2.46912 to 2.46912
+Heightened Def Con from 2.46939 to 2.46939
+Heightened Def Con from 2.46942 to 2.46942
+Heightened Def Con from 2.86987 to 2.86987
+Heightened Def Con from 2.87 to 2.87
+Heightened Def Con from 2.87002 to 2.87002
+Heightened Def Con from 3.26528 to 3.26528
+Heightened Def Con from 5.256 to 5.256
+Heightened Def Con from 5.25602 to 5.25602
+Heightened Def Con from 11.2635 to 11.2635
+Heightened Def Con from 11.2636 to 11.2636
+Heightened Def Con from 11.2637 to 11.2637
+Heightened Def Con from 11.6561 to 11.6561
+Heightened Def Con from 14.8652 to 14.8652
+Heightened Def Con from 14.8653 to 14.8653
+Heightened Def Con from 15.6572 to 15.6572
+Heightened Def Con from 15.6573 to 15.6573
+Heightened Def Con from 16.452 to 16.452
+Heightened Def Con from 17.2603 to 17.2603
+Heightened Def Con from 17.2604 to 17.2604
+Heightened Def Con from 17.2605 to 17.2605
+Heightened Def Con from 18.0697 to 18.0697
+Heightened Def Con from 18.0698 to 18.0698
+Heightened Def Con from 18.8683 to 18.8683
+Heightened Def Con from 18.8686 to 18.8686
+Heightened Def Con from 18.8686 to 18.8686
+Heightened Def Con from 21.0929 to 21.0929
+Heightened Def Con from 22.8647 to 22.8647
+Heightened Def Con from 22.8648 to 22.8648
+Heightened Def Con from 22.8649 to 22.8649
+Heightened Def Con from 23.2613 to 23.2613
+Heightened Def Con from 23.2613 to 23.2613
+Heightened Def Con from 24.4495 to 24.4495
+Heightened Def Con from 25.6651 to 25.6651
+Heightened Def Con from 26.0725 to 26.0725
+Heightened Def Con from 26.4707 to 26.4707
+Heightened Def Con from 26.4708 to 26.4708
+Heightened Def Con from 27.2644 to 27.2644
+Heightened Def Con from 28.0521 to 28.0521
+Heightened Def Con from 29.6651 to 29.6651
+Heightened Def Con from 29.6654 to 29.6654
 
-Date: Wed Sep 23 00:00:53 2020
-Total elapsed time: 47.730 seconds.
+Date: Wed Sep 23 18:00:47 2020
+Total elapsed time: 29.587 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 293307
-traniter = 206465
-tranpoints = 75613
-accept = 69292
-rejected = 8665
-matrix size = 135
-fillins = 1770
+totiter = 204948
+traniter = 194828
+tranpoints = 73177
+accept = 67663
+rejected = 5641
+matrix size = 131
+fillins = 1454
 solver = Normal
-Thread vector: 87.5/28.6[3] 21.6/13.6[3] 16.7/7.9[3] 1.9/10.7[1]  2592/500
-Matrix Compiler1: 348.93 KB object code size  110.3/55.4/[47.1]
-Matrix Compiler2: 41.88 KB object code size  9.3/18.3/[3.0]
+Thread vector: 29.0/18.2[3] 17.7/10.4[3] 13.5/10.3[3] 1.7/2.9[1]  2592/500
+Matrix Compiler1: 230.46 KB object code size  93.5/54.0/[35.1]
+Matrix Compiler2: 36.19 KB object code size  9.6/5.4/[2.9]
 

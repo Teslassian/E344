@@ -1,0 +1,126 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\von_Eschwege_21785155_A2 - Copy.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.5165
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.49501
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50104
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 42.4302%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source Step = 6.11683%
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point at 14.3725 s.
+Ignoring empty pin current: Ix(u3:1)
+Ignoring empty pin current: Ix(u3:2)
+Ignoring empty pin current: Ix(u3:1)
+Ignoring empty pin current: Ix(u3:2)
+Heightened Def Con from 0.0527 to 0.0527
+Heightened Def Con from 0.0528311 to 0.0528311
+Heightened Def Con from 0.0528966 to 0.0528966
+Heightened Def Con from 0.052913 to 0.052913
+Heightened Def Con from 0.544377 to 0.544377
+Heightened Def Con from 0.544377 to 0.544377
+Heightened Def Con from 1.0367 to 1.0367
+Heightened Def Con from 1.03696 to 1.03696
+Heightened Def Con from 1.37657 to 1.37657
+Heightened Def Con from 1.37657 to 1.37657
+Heightened Def Con from 1.37657 to 1.37657
+Heightened Def Con from 1.37657 to 1.37657
+Heightened Def Con from 2.0625 to 2.0625
+Heightened Def Con from 2.06252 to 2.06252
+Heightened Def Con from 3.0515 to 3.0515
+Heightened Def Con from 3.55067 to 3.55067
+Heightened Def Con from 6.0641 to 6.0641
+Heightened Def Con from 6.06423 to 6.06423
+Heightened Def Con from 6.06426 to 6.06426
+Heightened Def Con from 7.0535 to 7.0535
+Heightened Def Con from 7.3347 to 7.3347
+Heightened Def Con from 8.0265 to 8.0265
+Heightened Def Con from 8.02676 to 8.02676
+Heightened Def Con from 8.59159 to 8.59159
+Heightened Def Con from 10.0608 to 10.0608
+Heightened Def Con from 10.446 to 10.446
+Heightened Def Con from 10.446 to 10.446
+Heightened Def Con from 10.446 to 10.446
+Heightened Def Con from 11.0443 to 11.0443
+Heightened Def Con from 11.0446 to 11.0446
+Heightened Def Con from 11.0446 to 11.0446
+Heightened Def Con from 11.0446 to 11.0446
+Heightened Def Con from 12.0289 to 12.0289
+Heightened Def Con from 12.029 to 12.029
+Heightened Def Con from 12.029 to 12.029
+Heightened Def Con from 12.6031 to 12.6031
+Heightened Def Con from 14.451 to 14.451
+Heightened Def Con from 15.0568 to 15.0568
+Heightened Def Con from 16.0288 to 16.0288
+Heightened Def Con from 18.0603 to 18.0603
+Heightened Def Con from 18.0606 to 18.0606
+Heightened Def Con from 18.0606 to 18.0606
+Heightened Def Con from 19.0465 to 19.0465
+Heightened Def Con from 19.0465 to 19.0465
+Heightened Def Con from 19.3272 to 19.3272
+Heightened Def Con from 19.3272 to 19.3272
+Heightened Def Con from 19.3272 to 19.3272
+Heightened Def Con from 20.0305 to 20.0305
+Heightened Def Con from 20.0305 to 20.0305
+Heightened Def Con from 21.3105 to 21.3105
+Heightened Def Con from 21.4835 to 21.4835
+Heightened Def Con from 21.4835 to 21.4835
+Heightened Def Con from 22.0531 to 22.0531
+Heightened Def Con from 22.0533 to 22.0533
+Heightened Def Con from 22.0533 to 22.0533
+Heightened Def Con from 23.0515 to 23.0515
+Heightened Def Con from 23.0515 to 23.0515
+Heightened Def Con from 23.3339 to 23.3339
+Heightened Def Con from 24.0331 to 24.0331
+Heightened Def Con from 24.0333 to 24.0333
+Heightened Def Con from 24.0333 to 24.0333
+Heightened Def Con from 24.6485 to 24.6485
+Heightened Def Con from 25.0385 to 25.0385
+Heightened Def Con from 26.0535 to 26.0535
+Heightened Def Con from 26.0546 to 26.0546
+Heightened Def Con from 28.0265 to 28.0265
+Heightened Def Con from 28.0265 to 28.0265
+Heightened Def Con from 29.0395 to 29.0395
+Heightened Def Con from 29.0396 to 29.0396
+Heightened Def Con from 29.4996 to 29.4996
+
+Date: Wed Sep 23 17:41:10 2020
+Total elapsed time: 30.782 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 179230
+traniter = 169263
+tranpoints = 65111
+accept = 61601
+rejected = 3650
+matrix size = 131
+fillins = 1551
+solver = Normal
+Thread vector: 30.5/25.8[3] 20.0/9.7[3] 13.9/10.2[3] 1.8/3.0[1]  2592/500
+Matrix Compiler1: 287.43 KB object code size  112.7/64.5/[42.4]
+Matrix Compiler2: 37.78 KB object code size  9.8/8.4/[2.9]
+
