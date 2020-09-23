@@ -1,0 +1,23 @@
+\chapter{System and conclusion}
+\vspace{-5mm}
+\section{System}
+Considering the system as a whole, it should be easy to integrate it with the rest of the health monitoring system as the design is modular. This can be done by feeding the output of the temperature sensor into the system designed in this report, and then connecting the output of the system to the microcontroller ADC. This requires relatively few connections, and the only setup needed is to calibrate the ADC, using the following formula\cite{cs}:
+
+$$\mathrm{ADC} = (2^{10}-1)\frac{V_{in}}{V_{ref}} \;\;\; \rightarrow \;\;\; V_{in} = \frac{\mathrm{ADC}(V_{ref})}{2^{10}-1}$$
+
+The slope of the temperature increase is $\frac{42-34}{5-0} = 1.6$. Thus, for 38\degree C:
+
+$$T = 38 = 1.6V + C = 1.6(2.5) + C \;\;\; \rightarrow \;\;\; C = 34$$
+
+Therefore, the temperature can finally be calculated by
+
+$$T = (1.6)\frac{\mathrm{ADC}(V_{ref})}{2^{10}-1} + 34$$
+
+Since the noise is \SI{25}{\milli\volt} at maximum, the quantisation error (due to noise) is $T_{err} = (1.6(0.025) + 34) - (1.6(0) + 34) = 0.04$\degree C. Therefore, the measurement error is less than 4\% per 1\degree C.\\
+
+Concluding, it has been shown that the combination of the voltage regulator and the temperature sensing circuitry works very well to achieve the desired result. Since the cascaded filters ensure extremely low noise levels, the ADC should be capable of distinguishing the measured temperature to a very high degree of accuracy. The system uses more of the less costly components, and is very power efficient, all the while meeting all of the bonus requirements. It is thus safe to say that the objective of the design has been met successfully.
+
+\section{Lessons learnt}
+1. Make sure to understand the instructions before starting to work.\\
+2. Texmaker is a nightmare with citations.\\
+3. Don't go surfing for the entirety of the first week of class.
