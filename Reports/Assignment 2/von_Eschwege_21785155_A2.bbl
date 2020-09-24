@@ -21,11 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{ass1}
-``E344 assignment 1.''
+\bibitem{prev}
+D.~von Eschwege, ``asassas,'' 2020.
 
 \bibitem{actpas}
-``Difference between active and passive filter.''
+\BIBentryALTinterwordspacing
+``Difference between active and passive filter.'' [Online]. Available:
+  \url{https://circuitglobe.com/difference-between-active-and-passive-filter.html#ComparisonChart}
+\BIBentrySTDinterwordspacing
 
 \bibitem{opamp}
 \BIBentryALTinterwordspacing
@@ -40,6 +43,20 @@ W.~Storr, ``Operational amplifiers,'' 2018. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{PWM}
-``Analog output - convert pwm to voltage.''
+\BIBentryALTinterwordspacing
+``Analog output - convert pwm to voltage.'' [Online]. Available:
+  \url{https://www.instructables.com/id/Analog-Output-Convert-PWM-to-Voltage/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{filter}
+\BIBentryALTinterwordspacing
+W.~Storr, ``Filters,'' 2018. [Online]. Available:
+  \url{https://www.electronics-tutorials.ws/filter}
+\BIBentrySTDinterwordspacing
+
+\bibitem{octo}
+\BIBentryALTinterwordspacing
+``Octopart,'' Octopart, 2020. [Online]. Available: \url{https://octopart.com/}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
