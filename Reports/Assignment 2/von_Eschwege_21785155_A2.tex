@@ -18,9 +18,10 @@
 \setlength{\abovecaptionskip}{7.5pt}  % spacing above and below captions
 \newcommand*{\WaterMark}[2][0.2\paperwidth]{\AddToShipoutPicture*{\AtTextCenter{\parbox[c]{0pt}{\makebox[0pt][c]{\includegraphics[width=#1]{#2}}}}}}
 \usepackage{subcaption}
+\setlength{\belowcaptionskip}{-5pt}
  \usepackage{wrapfig}
 
-% Font and text
+% Font and text-
 \usepackage[afrikaans,english]{babel}
 \usepackage{microtype}
 \usepackage{setspace}
@@ -51,6 +52,7 @@
 \usepackage[cmex10]{amsmath}
 \usepackage{amssymb}
 \usepackage{cancel}
+\usepackage{multicol}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \newcommand{\T}{^\textrm{T}}
 \newcommand{\tr}{\textrm{tr}}

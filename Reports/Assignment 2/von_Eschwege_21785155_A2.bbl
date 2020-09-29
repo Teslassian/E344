@@ -48,24 +48,24 @@ W.~Storr, ``Operational amplifiers,'' 2018. [Online]. Available:
   \url{https://www.instructables.com/id/Analog-Output-Convert-PWM-to-Voltage/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{filter}
-\BIBentryALTinterwordspacing
-W.~Storr, ``Filters,'' 2018. [Online]. Available:
-  \url{https://www.electronics-tutorials.ws/filter}
-\BIBentrySTDinterwordspacing
+\bibitem{tlc2272}
+\emph{TLC227x: Advanced LinCMOS Rail-to-Rail Operational Amplifiers}, TL2272
+  Datasheet, Texas Instruments, 2016.
+
+\bibitem{tl081}
+\emph{TL08xx: JFET-Input Operational Amplifiers}, TL081 Datasheet, Texas
+  Instruments, May 2015.
 
 \bibitem{octo}
 \BIBentryALTinterwordspacing
 ``Octopart,'' Octopart, 2020. [Online]. Available: \url{https://octopart.com/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{tl081}
-\emph{TL08xx: JFET-Input Operational Amplifiers}, TL081 Datasheet, Texas
-  Instruments, May 2015.
-
-\bibitem{tlc2272}
-\emph{TLC227x: Advanced LinCMOS Rail-to-Rail Operational Amplifiers}, TL2272
-  Datasheet, Texas Instruments, 2016.
+\bibitem{filter}
+\BIBentryALTinterwordspacing
+W.~Storr, ``Filters,'' 2018. [Online]. Available:
+  \url{https://www.electronics-tutorials.ws/filter}
+\BIBentrySTDinterwordspacing
 
 \bibitem{lt1018}
 \emph{LT1018 Micropower Dual Comparator}, LT1018 Datasheet, Linear Technology.
