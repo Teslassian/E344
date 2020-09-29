@@ -2,27 +2,21 @@
 \vspace{-5mm}
 \section{System}
 
-The design of the heart-rate sensor goes to show that a noisy input signal, obtained from a sensing device, could effectively be converted to a square wave output as well as an analogue output, allowing for reliable interfacing of real-world measurements with digital systems. The heart-rate sensing circuit can now be integrated with the remainder of the health monitoring system by connecting the analogue output to the microcontroller input, to which the temperature sensor will also be connected - see E344 Assignment 1 \cite{prev}. The modular design of different parts of the health-monitoring system allows for simplification of both design and debugging.
-Due to the second order low-pass filter, the heart-rate sensor is remarkably robust with respect to variations in noise, attenuating noise levels to below 6\% of the signal amplitude before creating a pulse output. The design also performs well on a variety of the normalised input data sets. For microcontroller integration, a log-linear scale can be used to obtain a linear analogue reading, which can be calibrated using  \textbf{checl this}
+The design of the heart-rate sensor goes to show that a noisy input signal could effectively be converted to a square wave output as well as an analogue output, allowing for reliable interfacing of real-world measurements with digital systems. The heart-rate sensing circuit can now be integrated with the remainder of the health monitoring system by connecting the analogue output to the microcontroller input, to which the temperature sensor will also be connected - see E344 Assignment 1 \cite{prev}. The modular design of different parts of the health-monitoring system allows for simplification of both design and debugging. Due to the second order low-pass filter, the heart-rate sensor is remarkably robust with respect to variations in noise, attenuating noise levels to below 6\% of the signal amplitude before creating a pulse output. The design also performs well on a variety of the normalised input data sets. For microcontroller integration, a log-linear scale can be used to obtain a linear analogue reading, which can be calibrated using
 
-$$\mathrm{ADC} = (2^{10}-1)\frac{V_{in}}{V_{ref}} \;\;\; \rightarrow \;\;\; V_{in} = \frac{\mathrm{ADC}(V_{ref})}{2^{10}-1}$$
+$$\mathrm{ADC_{val}} = (2^{10}-1)\frac{V_{in}}{V_{ref}} \;\;\; \rightarrow \;\;\; V_{in} = \frac{(\mathrm{ADC_{val}})(V_{ref})}{2^{10}-1}$$
 
-The slope of the temperature increase is $\frac{42-34}{5-0} = 1.6$. Thus, for 38 C:
+The slope of the frequency increase is $\frac{0.8-2.5}{4.7-0.5} = -0.404$. Thus, for 150 BPM:
 
-$$T = 38 = 1.6V + C = 1.6(2.5) + C \;\;\; \rightarrow \;\;\; C = 34$$
+$$f = 2.5 = -0.404V + C = -0.404(0.5) + C \;\;\; \rightarrow \;\;\; C = 2.702$$
 
-Therefore, the temperature can finally be calculated by
+Therefore, the frequency can be calculated by
 
-$$T = (1.6)\frac{\mathrm{ADC}(V_{ref})}{2^{10}-1} + 34$$
+$$f = (-0.404)\frac{\mathrm{ADC_{val}}(V_{ref})}{2^{10}-1} + 2.702$$
 
-Since the noise is \SI{25}{\milli\volt} at maximum, the quantisation error (due to noise) is $T_{err} = (1.6(0.025) + 34) - (1.6(0) + 34) = 0.04$ C. 
+The quantisation error is $f_{err} = \frac{2.5 - 0.8}{2^{10}} / (2.5 - 0.8) * 100 = 0.1\%$
 
 Concluding, it has been shown that the combination of the voltage regulator and the temperature sensing circuitry works very well to achieve the desired result. Since the cascaded filters ensure extremely low noise levels, the ADC should be capable of distinguishing the measured temperature to a very high degree of accuracy. The system uses more of the less costly components, and is very power efficient, all the while meeting all of the bonus requirements. It is thus safe to say that the objective of the design has been met successfully.
-
-\textbf{
-Report on the ``so what'' or the take-away of the ciruit you designed in this report.  
-Report on noise levels and how the Heart rate sensor will fit into the system (E.g. what the calibration will look like and what the the measurement error will be given the range, quantisation error and noise). 
-}
 
 
 \section{Lessons learnt}
