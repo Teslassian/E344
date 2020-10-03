@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: von_Eschwege_21785155_A3.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Chapter3.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: App-A.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: App-B.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: App-C.aux
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: References.bib
+Warning--string name "august" is undefined
+--line 4 of file References.bib
+Warning--string name "march" is undefined
+--line 64 of file References.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 10 entries,
+            4087 wiz_defined-function locations,
+            865 strings with 8182 characters,
+and the built_in function-call counts, 3273 in all, are:
+= -- 245
+> -- 22
+< -- 0
++ -- 14
+- -- 4
+* -- 123
+:= -- 605
+add.period$ -- 17
+call.type$ -- 10
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 10
+duplicate$ -- 286
+empty$ -- 332
+format.name$ -- 4
+if$ -- 708
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 64
+newline$ -- 65
+num.names$ -- 4
+pop$ -- 190
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 253
+stack$ -- 0
+substring$ -- 7
+swap$ -- 151
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 10
+warning$ -- 0
+while$ -- 4
+width$ -- 12
+write$ -- 108
+(There were 2 warnings)

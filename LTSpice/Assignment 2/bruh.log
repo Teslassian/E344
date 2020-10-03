@@ -1,0 +1,23 @@
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\LTSpice\Assignment 2\bruh.asc
+
+WARNING: Less than two connections to node STIMULUS.  This node is used by V6.
+WARNING: Less than two connections to node 9V.  This node is used by R_SENSE1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Oct 03 16:41:28 2020
+Total elapsed time: 0.969 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 53095
+traniter = 53092
+tranpoints = 26547
+accept = 26547
+rejected = 0
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1:      12 opcodes  0.2/[0.1]/0.1
+Matrix Compiler2: off  [0.1]/0.2/0.2
+
