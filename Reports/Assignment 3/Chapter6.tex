@@ -1,5 +1,5 @@
 \chapter{System and conclusion}
-\vspace{-5mm}
+
 \section{System}
 Considering the system as a whole, it should be easy to integrate it with the rest of the health monitoring system as the design is modular. This can be done by feeding the output of the temperature sensor into the system designed in this report, and then connecting the output of the system to the microcontroller ADC. This requires relatively few connections, and the only setup needed is to calibrate the ADC, using the following formula\cite{cs}:
 
@@ -17,7 +17,15 @@ Since the noise is \SI{25}{\milli\volt} at maximum, the quantisation error (due 
 
 Concluding, it has been shown that the combination of the voltage regulator and the temperature sensing circuitry works very well to achieve the desired result. Since the cascaded filters ensure extremely low noise levels, the ADC should be capable of distinguishing the measured temperature to a very high degree of accuracy. The system uses more of the less costly components, and is very power efficient, all the while meeting all of the bonus requirements. It is thus safe to say that the objective of the design has been met successfully.
 
+\section{System}
+The design of the heart-rate sensor goes to show that a noisy input signal could effectively be converted to a square wave output as well as an analogue output, enabling reliable interfacing of real-world measurements with digital systems. The heart-rate sensing circuit can now be integrated with the remainder of the health monitoring system by connecting the analogue output to the microcontroller input, to which the temperature sensor will also be connected - see E344 Assignment 1 \cite{prev}. The modular design of different parts of the health-monitoring system simplifies both design and debugging. Due to the second order low-pass filter, the heart-rate sensor is remarkably robust with respect to variations in noise, attenuating noise levels to below 6\% of the signal amplitude before creating a pulse output. The design also performs well on a variety of the normalised input data sets. Calibration for microcontroller integration is done according to $f = -0.404V + 2.702$ (section \ref{sec:heartDesign}, and the quantisation error is $f_{err} = \frac{2.5 - 0.8}{2^{10}} / (2.5 - 0.8) \times 100 = 0.1\%$. Noise is filtered to the extent that it has a negligible effect on the digitalized reading.
+The system utilizes less costly components where possible, is very power efficient, and adheres to all of the bonus requirements. The design objective has been met successfully.
+
 \section{Lessons learnt}
-1. Make sure to understand the instructions before starting to work.\\
-2. Texmaker is a nightmare with citations.\\
-3. Don't go surfing for the entirety of the first week of class.
+1. LTSpice is a blessing, but can be an absolute nightmare with simulations. I've created a rough metric; it goes to show that 30\% of my time was spent on circuit design, 10\% on report writing, and 60\% on debugging LTSpice simulation problems. I entered E-Design with the belief that simulation would greatly accelerate the pace of the subject, as soldering was eliminated, but I stand firm in my belief that I could have built a practical circuit much faster, as 'timestep too small' does not apply in the beauty of real-world continuity. However, maybe I just stand firm in this belief because I have not dealt with the problems arising from burnt-out components, messy soldering, melted PCB tracks and exploding diodes.
+
+2. I believe to have greatly improved with regards to modularising and debugging not only circuits, but systems in general. Treating everything as a small problem to be solved furthered my conceptual understanding of component interaction.
+
+3. I shouldn't have gone surfing for the entirety of the first week of the term. I said this in Assignment 1 as well, and lost marks for it, but it is still applicable, so I'll say it again.
+
+4. If I could have it all over again, I wouldn't have texted my circuit; she did not reply.

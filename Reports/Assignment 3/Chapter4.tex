@@ -1,104 +1,151 @@
-\chapter{Temperature sensor conditioning circuit}\label{sec:temp_sensor}
+\chapter{Heart rate sensor}\label{ch:heartRate}
+%**********************************************
 
 %**********************************************
-\section{Intro} \label{sec:temp_intro}
+\section{Introduction} \label{sec:heartIntro}
 %**********************************************
-The signal obtained from the temperature sensor presents as DC, with \SI{50}{Hz} AC noise superimposed. The sensor output is too small for a ADC to take as input. Furthermore, the applicable range is only from 34\degree C to 42\degree C. The two aforementioned considerations necessitate amplification of the relevant part of the temperature sensor signal to a \numrange{0}{5} \si{\volt} range for an ADC. To this end, a temperature sensor conditioning circuit is required, making use of a filter, an offset removing subcircuit, as well as an amplifier. The filter attenuates the AC signal present in the input signal in order to minimize noise. The offset removing subcircuit removes enough of the DC offset to ensure that the output signal is centered around \SI{2.5}{\volt}, to ensure the largest possible output swing. Finally, the amplifier increases the magnitude of the input signal in order to be suitable as input for an ADC.
+Circuits pertaining to signal conditioning, pulse signal and analogue output generation will be discussed. Conditioning is done via filtering and amplification, thereafter thresholding and pulse-width modulation is used to generate outputs. Active filters provide high input and low output impedance, and a large Q-factor \cite{actpas}. A differential amplifier is suitable for amplification, as the gain is referenced against a customizable voltage \cite{opamp}. A Schmitt Trigger is well-suited for pulse generation, as it provides a noise margin \cite{schmitt}. PWM signals can be converted to analogue using filtering \cite{PWM}.
 
 %**********************************************
-\section{Design}\label{sec:temp_design}
+\section{Design} \label{sec:heartDesign}
 %**********************************************
-The amplifier was designed first, as its gain serves as the determining factor for the amount of noise reduction that is required from the filter. A TLC2272 op-amp was chosen as it allows for an output very close to its rails. Since the output signal has to be centered around \SI{2.5}{\volt}, a differential amplifier was decided upon, as the negative input can adjust the output offset. The zero-reference temperature sensor voltage ($V_{zero}$) is \SI{440}{\milli \volt}, and increases by \SI{35}{\milli \volt} for every 1\degree C ($V_{\Delta}$). Therefore  $V_{temp} = V_{zero} + V_{\Delta} \times \mathrm{Temp}$. As shown in table \ref{tab:temp}, the maximum 
-
-\begin{wraptable}{R}{0.65\textwidth}
-%\begin{table}[h]
-        \centering
-%        \vspace{-2cm}
-        \footnotesize
-        \caption{Temperatures and Corresponding Voltage Levels}
-         \begin{tabular}{c@{\qquad}rrr}
-          \toprule
-          Temperature [\degree C] 	& 32    & 38	& 42\\
-          Voltage [V] 			& 1.63	& 1.77	& 1.91\\
-          \bottomrule
-        \end{tabular}
-     \label{tab:temp}
-%\end{table}
-\end{wraptable}
-
-input voltage swing equals $1.91 - 1.63 = 0.28$V, and has a DC offset of \SI{1.77}{\volt}. Amplification is needed to reach an output voltage swing of \SI{5}{\volt}, which, combined with a \SI{2.5}{V} DC offset, will ensure that the circuit uses the input range as specified, and excludes the lower and upper temperature ranges (i.e. below 34\degree C and above 42\degree C). Therefore:
-
-$$A_v = \frac{V_{out}}{V_{in}} = \frac{5}{0.28} = 17.86$$
-
-Considering the current design requirement of \SI{25}{mA} maximum, the input resistor R is selected as \SI{10}{\kilo \Omega}, which will therefore, at the highest possible voltage level (\SI{5}{\volt}), use \SI{0.5}{mA} of current.  This gives $R_{feedback} = 178.6$k$\Omega$, according to $A_v = \frac{{R}_{feedback}}{R}$ \cite{opamp}. R corresponds to $R_1$ and $R_2$, and $R_{feedback}$ to $R_{3}$ and $R_4$ in the final design diagram (figure \ref{fig:final}), which is shown here already to aid with the explanation of the design process. 
-
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
-    \includegraphics[width = 1\textwidth]{Figures/final.png}
-    \caption{Temperature Sensor Circuit}
-    \label{fig:final}
+    \vspace{-1cm}
+    \includegraphics[width = 1\textwidth]{Figures/circuit}
+    \caption{Complete Circuit}
+    \label{fig:circuit}
 \end{figure}
 
-Two points need to be considered: 
-\begin{enumerate}
-\item The DC offset of the input signal is undesired and has to be removed in order to obtain a zero-mean input signal. This can be achieved by designing another subcircuit that makes use of another op-amp, for example. This adds to the cost and complexity of the circuit.
-\item The output signal has to be centered around \SI{2.5}{\volt}. This means that a DC offset has to be added in the form of a virtual ground.
-\end{enumerate}
+The complete circuit is shown upfront in figure \ref{fig:circuit} to aid explanation. The largest resistor in sub-circuits is always chosen to be \SI{500}{k\Omega} as to reduce current usage. The TLC2272 op-amp has $V_{CM}$ of \numrange{-0.3}{4} \si{V}, $V_{ID} = \pm 16 \; V$, $V_{in_{max}} = V_{DD+}$ and $V_{in_{min}} = V_{DD-} - 0.3$ \cite{tlc2272}. The TL081 has $V_{CM}$ of \numrange{1}{4} \si{V}, $V_{ID} = \pm 30 \;V$, $V_{in_{max}} = 3.5 \;V$ and $V_{in_{min}} = 1.5 \;V$ \cite{tl081}. This information is given here as to avoid repetition - refer here when op-amp characteristics are discussed. The design process now follows.
+The FFT of the stimulus input in figure \ref{fig:fft} shows information residing between \numrange{0.8}{2.5} \si{Hz}, corresponding to 50 and 150 BPM respectively. The other peaks represent noise at \SI{0.25}{Hz}, as well as at twice and three times the message signal, and higher. Noise distorts square wave output, necessitating filtering. 
+\begin{wrapfigure}{r}{0.5\textwidth}
+%	\vspace{-0.45cm}
+    \centering
+    \includegraphics[width = 0.44\textwidth]{./Figures/fft}
+%	\vspace*{-1mm}
+    \caption{Fast fourier transform of stimulus}
+    \label{fig:fft}
+\end{wrapfigure}
+A first order passive high-pass filter, $f_c =$ \SI{0.606}{Hz}, attenuates the low frequency noise at \SI{0.25}{Hz}. R18 = \SI{500}{k\Omega}, thus C8 = \SI{525}{nF} according to $f_{c} = \frac{1}{2\pi R C}$. A virtual ground centres the signal around \SI{2.5}{V}, ensuring that the LPF input falls within the common-mode range of the TL081, which is used as it inexpensive \cite{octo}. A second order active low-pass filter, $f_c =$ \SI{4.1}{Hz}, filters out high frequency noise. R5 = R6 = \SI{500}{k\Omega}, C1 = C2 = \SI{77}{nF} - see aforementioned formula. Cutoff frequencies were selected to remove noise maximally while minimally affecting heart-rate data. The signal should reside slightly above \SI{2.5}{V} to facilitate amplification (to be discussed) and to ensure common-mode input range compliance in the next stage. Thus, Rb1 = \SI{500}{k\Omega} and Ra1 = \SI{10}{k\Omega} since $A_v=1+\frac{R_{A}}{R_{B}}$ 
+\cite{filter}. A filter output with DC offset slightly above \SI{2.5}{V} allows for the use of a differential amplifier with the existing virtual ground connected to the negative input, removing the need for additional circuitry otherwise required. The signal is amplified according to $\mathrm{V}_{\mathrm{OUT}}=\frac{\mathrm{R}_{a}}{\mathrm{R}_{b}}\left(\mathrm{V}_{2}-\mathrm{V}_{1}\right)$ \cite{opamp}, where R\textsubscript{a} corresponds to R7 and R9 and R\textsubscript{b} to R8 and R10. The gain of 50 was selected to again provide a DC offset of \SI{2.5}{V}, as it facilitates implementation of the comparator (to be discussed). Since the amplified signal has an amplitude of only \SI{1.66}{V}, the inexpensive TL081 was chosen despite having a smaller output range. Next, the signal is fed into a Schmitt Trigger - the LT1018 comparator allows for output very close to 0 and 5V and has a high gain. \SI{5}{V} is produced if the input exceeds the upper trip point (UTP) and \SI{0}{V} if the input falls below the lower trip point (LTP) \cite{schmitt}. The hysteresis width ($w_h =$ UTP - LTP) serves as a noise margin around the reference voltage, $V_{REF}$ \cite{schmitt}. The DC offset of \SI{2.5}{V} of the amplified signal requires $V_{REF}$ = \SI{2.5}{V}, once again allowing for the use of the existing virtual ground. Pulse duration is designed for the highest frequency, as it will then also meet the requirement for lower frequencies. Since 150 BPM corresponds to a period of \SI{0.4}{s}, $w_h$ should be selected to ensure an output pulse width of at least \SI{150}{ms}; \SI{200}{ms} selected to account for noise. The amplified signal approximates a sinusoid:
 
-When considered in conjunction with each other, the DC offset alteration can be resolved in one step, thereby reducing cost and complexity significantly. The decision was therefore made to use a differential amplifier, with the input signal connected to the positive input, after which the voltage required at the negative input can be calculated in such a way as to simultaneously subtract the offset and add the virtual ground in one step, thereby producing an output DC offset of \SI{2.5}{\volt}.  This approach also simplifies the design procedure, as it becomes unnecessary to calculate the virtual ground separately (the lecturer mentions that this is an acceptable approach in Lecture Video 2, minute 11\cite{vground}; this removes the need to perform any virtual ground calculations per se - feel free to double-check with the lecturer). The differential amplifier, however, has to be non-inverting. The calculation thus reduces to a simple differential amplifier gain formula \cite{opamp}: 
+\noindent\begin{minipage}{.5\linewidth}
+\vspace{-0.35cm}
+\begin{equation}
+    y_1 = 1.66\sin(2\pi(2.5)t_1) + 2.5
+    \label{eq:sin1}
+\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+\vspace{-0.35cm}
+\begin{equation}
+    y_2 = 1.66\sin(2\pi(2.5)t_2) + 2.5
+    \label{eq:sin2}
+\end{equation}
+\end{minipage}
 
-$$V_{out}=\frac{{R}_{feedback}}{{R}}\left({V}_{in+}-{V}_{in-}\right) \;\;\; \rightarrow \;\;\; 2.5=\frac{178600}{10000}\left(1.77-{V}_{in-}\right)$$
+Subtracting \ref{eq:sin2} from \ref{eq:sin1} yields $y_1 - y_2 = w_h =$ \SI{0.52}{V} for $t_1 =$\SI{0.01}{s} and $t_2 =$ \SI{.
+21}{s}, resulting in a theoretical pulse width ranging from \numrange{0.2}{0.625} \si{ms}, which is sufficient. $w_h$ also is an order of magnitude larger than the highest input signal noise levels, increasing design fidelity.  Now, UTP = \SI{2.75}{V}, LTP = \SI{2.25}{V}, UTP = $V_{REF} + \beta Vcc$ and LTP = $V_{REF} - \beta Vcc$, thus $\beta$ = 0.05 \cite{schmitt}. Further, $\beta=\frac{\mathrm{R}_{22}}{\mathrm{R}_{22}+\mathrm{R}_{21}}$. Thus R21 = \SI{190}{k\Omega} and R22 = \SI{10}{k\Omega}. (R21 was adjusted to \SI{100}{k\Omega} to account for loading effects). A one-shot was considered to extend the pulses, but was omitted as it was superfluous. The pulse output frequency thus represents the heart-rate.\\
 
-With $V_{out}$ as \SI{2.5}{\volt}, $V_{in+}$ as \SI{1.77}{\volt} and the resistor values as calculated previously, ${V}_{in-} = 1.63 \; \mathrm{V}$. The voltage at ${V}_{in-}$ can be set by means of a voltage divider circuit, which takes \SI{5}{\volt} as input and is calculated as follows (resistor names in formulae are selected to conform with Figure \ref{fig:final}): ${V}_{in-} = 5 (\frac{R_{6}}{R_{6}\times R_{5}})$. Selecting $R_5$ as \SI{10}{\kilo \Omega} gives $R_6 =$ \SI{4.84}{\kilo \Omega}. Here, the common-mode voltage, $V_{IC}$, needs consideration; the TLC2272 can operate with a common-mode voltage of $V_{DD-}$ to $V_{DD+} - 1.5$\cite{tlc}. Since $V_{{in+}_{max}}$ is \SI{1.91}{\volt} and $V_{in-}$ is \SI{1.63}{\volt}, the largest possible common mode voltage is $V_{IC} = \frac{1.91 + 1.63}{2} =$ \SI{1.77}{\volt}, which is well below the maximum limit. Since $V_{in-}$ stays constant, the lower limit will never be reached either.\\
+Obtaining an output suitable for a microcontroller presents itself as a problem of converting frequency to analogue. The decision was made to obtain a PWM signal from the FM pulse signal, as PWM signals readily lend themselves to conversion-to-analogue using a simple low-pass RC filter. Pulse-width modulation was achieved by means of a D flip-flop. The essence of the design is to firstly keep the output high continually, but to then drive the output low for a fixed time, once per period. Since the period of the clock signal varies against BPM, driving low for a fixed amount of time results in a different ratio of the pulse being low at different frequencies, producing a varying duty cycle. Specifically, the previously generated pulse signal is used as a clock signal for the D flip-flop, and the not-Q output is fed back into the data line. This would normally drive the output high for all time $t$; thus a RC circuit is added of which the capacitor is charged by the not-Q output, and connected to the SET-line of the flip-flop. Once the capacitor charges to \SI{2.5}{V}, Q is pulled high and not-Q low until the next rising edge of the clock input inverts Q and not-Q. The result is a slightly delayed PWM signal, with a large duty cycle at high frequencies, and vice-versa. The result is a consistent PWM output, as long as the capacitor charge time is selected to be shorter than the narrowest pulse of the clock signal. See section \ref{sec:heartResults}, figure \ref{subfig:pwm} for output. Calculations follow. R1 = \SI{500}{k\Omega} gives $C = 1\mu$, according to the capacitor charge/discharge exponential equations - the extended solution (via Matlab scripting) is given in Appendix C for the sake of brevity. Having obtained a PWM signal, a fourth order passive low-pass filter produces analogue values in the range of \numrange{0.95}{1.2} \si{V}. A cutoff frequency of \SI{0.5}{Hz} ensures maximal attenuation of noise while maintaining a 5\% settling time of 10 seconds. Therefore R = \SI{500}{k\Omega} and C = \SI{1}{\mu}. Finally, the analogue output is amplified by means of a TLC2272 differential amplifier with a negative input at \SI{0.938}{V}. A gain of 20 produces a sufficient output range. Resistor values were increased as to minimize loading effects - thus R2 = R12 = \SI{900}{k\Omega} and R11 = R13 = \SI{45}{k\Omega} according to $\mathrm{V}_{\mathrm{OUT}}=\frac{\mathrm{R}_{a}}{\mathrm{R}_{b}}\left(\mathrm{V}_{2}-\mathrm{V}_{1}\right)$ \cite{opamp}. Loading effects still had a slight effect, and required adapting R11 and R13 to \SI{41}{k\Omega}. An analogue transducer is thus designed. For microcontroller integration, a log-linear scale can linearise the analogue output, and the calibration constant is calculated. The slope is $\frac{0.8-2.5}{4.7-0.5} = -0.404$. Thus, for 150 BPM, $f = 2.5 = -0.404V + C = -0.404(0.5) + C \;\;\; \rightarrow \;\;\; C = 2.702$.\\
+Total current is calculated using \SI{1.4}{mA} per TL081 \cite{tl081}, \SI{2.2}{mA} per TLC2272 \cite{tlc2272} and \SI{110}{\mu A} per LT1018 \cite{lt1018}. Non-trivial resistors are all approximated using \SI{5}{V} over, as to err on the side of caution: $4(1.4m) + (2.2m) + (110n) + 16\left(\frac{5}{500k}\right) + 3\left(\frac{5}{10k}\right) +
+ 2\left(\frac{5}{41k}\right) + \left(\frac{5}{100k}\right) =$ \SI{9.75}{mA}. Voltage regulator current is considered in E344 Assignment 1 \cite{prev}. $100m - 9.75m - 11.39m$ leaves \SI{78.86}{mA} for Assignment 3.
 
-Simulation was used to select a filter, and has shown the following: the RC filter is very simple, but produces too much noise. The passive low-pass filter is relatively simple, but does not meet the settling time requirement. The active low-pass filter meets both the noise and settling time requirements, but requires the TLC2272 op-amp to do so. Since a single TLC2272 op-amp is more expensive than multiple TL081 op-amps, the decision was made to rather use cascaded second order low-pass filters, which  make use of the TL081. This is somewhat more complex, but lowers the cost, as the final circuit now only uses three op-amps, two of which are the cheaper TL081 models. The cascaded setup also produces an output signal with extremely low noise.  A filter gain of close to unity is desired; for $R_A = $ \SI{500}{\kilo\Omega}, a value of \SI{5}{\kilo\Omega} is suitable for $R_A$, according to the formula\cite{filter}: ${A_v}=1+\frac{{R}_A}{R_B}$
-
-The settling time requirement of \SI{100}{ms} means that a cutoff frequency of more than \SI{10}{Hz} is needed, while the attenuation of noise requires a cutoff frequency below \SI{50}{Hz}. $f_c = $ \SI{15}{Hz} was chosen - the bandwidth thus also is \SI{15}{Hz}. Choosing R ($\mathrm{R_7 \; and \; R_9}$ in the diagram) as \SI{100}{\kilo\Omega} gives C ($\mathrm{C_4 \; and \; C_5}$) as \SI{106.1}{nF}, according to $f_c=\frac{1}{2 \pi RC}$. The given cutoff frequency implies a rise time of \SI{19.1}{ms} according to $t_{r} \approx \frac{1.8}{w_{n}} = \frac{1.8}{2 \pi (15)}$\cite{cs}. This meets the requirement of \SI{100}{ms}. After design completion, this filter is then duplicated and connected back-to-back in order to form cascaded second-order low-pass filters, as seen in figure \ref{fig:final}.\\
-
-Using the assumption that each resistor is subjected to an average voltage of \SI{2.5}{\volt}, while the op-amp draws 3 mA\cite{tlc}, the total temperature sensor current consumption is: 
-
-$I_{temp} = (2)\frac{2.5}{10k} + (2)\frac{2.5}{178.6k} + 3mA = 3.53mA$
-
-and the calculated current for the total circuit is:
-
-$I_{total} = (3)\frac{2.5}{10k} + (2)\frac{2.5}{178.6k} + (4)\frac{2.5}{100k} + (2)\frac{2.5}{500k} + (3)\frac{2.5}{5k} + (2)\frac{2.5}{178.6k} + (3)3mA = 11.39mA$
-
- 
 %**********************************************
-\section{Results} \label{sec:temp_results}
+\section{Results} \label{sec:heartResults}
 %**********************************************
-The designed circuit receives an input signal ranging from 1.67 to \SI{1.94}{\volt} for $V_{in+}$, which is somewhat higher than the calculated values of 1.63 to \SI{1.91}{\volt}, and is due to the filter adding some offset. This can easily be overcome by adjusting the voltage divider. $V_{in-}$ receives \SI{1.7}{\volt}. Both $V_{in-}$ and $V_{in+}$ thus fall well within the allowable range for the TLC2272, which is from $\mathrm{V}_{\mathrm{DD}-}-0.3 \;\; \mathrm{to} \;\; \mathrm{V}_{\mathrm{DD}+}$\cite{tlc}.  The circuit produces a signal centered at \SI{2.5}{\volt} with an output swing of \SI{4.86}{\volt} (figure \ref{subfig:vout}), exceeding the required \SI{3.5}{\volt}. The absolute maximum amount of noise measured is \SI{25.6}{\milli\volt} (figure \ref{subfig:noise}), and the settling time is \SI{67}{ms} (figure \ref{subfig:ts}), thereby meeting the requirements of \SI{50}{\milli\volt} and \SI{100}{ms} respectively. Total current draw is \SI{12.83}{mA} (figure \ref{subfig:current}), well below the required \SI{15}{mA}, and very close to the calculated \SI{11.39}{mA}. The cutoff frequency, obtained via AC analysis simulation, is \SI{10.48}{Hz} (figure \ref{fig:ac}). Measurements and graphs of settling time, cutoff frequency and current drawn can be seen in Appendix C. It is thus clear that all requirements, as well as all bonus requirements, have been met with a good margin to spare, all the while using only three op-amps, two of which are the cheaper TL081 models. The output signal (light blue) is shown in figure \ref{subfig:vout}.
+
+\begin{wrapfigure}{r}{0.38\textwidth}
+\centering
+\vspace{-.8cm}
+\includegraphics[width=0.38\textwidth]{./Figures/filtout}
+%\vspace*{1mm}
+\caption{Filter input and output}
+\label{fig:filtout}
+\end{wrapfigure}
+
+The frequency response of the high- and low-pass filters gives $-3dB$ at \SI{0.61}{Hz} and $-6dB$ at \SI{4.3}{Hz} respectively - see figures \ref{subfig:hpf} and \ref{subfig:lpf1}. This reflects design calculations near perfectly. Comparison of filter input and output in figure \ref{fig:filtout} shows a drastic noise reduction.
+\pagebreak
 
 \begin{figure}[h]
  \footnotesize
- \centering
-    \begin{subfigure}[]{0.45\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/vout}
-		    \caption{Full Input and Output Range} \label{subfig:vout}
-     \end{subfigure}
-     \begin{subfigure}[]{0.45\textwidth}
-             \centering
-  		\includegraphics[width=1.0\linewidth]{./Figures/current}
-		   \caption{Total Current of Entire System} \label{subfig:current}
-     \end{subfigure}
-    \begin{subfigure}[]{0.45\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/noise}
-		    \caption{Simulated Noise Suppresion} \label{subfig:noise}
-     \end{subfigure}
-    \begin{subfigure}[]{0.45\textwidth}
-              \centering
-  		\includegraphics[width=1\linewidth]{./Figures/ts}
-		    \caption{Simulated Output Rise Time} \label{subfig:ts}
-     \end{subfigure}
-   \caption[\textcolor{red}{Complete Circuit Output}]{Complete Circuit Output (a) Output Range: 0.1 to 4.85V. Input Range: 1.63 to 1.94 V. (b)  Current draw below requirement.  (c)  Noise suppressed to negligible levels. (d) Settling time within 100 ms.}
-    \label{fig:simulation_results_box}
+   \centering
+   \begin{subfigure}[]{0.48\textwidth}
+        \includegraphics[width=\linewidth]{./Figures/hpf}
+	  \caption{High-pass filter} \label{subfig:hpf}	
+   \end{subfigure}
+   \begin{subfigure}[]{0.48\textwidth}
+  	 \includegraphics[width=\linewidth]{./Figures/lpf1}
+	  \caption{Second-order low-pass filter} \label{subfig:lpf1}	
+   \end{subfigure}
+   \caption {Frequency response of filters}
+   \label{fig:freqreq}
  \end{figure}
+
+The filtered signal is passed through a differential amplifier; the input is shown in blue and the output in red in figure \ref{subfig:amplified}. The filtered signal has a \SI{50}{mV} amplitude (peak-to-peak), and the output \SI{1.747}{V}. Therefore $A_v \approx 35$, which, although smaller than calculated, is to be expected due to non-linear behaviour for high amplification factors. Input and output of a LT1018 comparator, used for thresholding, is shown in figure \ref{subfig:pulses}.  See UTP = \SI{2.75}{V} and LTP = {2.25}{V} in figure \ref{subfig:pulses}, giving a hysteresis width of \SI{0.5}{V}, exactly as calculated.
+
+\begin{figure}[h]
+ \footnotesize
+   \centering
+   \begin{subfigure}[]{0.49\textwidth}
+        \includegraphics[width=\linewidth]{./Figures/amplified}
+	  \caption{Amplification of filtered signal} \label{subfig:amplified}	
+   \end{subfigure}
+   \begin{subfigure}[]{0.49\textwidth}
+  	 \includegraphics[width=\linewidth]{./Figures/pulses}
+	  \caption{Thresholding} \label{subfig:pulses}	
+   \end{subfigure}
+   \caption{Signal Conditioning}
+ \end{figure}
+ 
+The output ranges from \numrange{0.026}{4.95}\si{V}, with a pulse duration in range \numrange{189}{584} \si{ms} in figures \ref{subfig:pulses2} and \ref{subfig:pulses1}, meeting the \SI{150}{ms} requirement. The design remains consistent for specification deviations of $\pm 10\%$ amplitude and a DC offset variation of $\pm$ \SI{0.2}{V}, as the high-pass filter removes the DC component and the filter has a cutoff frequency low enough to greatly attenuate noise.
+
+\begin{figure}[h]
+ \footnotesize
+   \centering
+   \begin{subfigure}[]{0.49\textwidth} 	 
+  	 \includegraphics[width=\linewidth]{./Figures/pulses2}
+	  \caption{150 BPM} 
+	  \label{subfig:pulses2}	
+   \end{subfigure}
+   \begin{subfigure}[]{0.49\textwidth}
+        \includegraphics[width=\linewidth]{./Figures/pulses1}
+	  \caption{50 BPM} 
+	  \label{subfig:pulses1}	
+   \end{subfigure}
+   \caption{Full input versus output range}
+ \end{figure}
+
+\pagebreak
+For the analogue transducer, a PWM signal is obtained. Section \ref{sec:heartDesign} explains the interrelation, where \texttt{voutbeatpulses, pwm} and \texttt{rc} in figure \ref{subfig:pwm} correspond to the clock signal, Q, and the charging capacitor voltage respectively. The 5\% settling time is \SI{9.45}{s}. The duty cycle is 73\% at 60 BPM and decreases to 56\% at 150 BPM. Finally, amplification and filtering of the PWM signal produces analogue output, range \SI{4.2}{V} (\ref{subfig:analog}).
+
+\begin{figure}[h]
+ \footnotesize
+   \centering
+   \begin{subfigure}[]{0.57\textwidth}
+        \includegraphics[width=\linewidth]{./Figures/pwm}
+	  \caption{PWM and settling time} 
+	  \label{subfig:pwm}	
+   \end{subfigure}
+   \begin{subfigure}[]{0.41\textwidth}
+  	 \includegraphics[width=\linewidth]{./Figures/analog}
+	  \caption{Analogue voltage output} 
+	  \label{subfig:analog}	
+   \end{subfigure}
+ \end{figure}
+
+\begin{wrapfigure}{r}{0.55\textwidth}
+\centering
+\vspace{-0.3cm}
+\includegraphics[width=0.55\textwidth]{./Figures/current}
+\caption{Total current usage}
+\label{fig:current}
+\end{wrapfigure}
+In figure \ref{fig:current}, total current draw is measured through R\textsubscript{sense}, averaging \SI{13.0}{mA}, meeting the bonus requirement of \SI{15}{mA}. When combined with Assignment 1, the combined current of \SI{25.8}{mA} still is far less than the maximum current rating of \SI{100}{mA} for the voltage regulator \cite{prev}. 
 
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-Concluding, the circuit performs very well, and successfully amplifies the temperature sensor output to a level that is readable by the microcontroller ADC, all the while attenuating almost all noise present in the input. The design is somewhat complex, but also cheaper, as it uses less of the TLC2272 op-amps. It meets all requirements and bonus requirements.
-
+Concluding, it has been shown that the design performs as expected, meeting the all requirements. Output pulse width is broader than required, analogue output is generated with discrete, non-overlapping values exceeding the required range, while settling to a final value according to specification.  Current draw remains sub-\SI{15}{mA}. Upon implementation of the microcontroller, be cognizant of the fact that analogue output values scale in a slightly non-linear fashion. This is not a problem, as it can be easily accounted for in software. By design, the system is limited to the 50 to 150 BPM range, but could be expanded using the existing design as a proof-of-concept. 
 

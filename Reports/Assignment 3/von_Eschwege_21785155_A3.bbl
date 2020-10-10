@@ -21,14 +21,13 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{prev}
-D.~von Eschwege, ``asassas,'' 2020.
+\bibitem{lm7805}
+\emph{LM78LXXA 3-Terminal 0.1 A Positive Voltage Regulator}, LM7805 Datasheet,
+  Fairchild Semiconductor Corporation, 2013.
 
-\bibitem{actpas}
-\BIBentryALTinterwordspacing
-``Difference between active and passive filter.'' [Online]. Available:
-  \url{https://circuitglobe.com/difference-between-active-and-passive-filter.html#ComparisonChart}
-\BIBentrySTDinterwordspacing
+\bibitem{lm2595}
+\emph{LM2595 SIMPLE SWITCHER® Power Converter 150-kHz 1-A Step-Down Voltage
+  Regulator}, LM2595 Datasheet, Texas Instruments, May 2016.
 
 \bibitem{opamp}
 \BIBentryALTinterwordspacing
@@ -36,9 +35,37 @@ W.~Storr, ``Operational amplifiers,'' 2018. [Online]. Available:
   \url{https://www.electronics-tutorials.ws/opamp}
 \BIBentrySTDinterwordspacing
 
+\bibitem{vground}
+\BIBentryALTinterwordspacing
+M.~J. {Booysen}, ``E344 - lecture 2,'' 2020. [Online]. Available:
+  \url{https://www.youtube.com/watch?v=5bzHyeFQCPo&feature=youtu.be}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tlc2272}
+\emph{TLC227x: Advanced LinCMOS Rail-to-Rail Operational Amplifiers}, TL2272
+  Datasheet, Texas Instruments, 2016.
+
+\bibitem{filter}
+\BIBentryALTinterwordspacing
+W.~Storr, ``Filters,'' 2018. [Online]. Available:
+  \url{https://www.electronics-tutorials.ws/filter}
+\BIBentrySTDinterwordspacing
+
+\bibitem{cs}
+\BIBentryALTinterwordspacing
+H.~Jordaan, ``Control systems - 314,'' 2020. [Online]. Available:
+  \url{https://learn.sun.ac.za/course/view.php?id=53481}
+\BIBentrySTDinterwordspacing
+
+\bibitem{actpas}
+\BIBentryALTinterwordspacing
+``Difference between active and passive filter.'' [Online]. Available:
+  \url{https://circuitglobe.com/difference-between-active-and-passive-filter.html#ComparisonChart}
+\BIBentrySTDinterwordspacing
+
 \bibitem{schmitt}
 \BIBentryALTinterwordspacing
-------, ``Op-amp comparator,'' 2018. [Online]. Available:
+W.~Storr, ``Op-amp comparator,'' 2018. [Online]. Available:
   \url{https://www.electronics-tutorials.ws/opamp/op-amp-comparator.html}
 \BIBentrySTDinterwordspacing
 
@@ -48,10 +75,6 @@ W.~Storr, ``Operational amplifiers,'' 2018. [Online]. Available:
   \url{https://www.instructables.com/id/Analog-Output-Convert-PWM-to-Voltage/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{tlc2272}
-\emph{TLC227x: Advanced LinCMOS Rail-to-Rail Operational Amplifiers}, TL2272
-  Datasheet, Texas Instruments, 2016.
-
 \bibitem{tl081}
 \emph{TL08xx: JFET-Input Operational Amplifiers}, TL081 Datasheet, Texas
   Instruments, May 2015.
@@ -59,12 +82,6 @@ W.~Storr, ``Operational amplifiers,'' 2018. [Online]. Available:
 \bibitem{octo}
 \BIBentryALTinterwordspacing
 ``Octopart,'' Octopart, 2020. [Online]. Available: \url{https://octopart.com/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{filter}
-\BIBentryALTinterwordspacing
-W.~Storr, ``Filters,'' 2018. [Online]. Available:
-  \url{https://www.electronics-tutorials.ws/filter}
 \BIBentrySTDinterwordspacing
 
 \bibitem{lt1018}
