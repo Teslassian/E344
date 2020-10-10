@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  29 SEP 2020 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  3 OCT 2020 22:55
 entering extended mode
 **./e344_A1_report.tex
 (e344_A1_report.tex
@@ -637,7 +637,8 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 
 LaTeX Warning: Label `sec:temp_summary' multiply defined.
 
-) (Chapter4.aux) (App-A.aux) (App-B.aux) (App-C.aux))
+) (Chapter4.aux) (Chapter5.aux) (Chapter6.aux) (Chapter7.aux) (Chapter8.aux)
+(App-A.aux) (App-B.aux) (App-C.aux))
 \openout1 = `e344_A1_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -1154,10 +1155,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 16902 strings out of 480790
- 299126 string characters out of 2907055
- 705434 words of memory out of 3000000
- 32306 multiletter control sequences out of 15000+200000
+ 16922 strings out of 480790
+ 299690 string characters out of 2907055
+ 707782 words of memory out of 3000000
+ 32314 multiletter control sequences out of 15000+200000
  624202 words of font info for 132 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,13n,46p,1842b,853s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1178,7 +1179,7 @@ b><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on e344_A1_report.pdf (21 pages, 1453430 bytes).
+Output written on e344_A1_report.pdf (21 pages, 1452933 bytes).
 PDF statistics:
  507 PDF objects out of 1000 (max. 8388607)
  73 named destinations out of 1000 (max. 500000)

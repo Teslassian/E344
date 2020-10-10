@@ -2,14 +2,28 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces System Diagram\relax }}{1}{figure.caption.5}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Complete Circuit\relax }}{2}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Fast fourier transform of stimulus\relax }}{3}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Filter input and output\relax }}{4}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Frequency response of filters\relax }}{5}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Signal Conditioning\relax }}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Full input versus output range\relax }}{5}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Total current usage\relax }}{6}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Linear Voltage Regulator\relax }}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Switchmode Voltage Regulator\relax }}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Switchmode Voltage Regulator Noise\relax }}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Linear Voltage Regulator Output\relax }}{5}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Switchmode Voltage Regulator Output\relax }}{5}{figure.caption.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Temperature Sensor Circuit\relax }}{7}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \leavevmode {\color {red}Complete Circuit Output}}}{9}{figure.caption.14}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Complete Circuit\relax }}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Fast fourier transform of stimulus\relax }}{11}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Filter input and output\relax }}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Frequency response of filters\relax }}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Signal Conditioning\relax }}{13}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Full input versus output range\relax }}{13}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Total current usage\relax }}{14}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Settling Time Measurement\relax }}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Cutoff Frequency Measurement\relax }}{22}{figure.caption.27}%

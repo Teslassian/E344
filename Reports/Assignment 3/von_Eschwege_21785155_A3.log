@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  3 OCT 2020 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  10 OCT 2020 19:45
 entering extended mode
 **./von_Eschwege_21785155_A3.tex
 (von_Eschwege_21785155_A3.tex
@@ -493,6 +493,9 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \colbreak@box=\box106
 \mc@col@check@num=\count302
 )
+("C:\Program Files\MiKTeX\tex/latex/was\gensymb.sty"
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
 ("C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen197
@@ -667,7 +670,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip77
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 95.
+Package hyperref Info: Option `colorlinks' set `true' on input line 96.
 
 ("C:\Program Files\MiKTeX\tex/latex/tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -704,30 +707,37 @@ Package: cite 2015/02/27  v 5.5
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count328
 )
-(von_Eschwege_21785155_A3.aux (Chapter1.aux) (Chapter2.aux) (Chapter3.aux)
-(App-A.aux) (App-B.aux) (App-C.aux))
+(von_Eschwege_21785155_A3.aux (Chapter1.aux) (Chapter3.aux) (Chapter4.aux
+
+LaTeX Warning: Label `sec:temp_summary' multiply defined.
+
+) (Chapter5.aux
+
+LaTeX Warning: Label `sec:temp_summary' multiply defined.
+
+) (Chapter6.aux) (Chapter7.aux) (Chapter8.aux) (App-A.aux) (App-B.aux)
+(App-C.aux) (App-D.aux))
 \openout1 = `von_Eschwege_21785155_A3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
-LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-16.
-
-("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd"
+17.
+ ("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -797,14 +807,14 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \microtypecontext on input line 116.
+LaTeX Info: Redefining \microtypecontext on input line 117.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 116.
+LaTeX Info: Redefining \showhyphens on input line 117.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -819,8 +829,20 @@ Dictionary: translator-basic-dictionary, Language: English
 ) ("C:\Program Files\MiKTeX\tex/latex/siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-Package hyperref Info: Link coloring ON on input line 116.
- ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
+LaTeX Info: Redefining \celsius on input line 117.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 117
+.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 117.
+Package gensymb Info: Using \Omega for \ohm on input line 117.
+
+Package gensymb Warning: Not defining \micro.
+
+Package hyperref Info: Link coloring ON on input line 117.
+("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty"
@@ -831,39 +853,39 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 116.
-LaTeX Info: Redefining \pageref on input line 116.
-LaTeX Info: Redefining \nameref on input line 116.
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
 
 (von_Eschwege_21785155_A3.out) (von_Eschwege_21785155_A3.out)
 \@outlinefile=\write3
 \openout3 = `von_Eschwege_21785155_A3.out'.
 
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-16.
+17.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-116.
+117.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-116.
+117.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 116.
+(Font)              <12> on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 116.
+(Font)              <8> on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 116.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 116
+(Font)              <6> on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 117
 .
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
@@ -872,7 +894,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 116
+LaTeX Font Info:    Trying to load font information for U+msb on input line 117
 .
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
@@ -882,7 +904,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-116.
+117.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -892,7 +914,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-116.
+117.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -903,7 +925,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 (frontmatter/skripsie_title_page.tex
-<USlogo-top.pdf, id=71, 560.0925pt x 183.68625pt>
+<USlogo-top.pdf, id=143, 560.0925pt x 183.68625pt>
 File: USlogo-top.pdf Graphic file (type pdf)
 <use USlogo-top.pdf>
 Package pdftex.def Info: USlogo-top.pdf  used on input line 7.
@@ -924,201 +946,350 @@ File: frontmatter/fig/Signature.png Graphic file (type png)
 <use frontmatter/fig/Signature.png>
 Package pdftex.def Info: frontmatter/fig/Signature.png  used on input line 43.
 (pdftex.def)             Requested size: 90.38861pt x 42.67912pt.
-) [1 <./frontmatter/fig/Signature.png>] (von_Eschwege_21785155_A3.toc)
+) [1 <./frontmatter/fig/Signature.png>] (von_Eschwege_21785155_A3.toc [2
+
+])
 \tf@toc=\write4
 \openout4 = `von_Eschwege_21785155_A3.toc'.
 
- [2
-
-] (von_Eschwege_21785155_A3.lof)
+ [3] (von_Eschwege_21785155_A3.lof)
 \tf@lof=\write5
 \openout5 = `von_Eschwege_21785155_A3.lof'.
 
- [3
 
-]
-(von_Eschwege_21785155_A3.lot)
+[4
+
+] (von_Eschwege_21785155_A3.lot)
 \tf@lot=\write6
 \openout6 = `von_Eschwege_21785155_A3.lot'.
 
- (frontmatter/nomenclature.tex [4
+ (frontmatter/nomenclature.tex [5
 
-] [5
+] [6
 
-]) [6]
+])
+[7]
 \openout2 = `Chapter1.aux'.
 
-
-(Chapter1.tex
+ (Chapter1.tex
 Chapter 1.
-<Figures/overview.png, id=182, 1647.15375pt x 566.115pt>
+<Figures/overview.png, id=327, 1701.35625pt x 1330.9725pt>
 File: Figures/overview.png Graphic file (type png)
 <use Figures/overview.png>
 Package pdftex.def Info: Figures/overview.png  used on input line 8.
-(pdftex.def)             Requested size: 425.08147pt x 146.098pt.
+(pdftex.def)             Requested size: 472.31595pt x 369.48125pt.
 
-LaTeX Warning: Citation `prev' on page 1 undefined on input line 13.
-
-
-LaTeX Warning: Citation `prev' on page 1 undefined on input line 13.
-
-) [1
-
-
- <./Figures/overview.png>]
-\openout2 = `Chapter2.aux'.
-
- (Chapter2.tex
-Chapter 2.
-
-LaTeX Warning: Citation `actpas' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `opamp' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `schmitt' on page 2 undefined on input line 7.
-
-
-LaTeX Warning: Citation `PWM' on page 2 undefined on input line 7.
-
-<Figures/circuit.png, id=192, 1349.79282pt x 524.71031pt>
-File: Figures/circuit.png Graphic file (type png)
-<use Figures/circuit.png>
-Package pdftex.def Info: Figures/circuit.png  used on input line 15.
-(pdftex.def)             Requested size: 472.31595pt x 183.60332pt.
-
-LaTeX Warning: Citation `tlc2272' on page 2 undefined on input line 20.
-
-
-LaTeX Warning: Citation `tl081' on page 2 undefined on input line 20.
-
-<./Figures/fft.png, id=195, 429.10312pt x 225.09094pt>
-File: ./Figures/fft.png Graphic file (type png)
-<use ./Figures/fft.png>
-Package pdftex.def Info: ./Figures/fft.png  used on input line 25.
-(pdftex.def)             Requested size: 207.82016pt x 109.0144pt.
-[2
-
-
-
- <./Figures/circuit.png>]
-
-LaTeX Warning: Citation `octo' on page 3 undefined on input line 30.
-
-
-LaTeX Warning: Citation `filter' on page 3 undefined on input line 31.
-
-
-LaTeX Warning: Citation `opamp' on page 3 undefined on input line 31.
-
-
-LaTeX Warning: Citation `schmitt' on page 3 undefined on input line 31.
-
-
-LaTeX Warning: Citation `schmitt' on page 3 undefined on input line 31.
-
-
-LaTeX Warning: Citation `schmitt' on page 3 undefined on input line 49.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-LaTeX Warning: Citation `opamp' on page 3 undefined on input line 51.
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+[1
 
 
-LaTeX Warning: Citation `tl081' on page 3 undefined on input line 52.
+ <./Figures/overview.png>]) [2]
+\openout2 = `Chapter3.aux'.
+
+ (Chapter3.tex
+Chapter 2.
+
+LaTeX Warning: Citation `lm7805' on page 3 undefined on input line 8.
 
 
-LaTeX Warning: Citation `tlc2272' on page 3 undefined on input line 52.
+LaTeX Warning: Citation `lm2595' on page 3 undefined on input line 8.
 
 
-LaTeX Warning: Citation `lt1018' on page 3 undefined on input line 52.
+
+pdfTeX warning: pdflatex (file ./Figures/LR.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
+<Figures/LR.pdf, id=344, 438.1971pt x 176.45926pt>
+File: Figures/LR.pdf Graphic file (type pdf)
+<use Figures/LR.pdf>
+Package pdftex.def Info: Figures/LR.pdf  used on input line 17.
+(pdftex.def)             Requested size: 226.70963pt x 91.29622pt.
+
+LaTeX Warning: Citation `lm7805' on page 3 undefined on input line 22.
 
 
-LaTeX Warning: Citation `prev' on page 3 undefined on input line 53.
+Underfull \hbox (badness 1442) in paragraph at lines 22--23
+[]\OT1/lmr/m/n/12 (+20) The LM7805 chip and its re-quired pe-
+ []
 
-[3 <./Figures/fft.png>]
-<./Figures/filtout.png, id=215, 403.5075pt x 142.28156pt>
+
+Underfull \hbox (badness 1377) in paragraph at lines 22--23
+\OT1/lmr/m/n/12 (+20) riph-eral cir-cuit is shown in Fig-ure [][]2.1[][].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+LaTeX Warning: Citation `lm2595' on page 3 undefined on input line 24.
+
+[3
+
+
+
+ <./Figures/LR.pdf>]
+
+pdfTeX warning: pdflatex (file ./Figures/SM.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
+<Figures/SM.pdf, id=366, 441.69016pt x 187.29976pt>
+File: Figures/SM.pdf Graphic file (type pdf)
+<use Figures/SM.pdf>
+Package pdftex.def Info: Figures/SM.pdf  used on input line 35.
+(pdftex.def)             Requested size: 330.61972pt x 140.20009pt.
+
+Underfull \hbox (badness 1009) in paragraph at lines 41--42
+\OT1/lmr/m/n/12 (+20) and the volt-age reg-u-la-
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+[][]\OT1/lmr/m/n/12 (+20) Furthermore, the
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 64--65
+\OT1/lmr/m/n/12 (+20) cre-ates noise lev-els
+ []
+
+<Figures/smnoise.png, id=370, 1427.3325pt x 328.97906pt>
+File: Figures/smnoise.png Graphic file (type png)
+<use Figures/smnoise.png>
+Package pdftex.def Info: Figures/smnoise.png  used on input line 68.
+(pdftex.def)             Requested size: 472.31595pt x 108.85959pt.
+<Figures/lmout.png, id=374, 620.3175pt x 150.5625pt>
+File: Figures/lmout.png Graphic file (type png)
+<use Figures/lmout.png>
+Package pdftex.def Info: Figures/lmout.png  used on input line 78.
+(pdftex.def)             Requested size: 472.31595pt x 114.64003pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/smout.png, id=375, 616.55344pt x 151.3153pt>
+File: Figures/smout.png Graphic file (type png)
+<use Figures/smout.png>
+Package pdftex.def Info: Figures/smout.png  used on input line 85.
+(pdftex.def)             Requested size: 472.31595pt x 115.91975pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./Figures/SM.pdf> <./Figures/smnoise.png>]) [5 <./Figures/lmout.png> <./Fig
+ures/smout.png>]
+\openout2 = `Chapter4.aux'.
+
+ (Chapter4.tex
+Chapter 3.
+
+Underfull \hbox (badness 2245) in paragraph at lines 29--30
+[][]\OT1/lmr/m/n/12 (+20) input volt-age swing equals
+ []
+
+[6
+
+
+
+]
+<Figures/final.png, id=412, 1358.82657pt x 613.54219pt>
+File: Figures/final.png Graphic file (type png)
+<use Figures/final.png>
+Package pdftex.def Info: Figures/final.png  used on input line 37.
+(pdftex.def)             Requested size: 472.31595pt x 213.25444pt.
+
+
+LaTeX Warning: Citation `vground' on page 7 undefined on input line 48.
+
+
+LaTeX Warning: Citation `tlc' on page 7 undefined on input line 52.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[7 <./Figures/final.png>]
+
+LaTeX Warning: Citation `cs' on page 8 undefined on input line 56.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+LaTeX Warning: Citation `tlc' on page 8 undefined on input line 58.
+
+
+LaTeX Warning: Citation `tlc' on page 8 undefined on input line 70.
+
+[8]
+<./Figures/vout.png, id=438, 496.85625pt x 306.39468pt>
+File: ./Figures/vout.png Graphic file (type png)
+<use ./Figures/vout.png>
+Package pdftex.def Info: ./Figures/vout.png  used on input line 77.
+(pdftex.def)             Requested size: 212.54073pt x 131.06924pt.
+<./Figures/current.png, id=439, 327.47343pt x 100.87688pt>
+File: ./Figures/current.png Graphic file (type png)
+<use ./Figures/current.png>
+Package pdftex.def Info: ./Figures/current.png  used on input line 82.
+(pdftex.def)             Requested size: 212.54073pt x 65.4722pt.
+<./Figures/noise.png, id=440, 424.58624pt x 304.88907pt>
+File: ./Figures/noise.png Graphic file (type png)
+<use ./Figures/noise.png>
+Package pdftex.def Info: ./Figures/noise.png  used on input line 87.
+(pdftex.def)             Requested size: 212.54073pt x 152.62094pt.
+<./Figures/ts.png, id=441, 490.08093pt x 363.60844pt>
+File: ./Figures/ts.png Graphic file (type png)
+<use ./Figures/ts.png>
+Package pdftex.def Info: ./Figures/ts.png  used on input line 92.
+(pdftex.def)             Requested size: 212.54073pt x 157.69124pt.
+) [9 <./Figures/vout.png> <./Figures/current.png> <./Figures/noise.png> <./Figu
+res/ts.png>]
+\openout2 = `Chapter5.aux'.
+
+ (Chapter5.tex
+Chapter 4.
+<Figures/circuit.png, id=453, 1349.79282pt x 524.71031pt>
+File: Figures/circuit.png Graphic file (type png)
+<use Figures/circuit.png>
+Package pdftex.def Info: Figures/circuit.png  used on input line 15.
+(pdftex.def)             Requested size: 472.31595pt x 183.60332pt.
+<./Figures/fft.png, id=458, 429.10312pt x 225.09094pt>
+File: ./Figures/fft.png Graphic file (type png)
+<use ./Figures/fft.png>
+Package pdftex.def Info: ./Figures/fft.png  used on input line 25.
+(pdftex.def)             Requested size: 207.82016pt x 109.0144pt.
+[10
+
+
+
+ <./Figures/circuit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
+ []
+
+[11 <./Figures/fft.png>]
+<./Figures/filtout.png, id=491, 403.5075pt x 142.28156pt>
 File: ./Figures/filtout.png Graphic file (type png)
 <use ./Figures/filtout.png>
 Package pdftex.def Info: ./Figures/filtout.png  used on input line 62.
 (pdftex.def)             Requested size: 179.48236pt x 63.28795pt.
- [4 <./Figures/filtout.png>]
-<./Figures/hpf.png, id=225, 521.69907pt x 204.765pt>
+ [12 <./Figures/filtout.png>]
+<./Figures/hpf.png, id=502, 521.69907pt x 204.765pt>
 File: ./Figures/hpf.png Graphic file (type png)
 <use ./Figures/hpf.png>
 Package pdftex.def Info: ./Figures/hpf.png  used on input line 75.
 (pdftex.def)             Requested size: 226.70963pt x 88.98143pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 77.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 77.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 77.
-<./Figures/lpf1.png, id=226, 539.01375pt x 218.31563pt>
+<./Figures/lpf1.png, id=503, 539.01375pt x 218.31563pt>
 File: ./Figures/lpf1.png Graphic file (type png)
 <use ./Figures/lpf1.png>
 Package pdftex.def Info: ./Figures/lpf1.png  used on input line 79.
 (pdftex.def)             Requested size: 226.70963pt x 91.82518pt.
-<./Figures/amplified.png, id=230, 410.2828pt x 219.06844pt>
+<./Figures/amplified.png, id=507, 410.2828pt x 219.06844pt>
 File: ./Figures/amplified.png Graphic file (type png)
 <use ./Figures/amplified.png>
 Package pdftex.def Info: ./Figures/amplified.png  used on input line 92.
 (pdftex.def)             Requested size: 231.43741pt x 123.57332pt.
-<./Figures/pulses.png, id=231, 532.23843pt x 303.38344pt>
+<./Figures/pulses.png, id=508, 532.23843pt x 303.38344pt>
 File: ./Figures/pulses.png Graphic file (type png)
 <use ./Figures/pulses.png>
 Package pdftex.def Info: ./Figures/pulses.png  used on input line 96.
 (pdftex.def)             Requested size: 231.43741pt x 131.9198pt.
-<./Figures/pulses2.png, id=234, 427.5975pt x 259.7203pt>
+<./Figures/pulses2.png, id=511, 427.5975pt x 259.7203pt>
 File: ./Figures/pulses2.png Graphic file (type png)
 <use ./Figures/pulses2.png>
 Package pdftex.def Info: ./Figures/pulses2.png  used on input line 108.
 (pdftex.def)             Requested size: 231.43741pt x 140.57184pt.
-<./Figures/pulses1.png, id=235, 432.11438pt x 258.9675pt>
+<./Figures/pulses1.png, id=512, 432.11438pt x 258.9675pt>
 File: ./Figures/pulses1.png Graphic file (type png)
 <use ./Figures/pulses1.png>
 Package pdftex.def Info: ./Figures/pulses1.png  used on input line 113.
 (pdftex.def)             Requested size: 231.43741pt x 138.70232pt.
- [5 <./Figures/hpf.png> <./Figures/lpf1.png> <./Figures/amplified.png> <./Figur
-es/pulses.png> <./Figures/pulses2.png> <./Figures/pulses1.png>]
-<./Figures/pwm.png, id=243, 462.97969pt x 274.02374pt>
+ [13 <./Figures/hpf.png> <./Figures/lpf1.png> <./Figures/amplified.png> <./Figu
+res/pulses.png> <./Figures/pulses2.png> <./Figures/pulses1.png>]
+<./Figures/pwm.png, id=520, 462.97969pt x 274.02374pt>
 File: ./Figures/pwm.png Graphic file (type png)
 <use ./Figures/pwm.png>
 Package pdftex.def Info: ./Figures/pwm.png  used on input line 127.
 (pdftex.def)             Requested size: 269.22354pt x 159.34782pt.
-<./Figures/analog.png, id=244, 368.1253pt x 308.65312pt>
+<./Figures/analog.png, id=521, 368.1253pt x 308.65312pt>
 File: ./Figures/analog.png Graphic file (type png)
 <use ./Figures/analog.png>
 Package pdftex.def Info: ./Figures/analog.png  used on input line 132.
 (pdftex.def)             Requested size: 193.65126pt x 162.37027pt.
-<./Figures/current.png, id=245, 327.47343pt x 100.87688pt>
 File: ./Figures/current.png Graphic file (type png)
 <use ./Figures/current.png>
 Package pdftex.def Info: ./Figures/current.png  used on input line 141.
 (pdftex.def)             Requested size: 259.7752pt x 80.02278pt.
+) [14 <./Figures/pwm.png> <./Figures/analog.png>]
+\openout2 = `Chapter6.aux'.
+
+ (Chapter6.tex
+Chapter 5.
+
+LaTeX Warning: Citation `cs' on page 15 undefined on input line 4.
 
 
-LaTeX Warning: Citation `prev' on page 6 undefined on input line 145.
-
-) [6 <./Figures/pwm.png> <./Figures/analog.png> <./Figures/current.png>]
-\openout2 = `Chapter3.aux'.
-
-
-(Chapter3.tex
-Chapter 3.
-
-LaTeX Warning: Citation `prev' on page 7 undefined on input line 5.
-
-) [7
+Underfull \hbox (badness 1694) in paragraph at lines 16--17
+[]\OT1/lmr/m/n/12 (+20) Since the noise is [][] at max-i-mum, the quan-ti-sa-ti
+on er-ror (due to noise) is
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
-] (von_Eschwege_21785155_A3.bbl) [8
+ []
+
+) [15
+
+
+
+]
+\openout2 = `Chapter7.aux'.
+
+ (Chapter7.tex
+Chapter 6.
+
+LaTeX Warning: Citation `cs' on page 16 undefined on input line 4.
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 16--17
+[]\OT1/lmr/m/n/12 (+20) Since the noise is [][] at max-i-mum, the quan-ti-sa-ti
+on er-ror (due to noise) is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+) [16
+
+
+
+]
+\openout2 = `Chapter8.aux'.
+
+ (Chapter8.tex
+Chapter 7.
+) [17
+
+
+
+] (von_Eschwege_21785155_A3.bbl) [18
 
 
 ]
@@ -1130,13 +1301,13 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./Figures/SocialContract_signed.pdf): PDF inclus
 ion: found PDF version <1.6>, but at most version <1.5> allowed
-<./Figures/SocialContract_signed.pdf, id=283, 597.62273pt x 845.00691pt>
+<./Figures/SocialContract_signed.pdf, id=558, 597.62273pt x 845.00691pt>
 File: ./Figures/SocialContract_signed.pdf Graphic file (type pdf)
 <use ./Figures/SocialContract_signed.pdf>
 Package pdftex.def Info: ./Figures/SocialContract_signed.pdf  used on input lin
 e 6.
 (pdftex.def)             Requested size: 368.40585pt x 520.92043pt.
-) [9
+) [19
 
 
  <./Figures/SocialContract_signed.pdf>]
@@ -1144,7 +1315,7 @@ e 6.
 
  (App-B.tex
 Appendix B.
-<./Figures/GitHub.png, id=306, 924.45375pt x 449.42906pt>
+<./Figures/GitHub.png, id=581, 924.45375pt x 449.42906pt>
 File: ./Figures/GitHub.png Graphic file (type png)
 <use ./Figures/GitHub.png>
 Package pdftex.def Info: ./Figures/GitHub.png  used on input line 7.
@@ -1154,7 +1325,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 7--9
  [][] 
  []
 
-) [10
+) [20
 
 
 
@@ -1168,72 +1339,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-<./Figures/script.png, id=313, 286.82156pt x 256.70906pt>
+<./Figures/script.png, id=588, 286.82156pt x 256.70906pt>
 File: ./Figures/script.png Graphic file (type png)
 <use ./Figures/script.png>
 Package pdftex.def Info: ./Figures/script.png  used on input line 10.
 (pdftex.def)             Requested size: 354.23695pt x 317.05463pt.
-) [11
+) [21
 
 
 
  <./Figures/script.png>]
+\openout2 = `App-D.aux'.
 
-Package caption Warning: Unused \captionsetup[algorithm] on input line 101.
+ (App-D.tex
+Appendix D.
+<Figures/ts.png, id=597, 490.08093pt x 363.60844pt>
+File: Figures/ts.png Graphic file (type png)
+<use Figures/ts.png>
+Package pdftex.def Info: Figures/ts.png  used on input line 6.
+(pdftex.def)             Requested size: 283.39244pt x 210.26608pt.
+<Figures/ac.png, id=599, 746.03719pt x 368.1253pt>
+File: Figures/ac.png Graphic file (type png)
+<use Figures/ac.png>
+Package pdftex.def Info: Figures/ac.png  used on input line 14.
+(pdftex.def)             Requested size: 377.85419pt x 186.44948pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 19--148
+
+ []
+
+[22
+
+
+
+ <./Figures/ts.png> <./Figures/ac.png>] [23]
+
+Package caption Warning: Unused \captionsetup[algorithm] on input line 102.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
-(von_Eschwege_21785155_A3.aux (Chapter1.aux) (Chapter2.aux) (Chapter3.aux)
-(App-A.aux) (App-B.aux) (App-C.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+(von_Eschwege_21785155_A3.aux (Chapter1.aux) (Chapter3.aux) (Chapter4.aux)
+(Chapter5.aux) (Chapter6.aux) (Chapter7.aux) (Chapter8.aux) (App-A.aux)
+(App-B.aux) (App-C.aux) (App-D.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package rerunfilecheck Info: File `von_Eschwege_21785155_A3.out' has not change
+d.
+(rerunfilecheck)             Checksum: 8D414EDA1F58C639B536C71677929616;1935.
 
-
-Package rerunfilecheck Warning: File `von_Eschwege_21785155_A3.out' has changed
-.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `von_Eschwege_21785155_A3.out':
-(rerunfilecheck)             Before: 3B890333AA1C83D9679DEA6382E08354;919
-(rerunfilecheck)             After:  F27C26E17861D15363FDCFC6A0ECED99;969.
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 16971 strings out of 480790
- 300226 string characters out of 2907055
- 714180 words of memory out of 3000000
- 32381 multiletter control sequences out of 15000+200000
- 624182 words of font info for 136 fonts, out of 3000000 for 9000
+ 17238 strings out of 480790
+ 305220 string characters out of 2907055
+ 719193 words of memory out of 3000000
+ 32550 multiletter control sequences out of 15000+200000
+ 624439 words of font info for 139 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,46p,2998b,768s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,46p,2998b,859s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/M
 iKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/l
-m/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Progr
-am Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX/fonts
+m/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Progr
+am Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program Files/MiKTeX/fonts
 /type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex
-10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><
-C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/l
-m/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program 
-Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/ty
-pe1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssb
-x10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program F
-iles/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type
-1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb
->
-Output written on von_Eschwege_21785155_A3.pdf (18 pages, 1447981 bytes).
+10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Fi
+les/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi7.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiK
+TeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/lm/lmtt12.pfb>
+Output written on von_Eschwege_21785155_A3.pdf (31 pages, 1857812 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 27875 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
+ 28074 words of extra memory for PDF output out of 29859 (max. 10000000)
 

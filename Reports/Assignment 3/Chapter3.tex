@@ -1,15 +1,93 @@
-\chapter{System and conclusion}
-\vspace{-5mm}
-\section{System}
+\chapter{Voltage regulation}\label{ch:voltageRegulation}
+%**********************************************
 
-The design of the heart-rate sensor goes to show that a noisy input signal could effectively be converted to a square wave output as well as an analogue output, enabling reliable interfacing of real-world measurements with digital systems. The heart-rate sensing circuit can now be integrated with the remainder of the health monitoring system by connecting the analogue output to the microcontroller input, to which the temperature sensor will also be connected - see E344 Assignment 1 \cite{prev}. The modular design of different parts of the health-monitoring system simplifies both design and debugging. Due to the second order low-pass filter, the heart-rate sensor is remarkably robust with respect to variations in noise, attenuating noise levels to below 6\% of the signal amplitude before creating a pulse output. The design also performs well on a variety of the normalised input data sets. Calibration for microcontroller integration is done according to $f = -0.404V + 2.702$ (section \ref{sec:heartDesign}, and the quantisation error is $f_{err} = \frac{2.5 - 0.8}{2^{10}} / (2.5 - 0.8) \times 100 = 0.1\%$. Noise is filtered to the extent that it has a negligible effect on the digitalized reading.
-The system utilizes less costly components where possible, is very power efficient, and adheres to all of the bonus requirements. The design objective has been met successfully.
+%**********************************************
+\section{Introduction} \label{sec:voltIntro}
+%**********************************************
 
-\section{Lessons learnt}
-1. LTSpice is a blessing, but can be an absolute nightmare with simulations. I've created a rough metric; it goes to show that 30\% of my time was spent on circuit design, 10\% on report writing, and 60\% on debugging LTSpice simulation problems. I entered E-Design with the belief that simulation would greatly accelerate the pace of the subject, as soldering was eliminated, but I stand firm in my belief that I could have built a practical circuit much faster, as 'timestep too small' does not apply in the beauty of real-world continuity. However, maybe I just stand firm in this belief because I have not dealt with the problems arising from burnt-out components, messy soldering, melted PCB tracks and exploding diodes.
+Given a 9 $\mathrm{V_{DC}}$ battery, a voltage regulator is required to reduce the voltage level to 5 $\mathrm{V_{DC}}$, as this is the level required by the operational amplifiers used in the rest of the circuit. Two voltage regulators were considered: the LM7805 linear regulator as well as the LM2595 switchmode regulator, which were both analysed with regards to efficiency and noise by means of calculations and simulations. According to the literature, the linear regulator does not really output noise, but has low power efficiency of around $50\%$ for input and output of 9 $\mathrm{V_{DC}}$ and 5 $\mathrm{V_{DC}}$\cite{lm7805} respectively. The switchmode regulator can provide power efficiency of around $85\%$, but outputs a considerable amount of noise\cite{lm2595}. With the aforementioned in mind, both of the regulators were simulated (Section \ref{sec:voltDesign}) to determine the best trade-off between low noise and efficiency.
 
-2. I believe to have greatly improved with regards to modularising and debugging not only circuits, but systems in general. Treating everything as a small problem to be solved furthered my conceptual understanding of component interaction.
+%**********************************************
+\section{Design} \label{sec:voltDesign}
+%**********************************************
 
-3. I shouldn't have gone surfing for the entirety of the first week of the term. I said this in Assignment 1 as well, and lost marks for it, but it is still applicable, so I'll say it again.
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\vspace{-1.3cm}
+    \centering
+    \includegraphics[width = 0.48\textwidth]{Figures/LR.pdf}
+    \caption{Linear Voltage Regulator}
+    \label{fig:LR}
+\end{wrapfigure}
 
-4. If I could have it all over again, I wouldn't have texted my circuit; she did not reply.
+The LM7805 chip and its required peripheral circuit is shown in Figure \ref{fig:LR}. Component values were obtained from the datasheet \cite{lm7805}. For testing purposes, a \SI{50}{\Omega} load was connected to the regulator, drawing \SI{100}{mA}.\\
+
+The LM2595 chip is shown in figure \ref{fig:SM}, built into the required peripheral circuit. Capacitor and inductor values were obtained from the datasheet \cite{lm2595}. Resistor values were calculated:
+
+$$\mathrm{V}_{\mathrm{OUT}}=\mathrm{V}_{\mathrm{REF}}\left(1+\frac{\mathrm{R}_{2}}{\mathrm{R}_{1}}\right) \quad \text { where } \mathrm{V}_{\mathrm{REF}}=1.23 \mathrm{V}$$
+
+Selecting $\mathrm{R_1}$ as \SI{1}{\kilo\Omega}, with $\mathrm{V_{out}}$ as \SI{5}{\volt} gives $\mathrm{R_2}$ as \SI{3065}{\Omega}. For testing purposes, a \SI{50}{\Omega} load was connected to the regulator, drawing \SI{100}{mA}.\\
+\pagebreak 
+
+\begin{wrapfigure}{r}{0.7\textwidth}
+%\begin{figure}
+%	\vspace{-2cm}
+    \centering
+    \includegraphics[width = 0.7\textwidth]{Figures/SM.pdf}
+    \caption{Switchmode Voltage Regulator}
+    \label{fig:SM}
+\end{wrapfigure}
+%\end{figure}
+
+Since the provided circuit includes a resistor ($R_{sense}$) between the voltage source and the voltage regulator, the voltage drop over the resistor will be $V = IR = (0.01238)(0.01) = 123.8\mu \mathrm{V}$. This is negligible, as it is not nearly enough to approach the dropout voltages of the voltage regulators, which are \SI{6.7}{\volt} for the LM7805 and \SI{5.8}{\volt} for the LM2595 in the case of a \SI{5}{\volt} output.
+
+%**********************************************
+\section{Results} \label{sec:volt_results}
+%**********************************************
+
+The input and output power measurements are displayed in table \ref{tab:compvreg}. Comparing the efficiency of the respective regulators, it is clear that the switchmode regulator is considerably more efficient. However, simulation results in a settling time of \SI{1.24}{ms}, which is quite slow. 
+
+\begin{wraptable}{r}{0.75\textwidth}
+        \centering
+        \footnotesize
+        \caption{Comparison of Voltage Regulators}
+         \begin{tabular}{c@{\qquad}rrrrr}
+          \toprule
+             & $I_{in}$ [mA] & $I_{out}$ [mA] & $P_{in}$ [mW] & $P_{out}$ [mW] & $\eta$ [\%] \\
+          \midrule
+          LM7805 	& 105.06 	& 100.05 	& 945.54 	& 500.55 	& 52.93\\
+          LM2595 	& 57.54 	& 99.65 	& 517.86 	& 496.6 	& 95.89\\
+          \bottomrule
+        \end{tabular}
+     \label{tab:compvreg}
+\end{wraptable}
+
+Furthermore, the switchmode regulator creates noise levels of up to 950 $\mu V_{pp}$ in the output, as can be seen in figure \ref{fig:smnoise}, whereas the linear regulator produces almost no noise (figure \ref{fig:lmout}). Noise is a problem, as the large gain of the differential amplifier  will increase the noise levels, which will distort the output. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1\textwidth]{Figures/smnoise.png}
+    \caption{Switchmode Voltage Regulator Noise}
+    \label{fig:smnoise}
+\end{figure}
+
+
+The output graphs of the voltage regulators are shown in figures \ref{fig:lmout} and \ref{fig:smout}, and clearly demonstrate that both regulators produce the desired output current and voltage. The input current for the switchmode regulator is not shown as it obscures the graph, but it has an average value of \SI{57.54}{mA}. All relevant values can be found in table \ref{tab:compvreg}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1\textwidth]{Figures/lmout.png}
+    \caption{Linear Voltage Regulator Output}
+    \label{fig:lmout}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 1\textwidth]{Figures/smout.png}
+    \caption{Switchmode Voltage Regulator Output}
+    \label{fig:smout}
+\end{figure}
+
+%**********************************************
+\section{Summary}\label{sec:temp_summary}
+%**********************************************
+Concluding, it has been shown that both regulators behave as expected, but that the levels of noise present in the switchmode regulator make it unsuitable for the design at hand, as input signals, and thus the noise as well, will be amplified to levels of noise in the output signal that are unacceptable for an ADC input. The linear regulator will therefore be used. This choice was made despite the fact that the switchmode regulator is approximately 40\% more efficient than the linear regulator. However, since the total current drawn is still very low, the efficiency is not a problem. However, it should be noted that the current drawn should be re-evaluated after the rest of the components have been connected to the regulator, in order to make sure that the current draw requirement still is met, and that the current needed is within the range that the regulator can supply.
