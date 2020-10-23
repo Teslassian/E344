@@ -19,14 +19,17 @@
 \BOOKMARK [1][-]{section.4.2}{Design}{chapter.4}% 19
 \BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 20
 \BOOKMARK [1][-]{section.4.4}{Summary}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Calibration and Digitisation}{}% 22
-\BOOKMARK [1][-]{section.5.1}{foo}{chapter.5}% 23
-\BOOKMARK [0][-]{chapter.6}{System and conclusion}{}% 24
-\BOOKMARK [1][-]{section.6.1}{System}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.2}{System}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.3}{Lessons learnt}{chapter.6}% 27
-\BOOKMARK [0][-]{chapter*.23}{Bibliography}{}% 28
-\BOOKMARK [0][-]{appendix.A}{Social contract}{}% 29
-\BOOKMARK [0][-]{appendix.B}{GitHub Activity Heatmap}{}% 30
-\BOOKMARK [0][-]{appendix.C}{Stuff you want to include}{}% 31
-\BOOKMARK [0][-]{appendix.D}{Stuff you want to include}{}% 32
+\BOOKMARK [0][-]{chapter.5}{Calibration and digitisation}{}% 22
+\BOOKMARK [1][-]{section.5.1}{Temperature sensor}{chapter.5}% 23
+\BOOKMARK [2][-]{subsection.5.1.1}{Analytical Design}{section.5.1}% 24
+\BOOKMARK [2][-]{subsection.5.1.2}{Empirical Design}{section.5.1}% 25
+\BOOKMARK [1][-]{section.5.2}{Heart rate sensor}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{System and conclusion}{}% 27
+\BOOKMARK [1][-]{section.6.1}{System}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{System}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.3}{Lessons learnt}{chapter.6}% 30
+\BOOKMARK [0][-]{chapter*.23}{Bibliography}{}% 31
+\BOOKMARK [0][-]{appendix.A}{Social contract}{}% 32
+\BOOKMARK [0][-]{appendix.B}{GitHub Activity Heatmap}{}% 33
+\BOOKMARK [0][-]{appendix.C}{Stuff you want to include}{}% 34
+\BOOKMARK [0][-]{appendix.D}{Stuff you want to include}{}% 35

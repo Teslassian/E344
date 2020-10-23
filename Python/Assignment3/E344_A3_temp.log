@@ -1,6 +1,6 @@
-Circuit: * C:\Users\dvone\Desktop\Assignment3\E344_A3_temp.asc
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\Python\Assignment3\E344_A3_temp.asc
 
-V1: Removing PWL point (0.001,1.91)
+V1: Removing PWL point (0.001,1.69)
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -199,42 +199,28 @@ Source Step = 91.7514%
 Source Step = 91.7798%
 Source Step = 91.8083%
 Source Step = 91.8368%
-Source Step = 91.8652%
-Source Step = 91.8937%
-Source Step = 91.9222%
-Source Step = 91.9507%
-Source Step = 91.9791%
-Source Step = 92.0076%
-Source Step = 92.0361%
-Source Step = 92.0646%
-Source Step = 92.093%
-Source Step = 92.1215%
-Source Step = 92.15%
-Source Step = 92.1785%
-Source Step = 92.2069%
-Source Step = 92.2354%
 Starting source stepping with srcstepmethod=1
 Source Step = 3.0303%
-Source Step = 9.35133%
+Source Step = 3.92992%
 Source stepping failed
 
-Pseudo transient terminated at 100.389 s, solution accepted ready or not!
+Pseudo transient terminated at 101.146 s, solution accepted ready or not!
 
-Date: Sat Oct 03 20:08:52 2020
-Total elapsed time: 51.726 seconds.
+Date: Mon Oct 12 23:28:40 2020
+Total elapsed time: 49.253 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 79285
-traniter = 4044
-tranpoints = 2021
-accept = 2021
-rejected = 466
+totiter = 128810
+traniter = 4057
+tranpoints = 2024
+accept = 2023
+rejected = 1835
 matrix size = 213
-fillins = 892
+fillins = 804
 solver = Normal
-Thread vector: 55.1/26.0[4] 17.6/8.1[4] 12.6/4.8[4] 2.8/51.6[1]  2592/500
-Matrix Compiler1: 98.13 KB object code size  47.2/24.7/[15.3]
-Matrix Compiler2: 33.31 KB object code size  10.3/10.1/[4.1]
+Thread vector: 53.0/22.7[4] 19.2/9.4[4] 21.6/14.4[4] 3.8/20.1[1]  2592/500
+Matrix Compiler1: 80.32 KB object code size  35.6/19.4/[12.6]
+Matrix Compiler2: 31.78 KB object code size  64.2/16.6/[5.0]
 

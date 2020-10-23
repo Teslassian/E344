@@ -1,4 +1,4 @@
-* C:\Users\dvone\Desktop\Assignment3\E344_A3_heart.asc
+* C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\Python\Assignment3\E344_A3_heart.asc
 V1 Vheartsensor 0 PWL file=HeartSensorPWL.csv
 V4 N008 0 9
 R_Sense 9V N008 0.010

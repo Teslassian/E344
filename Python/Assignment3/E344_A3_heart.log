@@ -1,4 +1,4 @@
-Circuit: * C:\Users\dvone\Desktop\Assignment3\E344_A3_heart.asc
+Circuit: * C:\Users\dvone\Desktop\Engineering 3.2\E-Design 344\GitRepo\E344\Python\Assignment3\E344_A3_heart.asc
 
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
@@ -25,114 +25,34 @@ Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
 Source Step = 33.3333%
 Source Step = 63.6364%
-Source Step = 72.7332%
-Source Step = 72.7628%
-Source Step = 72.7924%
-Source Step = 72.822%
-Source Step = 72.8516%
-Source Step = 72.8812%
-vernier = 0.00146484
-Source Step = 72.9226%
-Source Step = 72.967%
-Source Step = 73.0114%
-Source Step = 73.0558%
-Source Step = 73.1001%
-vernier = 0.00219727
-Source Step = 73.1601%
-Source Step = 73.2267%
-Source Step = 73.2932%
-Source Step = 73.3598%
-Source Step = 73.4264%
-vernier = 0.0032959
-Source Step = 73.513%
-Source Step = 73.6128%
-Source Step = 73.7127%
-Source Step = 73.8126%
-Source Step = 73.9125%
-vernier = 0.00494385
-Source Step = 74.0373%
-Source Step = 74.1871%
-Source Step = 74.3369%
-Source Step = 74.4867%
-Source Step = 74.6366%
-vernier = 0.00741577
-Source Step = 74.8163%
-Source Step = 75.0411%
-Source Step = 75.2658%
-Source Step = 75.4905%
-Source Step = 75.7152%
-vernier = 0.0111237
-Source Step = 75.9736%
-Source Step = 76.3107%
-Source Step = 76.6478%
-Source Step = 76.9849%
-Source Step = 77.322%
-vernier = 0.0166855
-Source Step = 77.6928%
-Source Step = 78.1984%
-Source Step = 78.704%
-Source Step = 79.2096%
-Source Step = 79.7152%
-vernier = 0.0250282
-Source Step = 80.2461%
-Source Step = 81.0046%
-Source Step = 81.763%
-Source Step = 82.5214%
-Source Step = 83.2799%
-Source Step = 84.0383%
-vernier = 0.0375423
-Source Step = 85.1759%
-Source Step = 86.3136%
-Source Step = 87.4512%
-Source Step = 88.5889%
-Source Step = 89.7265%
-vernier = 0.0563135
-Source Step = 90.9495%
-Source Step = 91.3761%
-Source Step = 91.8027%
-Source Step = 92.2294%
-Source Step = 92.656%
-vernier = 0.0211176
-Source Step = 93.1039%
-Source Step = 93.7438%
-Source Step = 94.3838%
-Source Step = 95.0237%
-Source Step = 95.6636%
-Source Step = 96.3036%
-vernier = 0.0316764
-Source Step = 97.2634%
-Source Step = 98.2233%
-Source Step = 99.1832%
+Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-Heightened Def Con from 1.39445 to 1.39445
-Heightened Def Con from 1.39458 to 1.39458
-Heightened Def Con from 1.39468 to 1.39468
-Heightened Def Con from 2.736 to 2.736
-Heightened Def Con from 2.73606 to 2.73606
-Heightened Def Con from 4.05024 to 4.05024
-Heightened Def Con from 4.05034 to 4.05034
-Heightened Def Con from 4.71945 to 4.71945
-Heightened Def Con from 4.71955 to 4.71955
-Heightened Def Con from 5.39508 to 5.39508
-Heightened Def Con from 5.39515 to 5.39515
-Heightened Def Con from 5.39517 to 5.39517
+Heightened Def Con from 0.0532728 to 0.0532728
+Heightened Def Con from 0.0534039 to 0.0534039
+Heightened Def Con from 1.04471 to 1.04471
+Heightened Def Con from 2.06719 to 2.06719
+Heightened Def Con from 3.06163 to 3.06163
+Heightened Def Con from 3.06164 to 3.06164
+Heightened Def Con from 4.0353 to 4.0353
+Heightened Def Con from 5.04391 to 5.04391
+Heightened Def Con from 5.04392 to 5.04392
 
-Date: Sat Oct 03 19:58:05 2020
-Total elapsed time: 18.235 seconds.
+Date: Mon Oct 12 23:18:46 2020
+Total elapsed time: 11.200 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 89225
-traniter = 83762
-tranpoints = 32856
-accept = 31187
-rejected = 1681
+totiter = 61532
+traniter = 59427
+tranpoints = 27974
+accept = 27551
+rejected = 432
 matrix size = 114
-fillins = 1159
+fillins = 1154
 solver = Normal
-Thread vector: 62.4/25.7[3] 16.6/10.7[3] 21.4/13.5[3] 4.0/25.1[1]  2592/500
-Matrix Compiler1:   10304 opcodes  78.9/[40.8]/53.6
-Matrix Compiler2: 29.85 KB object code size  11.1/16.0/[4.2]
+Thread vector: 868.5/48.2[3] 18.3/13.0[3] 11.8/5.7[3] 14.7/11.1[3]  2592/500
+Matrix Compiler1: 201.47 KB object code size  80.0/43.5/[31.7]
+Matrix Compiler2: 29.70 KB object code size  108.1/7.9/[6.6]
 

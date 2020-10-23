@@ -20,7 +20,7 @@ The heart-rate sensor input is to be converted to a pulse signal and an analogue
 
 A microcontroller produces digital readings of the temperature and heart-rate by using the analogue output voltage (representative of the temperature measurement) and the pulse output signal (representing the the heart-rate) in a calibration formula programmed into the microcontroller, where the former is linearly scaled and the latter is converted to a digital reading using the signal frequency. The frequency is detected by measuring the time-interval between rising edges.\\
 
-A voltage regulator supplies power to all sub-circuits of which the system is comprised. Capable of a maximum current of \SI{100}{mA} at \SI{5}{V}, it is more than sufficient to supply the current drawn by Assignments 1, 2 and 3 -  \SI{12.8}{mA}, \SI{13.0}{mA} and \textbf{microcontroller current draw} respectively.
+A voltage regulator supplies power to all sub-circuits of which the system is comprised. Capable of a maximum current of \SI{100}{mA} at \SI{5}{V}, it is more than sufficient to supply the current drawn by Assignments 1, 2 and 3 - \SI{12.8}{mA}, \SI{13.0}{mA} and \SI{50}{mA} respectively, where the current draw for Assignment 3 is estimated based on the typical current draw of a microcontroller of the type that would suffice for analogue-to-digital conversion of the heart-rate and temperature data \cite{arduino}. All circuits were designed with conservative current use in mind as to increase efficiency of the health-monitoring system.
 
 \vfill
 

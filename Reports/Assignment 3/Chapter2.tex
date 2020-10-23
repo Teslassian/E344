@@ -30,15 +30,15 @@ Selecting $\mathrm{R_1}$ as \SI{1}{\kilo\Omega}, with $\mathrm{V_{out}}$ as \SI{
 
 \begin{wrapfigure}{r}{0.7\textwidth}
 %\begin{figure}
-%	\vspace{-2cm}
+%	\vspace{1.2cm}
     \centering
-    \includegraphics[width = 0.7\textwidth]{Figures/SM.pdf}
+    \includegraphics[width = 0.72\textwidth]{Figures/SM.pdf}
     \caption{Switchmode Voltage Regulator}
     \label{fig:SM}
 \end{wrapfigure}
 %\end{figure}
 
-Since the provided circuit includes a resistor ($R_{sense}$) between the voltage source and the voltage regulator, the voltage drop over the resistor will be $V = IR = (0.01238)(0.01) = 123.8\mu \mathrm{V}$. This is negligible, as it is not nearly enough to approach the dropout voltages of the voltage regulators, which are \SI{6.7}{\volt} for the LM7805 and \SI{5.8}{\volt} for the LM2595 in the case of a \SI{5}{\volt} output.
+Since the provided circuit includes a resistor ($R_{sense}$) between the voltage source and the voltage regulator, the voltage drop over the resistor will be $V = IR = (0.01238)(0.01) = 123.8\mu \mathrm{V}$. Considering that the power source supplies \SI{9}{V}, the aforementioned voltage drop is negligible - it is not nearly enough to approach the dropout voltages of the voltage regulators, which are \SI{6.7}{\volt} for the LM7805 and \SI{5.8}{\volt} for the LM2595 in the case of a \SI{5}{\volt} output.
 
 %**********************************************
 \section{Results} \label{sec:volt_results}
@@ -90,4 +90,4 @@ The output graphs of the voltage regulators are shown in figures \ref{fig:lmout}
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-Concluding, it has been shown that both regulators behave as expected, but that the levels of noise present in the switchmode regulator make it unsuitable for the design at hand, as input signals, and thus the noise as well, will be amplified to levels of noise in the output signal that are unacceptable for an ADC input. The linear regulator will therefore be used. This choice was made despite the fact that the switchmode regulator is approximately 40\% more efficient than the linear regulator. However, since the total current drawn is still very low, the efficiency is not a problem. However, it should be noted that the current drawn should be re-evaluated after the rest of the components have been connected to the regulator, in order to make sure that the current draw requirement still is met, and that the current needed is within the range that the regulator can supply.
+Concluding, it has been shown that both regulators behave as expected, but that the levels of noise present in the switchmode regulator make it unsuitable for the design at hand, as input signals, and thus the noise as well, will be amplified to levels of noise in the output signal that are unacceptable for an ADC input. The linear regulator will therefore be used. This choice was made despite the fact that the switchmode regulator is approximately 40\% more efficient than the linear regulator. However, since the total current drawn is still very low, efficiency is not of concern.

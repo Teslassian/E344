@@ -30,7 +30,8 @@ def calibrate(time, amplitude):
     if len(period) != 0:
         avg = sum(period)/len(period)
     
-    bpm = int(round(1 / avg * 60))
+    if avg != 0:
+        bpm = int(round(1 / avg * 60))
     
     ######################################
         
