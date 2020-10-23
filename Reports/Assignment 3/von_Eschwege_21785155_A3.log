@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  22 OCT 2020 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.14)  24 OCT 2020 00:33
 entering extended mode
 **./von_Eschwege_21785155_A3.tex
 (von_Eschwege_21785155_A3.tex
@@ -973,7 +973,7 @@ Package pdftex.def Info: frontmatter/fig/Signature.png  used on input line 43.
 
  (Chapter1.tex
 Chapter 1.
-<Figures/overview.png, id=327, 1701.35625pt x 1330.9725pt>
+<Figures/overview.png, id=324, 1701.35625pt x 1330.9725pt>
 File: Figures/overview.png Graphic file (type png)
 <use Figures/overview.png>
 Package pdftex.def Info: Figures/overview.png  used on input line 8.
@@ -1013,7 +1013,7 @@ Chapter 2.
 
 pdfTeX warning: pdflatex (file ./Figures/LR.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Figures/LR.pdf, id=346, 438.1971pt x 176.45926pt>
+<Figures/LR.pdf, id=343, 438.1971pt x 176.45926pt>
 File: Figures/LR.pdf Graphic file (type pdf)
 <use Figures/LR.pdf>
 Package pdftex.def Info: Figures/LR.pdf  used on input line 17.
@@ -1041,7 +1041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
 pdfTeX warning: pdflatex (file ./Figures/SM.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<Figures/SM.pdf, id=372, 441.69016pt x 187.29976pt>
+<Figures/SM.pdf, id=369, 441.69016pt x 187.29976pt>
 File: Figures/SM.pdf Graphic file (type pdf)
 <use Figures/SM.pdf>
 Package pdftex.def Info: Figures/SM.pdf  used on input line 35.
@@ -1078,18 +1078,18 @@ Underfull \hbox (badness 1735) in paragraph at lines 64--65
 \OT1/lmr/m/n/12 (+20) cre-ates noise lev-els
  []
 
-<Figures/smnoise.png, id=376, 1414.53468pt x 338.76563pt>
+<Figures/smnoise.png, id=373, 1414.53468pt x 338.76563pt>
 File: Figures/smnoise.png Graphic file (type png)
 <use Figures/smnoise.png>
 Package pdftex.def Info: Figures/smnoise.png  used on input line 68.
 (pdftex.def)             Requested size: 472.31595pt x 113.11113pt.
-<Figures/lmout.png, id=380, 620.3175pt x 150.5625pt>
+<Figures/lmout.png, id=377, 620.3175pt x 150.5625pt>
 File: Figures/lmout.png Graphic file (type png)
 <use Figures/lmout.png>
 Package pdftex.def Info: Figures/lmout.png  used on input line 78.
 (pdftex.def)             Requested size: 472.31595pt x 114.64003pt.
 [4 <./Figures/SM.pdf> <./Figures/smnoise.png>]
-<Figures/smout.png, id=400, 616.55344pt x 151.3153pt>
+<Figures/smout.png, id=397, 616.55344pt x 151.3153pt>
 File: Figures/smout.png Graphic file (type png)
 <use Figures/smout.png>
 Package pdftex.def Info: Figures/smout.png  used on input line 85.
@@ -1104,139 +1104,133 @@ Chapter 3.
 
 
 ]
-<Figures/final.png, id=418, 865.73438pt x 660.96938pt>
+<Figures/final.png, id=417, 1364.09625pt x 677.53125pt>
 File: Figures/final.png Graphic file (type png)
 <use Figures/final.png>
 Package pdftex.def Info: Figures/final.png  used on input line 37.
-(pdftex.def)             Requested size: 377.85419pt x 288.48756pt.
- [7 <./Figures/final.png>]
+(pdftex.def)             Requested size: 377.85419pt x 187.6708pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
-
-LaTeX Warning: Reference `app:' on page 8 undefined on input line 70.
-
-[8]
-<./Figures/vout.png, id=452, 496.85625pt x 306.39468pt>
+[7 <./Figures/final.png>]
+<./Figures/ac.png, id=430, 346.29375pt x 207.77625pt>
+File: ./Figures/ac.png Graphic file (type png)
+<use ./Figures/ac.png>
+Package pdftex.def Info: ./Figures/ac.png  used on input line 58.
+(pdftex.def)             Requested size: 207.82016pt x 124.69524pt.
+ [8 <./Figures/ac.png>]
+<./Figures/vout.png, id=450, 496.85625pt x 310.15875pt>
 File: ./Figures/vout.png Graphic file (type png)
 <use ./Figures/vout.png>
-Package pdftex.def Info: ./Figures/vout.png  used on input line 77.
-(pdftex.def)             Requested size: 212.54073pt x 131.06924pt.
-<./Figures/current.png, id=453, 327.47343pt x 100.87688pt>
-File: ./Figures/current.png Graphic file (type png)
-<use ./Figures/current.png>
-Package pdftex.def Info: ./Figures/current.png  used on input line 82.
-(pdftex.def)             Requested size: 212.54073pt x 65.4722pt.
-<./Figures/noise.png, id=454, 424.58624pt x 304.88907pt>
+Package pdftex.def Info: ./Figures/vout.png  used on input line 79.
+(pdftex.def)             Requested size: 212.54073pt x 132.67943pt.
+<./Figures/current1.png, id=451, 450.18187pt x 294.34969pt>
+File: ./Figures/current1.png Graphic file (type png)
+<use ./Figures/current1.png>
+Package pdftex.def Info: ./Figures/current1.png  used on input line 84.
+(pdftex.def)             Requested size: 212.54073pt x 138.96866pt.
+<./Figures/noise.png, id=452, 424.58624pt x 286.82156pt>
 File: ./Figures/noise.png Graphic file (type png)
 <use ./Figures/noise.png>
-Package pdftex.def Info: ./Figures/noise.png  used on input line 87.
-(pdftex.def)             Requested size: 212.54073pt x 152.62094pt.
-<./Figures/ts.png, id=455, 490.08093pt x 363.60844pt>
+Package pdftex.def Info: ./Figures/noise.png  used on input line 90.
+(pdftex.def)             Requested size: 212.54073pt x 143.57672pt.
+<./Figures/ts.png, id=453, 490.08093pt x 344.03531pt>
 File: ./Figures/ts.png Graphic file (type png)
 <use ./Figures/ts.png>
-Package pdftex.def Info: ./Figures/ts.png  used on input line 92.
-(pdftex.def)             Requested size: 212.54073pt x 157.69124pt.
- [9 <./Figures/vout.png> <./Figures/current.png> <./Figures/noise.png> <./Figur
-es/ts.png>]) [10]
+Package pdftex.def Info: ./Figures/ts.png  used on input line 96.
+(pdftex.def)             Requested size: 212.54073pt x 149.20268pt.
+) [9 <./Figures/vout.png> <./Figures/current1.png> <./Figures/noise.png> <./Fig
+ures/ts.png>]
 \openout2 = `Chapter4.aux'.
 
  (Chapter4.tex
 Chapter 4.
-<Figures/circuit.png, id=471, 1349.79282pt x 524.71031pt>
-File: Figures/circuit.png Graphic file (type png)
-<use Figures/circuit.png>
-Package pdftex.def Info: Figures/circuit.png  used on input line 15.
-(pdftex.def)             Requested size: 472.31595pt x 183.60332pt.
-<./Figures/fft.png, id=476, 429.10312pt x 225.09094pt>
+<Figures/circuit2.png, id=462, 1343.77031pt x 474.27188pt>
+File: Figures/circuit2.png Graphic file (type png)
+<use Figures/circuit2.png>
+Package pdftex.def Info: Figures/circuit2.png  used on input line 15.
+(pdftex.def)             Requested size: 472.31595pt x 166.69962pt.
+<./Figures/fft.png, id=467, 429.10312pt x 216.81pt>
 File: ./Figures/fft.png Graphic file (type png)
 <use ./Figures/fft.png>
 Package pdftex.def Info: ./Figures/fft.png  used on input line 25.
-(pdftex.def)             Requested size: 207.82016pt x 109.0144pt.
-[11
+(pdftex.def)             Requested size: 221.98906pt x 112.1629pt.
+[10
 
 
 
- <./Figures/circuit.png>]
+ <./Figures/circuit2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
-
-LaTeX Warning: Reference `app:' on page 12 undefined on input line 51.
-
-
-LaTeX Warning: Citation `prev' on page 12 undefined on input line 53.
-
-[12 <./Figures/fft.png>]
-<./Figures/filtout.png, id=507, 403.5075pt x 142.28156pt>
+[11 <./Figures/fft.png>]
+<./Figures/filtout.png, id=499, 403.5075pt x 142.28156pt>
 File: ./Figures/filtout.png Graphic file (type png)
 <use ./Figures/filtout.png>
 Package pdftex.def Info: ./Figures/filtout.png  used on input line 62.
 (pdftex.def)             Requested size: 179.48236pt x 63.28795pt.
- [13 <./Figures/filtout.png>]
-<./Figures/hpf.png, id=517, 521.69907pt x 204.765pt>
+ [12 <./Figures/filtout.png>]
+<./Figures/hpf.png, id=509, 521.69907pt x 204.765pt>
 File: ./Figures/hpf.png Graphic file (type png)
 <use ./Figures/hpf.png>
 Package pdftex.def Info: ./Figures/hpf.png  used on input line 75.
 (pdftex.def)             Requested size: 226.70963pt x 88.98143pt.
-<./Figures/lpf1.png, id=518, 539.01375pt x 218.31563pt>
+<./Figures/lpf1.png, id=510, 539.01375pt x 218.31563pt>
 File: ./Figures/lpf1.png Graphic file (type png)
 <use ./Figures/lpf1.png>
 Package pdftex.def Info: ./Figures/lpf1.png  used on input line 79.
 (pdftex.def)             Requested size: 226.70963pt x 91.82518pt.
-<./Figures/amplified.png, id=522, 410.2828pt x 219.06844pt>
+<./Figures/amplified.png, id=514, 410.2828pt x 219.06844pt>
 File: ./Figures/amplified.png Graphic file (type png)
 <use ./Figures/amplified.png>
 Package pdftex.def Info: ./Figures/amplified.png  used on input line 92.
 (pdftex.def)             Requested size: 231.43741pt x 123.57332pt.
-<./Figures/pulses.png, id=523, 532.23843pt x 303.38344pt>
+<./Figures/pulses.png, id=515, 532.23843pt x 303.38344pt>
 File: ./Figures/pulses.png Graphic file (type png)
 <use ./Figures/pulses.png>
 Package pdftex.def Info: ./Figures/pulses.png  used on input line 96.
 (pdftex.def)             Requested size: 231.43741pt x 131.9198pt.
-<./Figures/pulses2.png, id=526, 427.5975pt x 259.7203pt>
+<./Figures/pulses2.png, id=518, 427.5975pt x 259.7203pt>
 File: ./Figures/pulses2.png Graphic file (type png)
 <use ./Figures/pulses2.png>
 Package pdftex.def Info: ./Figures/pulses2.png  used on input line 108.
 (pdftex.def)             Requested size: 231.43741pt x 140.57184pt.
-<./Figures/pulses1.png, id=527, 432.11438pt x 258.9675pt>
+<./Figures/pulses1.png, id=519, 432.11438pt x 258.9675pt>
 File: ./Figures/pulses1.png Graphic file (type png)
 <use ./Figures/pulses1.png>
 Package pdftex.def Info: ./Figures/pulses1.png  used on input line 113.
 (pdftex.def)             Requested size: 231.43741pt x 138.70232pt.
- [14 <./Figures/hpf.png> <./Figures/lpf1.png> <./Figures/amplified.png> <./Figu
+ [13 <./Figures/hpf.png> <./Figures/lpf1.png> <./Figures/amplified.png> <./Figu
 res/pulses.png> <./Figures/pulses2.png> <./Figures/pulses1.png>]
-<./Figures/pwm.png, id=535, 462.97969pt x 274.02374pt>
+<./Figures/pwm.png, id=527, 462.97969pt x 274.02374pt>
 File: ./Figures/pwm.png Graphic file (type png)
 <use ./Figures/pwm.png>
 Package pdftex.def Info: ./Figures/pwm.png  used on input line 127.
 (pdftex.def)             Requested size: 269.22354pt x 159.34782pt.
-<./Figures/analog.png, id=536, 368.1253pt x 308.65312pt>
+<./Figures/analog.png, id=528, 368.1253pt x 308.65312pt>
 File: ./Figures/analog.png Graphic file (type png)
 <use ./Figures/analog.png>
 Package pdftex.def Info: ./Figures/analog.png  used on input line 132.
 (pdftex.def)             Requested size: 193.65126pt x 162.37027pt.
-File: ./Figures/current.png Graphic file (type png)
-<use ./Figures/current.png>
-Package pdftex.def Info: ./Figures/current.png  used on input line 141.
-(pdftex.def)             Requested size: 259.7752pt x 80.02278pt.
+<./Figures/current2.png, id=529, 327.47343pt x 99.37125pt>
+File: ./Figures/current2.png Graphic file (type png)
+<use ./Figures/current2.png>
+Package pdftex.def Info: ./Figures/current2.png  used on input line 141.
+(pdftex.def)             Requested size: 259.7752pt x 78.82841pt.
 
 
-LaTeX Warning: Citation `prev' on page 15 undefined on input line 145.
+LaTeX Warning: Citation `prev' on page 14 undefined on input line 145.
 
-) [15 <./Figures/pwm.png> <./Figures/analog.png>]
+) [14 <./Figures/pwm.png> <./Figures/analog.png> <./Figures/current2.png>]
 \openout2 = `Chapter5.aux'.
 
- (Chapter5.tex
+
+(Chapter5.tex
 Chapter 5.
-) [16
+) [15
 
 
 
@@ -1257,19 +1251,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
  []
 
 
-LaTeX Warning: Citation `prev' on page 17 undefined on input line 21.
+LaTeX Warning: Citation `prev' on page 16 undefined on input line 21.
 
-[17
+[16
 
 
 
-]) [18] (von_Eschwege_21785155_A3.bbl
+]) [17] (von_Eschwege_21785155_A3.bbl
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 0.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [19
+)) [18
 
 
 ]
@@ -1281,13 +1275,13 @@ Appendix A.
 
 pdfTeX warning: pdflatex (file ./Figures/SocialContract_signed.pdf): PDF inclus
 ion: found PDF version <1.6>, but at most version <1.5> allowed
-<./Figures/SocialContract_signed.pdf, id=577, 597.62273pt x 845.00691pt>
+<./Figures/SocialContract_signed.pdf, id=570, 597.62273pt x 845.00691pt>
 File: ./Figures/SocialContract_signed.pdf Graphic file (type pdf)
 <use ./Figures/SocialContract_signed.pdf>
 Package pdftex.def Info: ./Figures/SocialContract_signed.pdf  used on input lin
 e 6.
 (pdftex.def)             Requested size: 368.40585pt x 520.92043pt.
-) [20
+) [19
 
 
  <./Figures/SocialContract_signed.pdf>]
@@ -1295,7 +1289,7 @@ e 6.
 
  (App-B.tex
 Appendix B.
-<./Figures/GitHub.png, id=600, 950.80219pt x 651.93562pt>
+<./Figures/GitHub.png, id=593, 950.80219pt x 651.93562pt>
 File: ./Figures/GitHub.png Graphic file (type png)
 <use ./Figures/GitHub.png>
 Package pdftex.def Info: ./Figures/GitHub.png  used on input line 7.
@@ -1305,7 +1299,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 7--9
  [][] 
  []
 
-) [21
+) [20
 
 
 
@@ -1315,16 +1309,16 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 7--9
  (App-C.tex
 Appendix C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<./Figures/script.png, id=607, 286.82156pt x 256.70906pt>
+<./Figures/script.png, id=600, 286.82156pt x 256.70906pt>
 File: ./Figures/script.png Graphic file (type png)
 <use ./Figures/script.png>
-Package pdftex.def Info: ./Figures/script.png  used on input line 10.
+Package pdftex.def Info: ./Figures/script.png  used on input line 11.
 (pdftex.def)             Requested size: 354.23695pt x 317.05463pt.
-) [22
+) [21
 
 
 
@@ -1333,26 +1327,16 @@ Package pdftex.def Info: ./Figures/script.png  used on input line 10.
 
  (App-D.tex
 Appendix D.
-<Figures/ts.png, id=616, 490.08093pt x 363.60844pt>
-File: Figures/ts.png Graphic file (type png)
-<use Figures/ts.png>
-Package pdftex.def Info: Figures/ts.png  used on input line 6.
-(pdftex.def)             Requested size: 283.39244pt x 210.26608pt.
-<Figures/ac.png, id=618, 746.03719pt x 368.1253pt>
-File: Figures/ac.png Graphic file (type png)
-<use Figures/ac.png>
-Package pdftex.def Info: Figures/ac.png  used on input line 14.
-(pdftex.def)             Requested size: 377.85419pt x 186.44948pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 19--147
+Underfull \hbox (badness 10000) in paragraph at lines 3--147
 
  []
 
-[23
+[22
 
 
 
- <./Figures/ts.png> <./Figures/ac.png>] [24]
+]
 
 Package caption Warning: Unused \captionsetup[algorithm] on input line 102.
 See the caption package documentation for explanation.
@@ -1366,7 +1350,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `von_Eschwege_21785155_A3.out' has not change
 d.
-(rerunfilecheck)             Checksum: 3FDC6FE3760AD5213328E369EFF07EBE;1980.
+(rerunfilecheck)             Checksum: C2251F51496804ABB12C4E38519EFEB5;1980.
 
 
 LaTeX Warning: There were undefined references.
@@ -1377,13 +1361,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 17278 strings out of 480790
- 305978 string characters out of 2907055
- 718946 words of memory out of 3000000
- 32587 multiletter control sequences out of 15000+200000
- 627696 words of font info for 142 fonts, out of 3000000 for 9000
+ 17282 strings out of 480790
+ 306112 string characters out of 2907055
+ 718924 words of memory out of 3000000
+ 32590 multiletter control sequences out of 15000+200000
+ 627783 words of font info for 143 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,46p,3007b,891s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,13n,46p,2999b,891s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/M
 iKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm
 /lm-rmtt.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program 
@@ -1403,9 +1387,9 @@ lic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><
 C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/l
 m/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on von_Eschwege_21785155_A3.pdf (32 pages, 1902264 bytes).
+Output written on von_Eschwege_21785155_A3.pdf (30 pages, 1927118 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
+ 706 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
  29098 words of extra memory for PDF output out of 29859 (max. 10000000)
 
