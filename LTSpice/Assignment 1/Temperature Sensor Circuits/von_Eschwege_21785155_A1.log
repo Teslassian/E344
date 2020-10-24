@@ -109,28 +109,33 @@ Source Step = 80.3289%
 Source Step = 84.1685%
 Starting source stepping with srcstepmethod=1
 Source Step = 3.0303%
-Source Step = 21.2121%
-Source Step = 24.5739%
-vernier = 0.00390625
+Source Step = 4.64311%
 Source stepping failed
 
-Pseudo Transient succeeded in finding the operating point at 502.275 ms.
+Pseudo transient terminated at 102.121 s, solution accepted ready or not!
+Heightened Def Con from 2.12793e-008 to 2.14043e-008
+Heightened Def Con from 2.15596e-008 to 2.35596e-008
+Heightened Def Con from 3.00535e-008 to 3.03035e-008
+Heightened Def Con from 6.31277e-008 to 6.31433e-008
+Heightened Def Con from 6.31551e-008 to 6.31709e-008
+Heightened Def Con from 6.31711e-008 to 6.51711e-008
+Heightened Def Con from 7.31709e-008 to 7.51709e-008
 
-Date: Sat Oct 03 17:37:12 2020
-Total elapsed time: 18.887 seconds.
+Date: Sat Oct 24 13:43:00 2020
+Total elapsed time: 11.038 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 194077
-traniter = 10091
-tranpoints = 5042
-accept = 5042
-rejected = 5493
+totiter = 24610
+traniter = 11881
+tranpoints = 5290
+accept = 5176
+rejected = 204
 matrix size = 217
-fillins = 680
+fillins = 690
 solver = Normal
-Thread vector: 34.9/22.8[4] 17.1/13.4[4] 15.2/10.9[4] 2.5/3.6[1]  2592/500
-Matrix Compiler1: 69.21 KB object code size  34.6/17.7/[11.3]
-Matrix Compiler2: 29.94 KB object code size  11.9/11.6/[4.2]
+Thread vector: 55.1/20.4[4] 18.1/7.3[4] 13.3/3.3[4] 3.5/38.5[1]  2592/500
+Matrix Compiler1: 70.47 KB object code size  33.3/15.2/[10.5]
+Matrix Compiler2: 30.10 KB object code size  24.6/357.6/[5.2]
 

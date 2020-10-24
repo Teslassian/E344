@@ -24,13 +24,15 @@
 \contentsline {section}{\numberline {5.1}Temperature sensor}{15}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Analytical Design}{15}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Empirical Design}{15}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Heart rate sensor}{15}{section.5.2}%
-\contentsline {chapter}{\numberline {6}System and conclusion}{16}{chapter.6}%
-\contentsline {section}{\numberline {6.1}System}{16}{section.6.1}%
-\contentsline {section}{\numberline {6.2}System}{16}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Lessons learnt}{17}{section.6.3}%
-\contentsline {chapter}{Bibliography}{18}{chapter*.24}%
-\contentsline {chapter}{\numberline {A}Social contract}{19}{appendix.A}%
-\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{20}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Stuff you want to include}{21}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Stuff you want to include}{22}{appendix.D}%
+\contentsline {section}{\numberline {5.2}Heart rate sensor}{16}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Analytical Design}{16}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Empirical Design}{16}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}System and conclusion}{17}{chapter.6}%
+\contentsline {section}{\numberline {6.1}System}{17}{section.6.1}%
+\contentsline {section}{\numberline {6.2}System}{17}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Lessons learnt}{18}{section.6.3}%
+\contentsline {chapter}{Bibliography}{19}{chapter*.25}%
+\contentsline {chapter}{\numberline {A}Social contract}{20}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{21}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Stuff you want to include}{22}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Stuff you want to include}{23}{appendix.D}%
