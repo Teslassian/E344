@@ -21,6 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{arduino}
+\BIBentryALTinterwordspacing
+``Arduino uno,'' Farnell, 2018. [Online]. Available:
+  \url{https://www.farnell.com/datasheets/1682209.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{lm7805}
 \emph{LM78LXXA 3-Terminal 0.1 A Positive Voltage Regulator}, LM7805 Datasheet,
   Fairchild Semiconductor Corporation, 2013.

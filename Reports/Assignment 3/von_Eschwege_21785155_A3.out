@@ -17,21 +17,20 @@
 \BOOKMARK [0][-]{chapter.4}{Heart rate sensor}{}% 17
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 18
 \BOOKMARK [1][-]{section.4.2}{Design}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.4}{Summary}{chapter.4}% 21
-\BOOKMARK [0][-]{chapter.5}{Calibration and digitisation}{}% 22
-\BOOKMARK [1][-]{section.5.1}{Temperature sensor}{chapter.5}% 23
-\BOOKMARK [2][-]{subsection.5.1.1}{Analytical Design}{section.5.1}% 24
-\BOOKMARK [2][-]{subsection.5.1.2}{Empirical Design}{section.5.1}% 25
-\BOOKMARK [1][-]{section.5.2}{Heart rate sensor}{chapter.5}% 26
-\BOOKMARK [2][-]{subsection.5.2.1}{Analytical Design}{section.5.2}% 27
-\BOOKMARK [2][-]{subsection.5.2.2}{Empirical Design}{section.5.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.1}{Signal Conditioning}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.2}{Analogue Transducer}{section.4.2}% 21
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{Summary}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Calibration and digitisation}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Temperature sensor}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.1.1}{Analytical Design}{section.5.1}% 26
+\BOOKMARK [2][-]{subsection.5.1.2}{Empirical Design}{section.5.1}% 27
+\BOOKMARK [1][-]{section.5.2}{Heart rate sensor}{chapter.5}% 28
 \BOOKMARK [0][-]{chapter.6}{System and conclusion}{}% 29
 \BOOKMARK [1][-]{section.6.1}{System}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.2}{System}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.3}{Lessons learnt}{chapter.6}% 32
-\BOOKMARK [0][-]{chapter*.25}{Bibliography}{}% 33
-\BOOKMARK [0][-]{appendix.A}{Social contract}{}% 34
-\BOOKMARK [0][-]{appendix.B}{GitHub Activity Heatmap}{}% 35
-\BOOKMARK [0][-]{appendix.C}{Stuff you want to include}{}% 36
-\BOOKMARK [0][-]{appendix.D}{Stuff you want to include}{}% 37
+\BOOKMARK [1][-]{section.6.2}{Lessons learnt}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter*.26}{Bibliography}{}% 32
+\BOOKMARK [0][-]{appendix.A}{Social contract}{}% 33
+\BOOKMARK [0][-]{appendix.B}{GitHub Activity Heatmap}{}% 34
+\BOOKMARK [0][-]{appendix.C}{Stuff you want to include}{}% 35
+\BOOKMARK [1][-]{subsection.C.0.1}{Calculation of transducer RC circuit}{appendix.C}% 36

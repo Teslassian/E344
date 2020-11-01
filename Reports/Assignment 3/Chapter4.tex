@@ -11,12 +11,14 @@ Circuits pertaining to signal conditioning, pulse signal and analogue output gen
 %**********************************************
 \begin{figure}[h]
     \centering
-    \vspace{-0.6cm}
+    \vspace{-0.7cm}
     \includegraphics[width = 1\textwidth]{Figures/circuit2}
     \caption{Complete Circuit}
     \label{fig:circuit}
 \end{figure}
 
+\vspace{-0.5cm}
+	\subsection{Signal Conditioning}
 The complete circuit is shown upfront in figure \ref{fig:circuit} to aid explanation. The largest resistor in sub-circuits is always chosen to be \SI{500}{k\Omega} as to reduce current usage. The TLC2272 op-amp has $V_{CM}$ of \numrange{-0.3}{4} \si{V}, $V_{ID} = \pm 16 \; V$, $V_{in_{max}} = V_{DD+}$ and $V_{in_{min}} = V_{DD-} - 0.3$ \cite{tlc2272}. The TL081 has $V_{CM}$ of \numrange{1}{4} \si{V}, $V_{ID} = \pm 30 \;V$, $V_{in_{max}} = 3.5 \;V$ and $V_{in_{min}} = 1.5 \;V$ \cite{tl081}. This information is given here as to avoid repetition - refer here when op-amp characteristics are discussed. The design process now follows.
 The FFT of the stimulus input in figure \ref{fig:fft} shows information residing between \numrange{0.8}{2.5} \si{Hz}, corresponding to 50 and 150 BPM respectively. The other peaks represent noise at \SI{0.25}{Hz}, as well as at twice and three times the message signal, and higher. Noise distorts square wave output, necessitating filtering. A first order passive high-pass filter, $f_c =$ \SI{0.606}{Hz}, attenuates the low-frequency noise at \SI{0.25}{Hz}. R18 = \SI{500}{k\Omega}, thus C8 = \SI{525}{nF} according to $f_{c} = \frac{1}{2\pi R C}$. 
 \begin{wrapfigure}{r}{0.5\textwidth}
@@ -48,25 +50,17 @@ A virtual ground centres the signal around \SI{2.5}{V}, ensuring that the LPF in
 Subtracting \ref{eq:sin2} from \ref{eq:sin1} yields $y_1 - y_2 = w_h =$ \SI{0.52}{V} for $t_1 =$\SI{0.01}{s} and $t_2 =$ \SI{.
 21}{s}, resulting in a theoretical pulse width ranging from \numrange{0.2}{0.625} \si{ms}, which is sufficient. $w_h$ also is an order of magnitude larger than the highest input signal noise levels, increasing design fidelity.  Now, UTP = \SI{2.75}{V}, LTP = \SI{2.25}{V}, UTP = $V_{REF} + \beta Vcc$ and LTP = $V_{REF} - \beta Vcc$, thus $\beta$ = 0.05 \cite{schmitt}. Further, $\beta=\frac{\mathrm{R}_{22}}{\mathrm{R}_{22}+\mathrm{R}_{21}}$. Thus R21 = \SI{190}{k\Omega} and R22 = \SI{10}{k\Omega}. (R21 was adjusted to \SI{100}{k\Omega} to account for loading effects). A one-shot was considered to extend the pulses, but was omitted as it was superfluous. The pulse output frequency thus represents the heart-rate.\\
 
-Obtaining an output suitable for a microcontroller presents itself as a problem of converting frequency to analogue. The decision was made to obtain a PWM signal from the FM pulse signal, as PWM signals readily lend themselves to conversion-to-analogue using a simple low-pass RC filter. Pulse-width modulation was achieved by means of a D flip-flop. The essence of the design is to continually keep the output high at first, but to then drive the output low for a fixed time, once per period. Since the period of the clock signal varies against BPM, driving low for a fixed amount of time results in a different ratio of the pulse being low at different frequencies, producing a varying duty cycle. Specifically, the previously generated pulse signal is used as a clock signal for the D flip-flop, and the not-Q output is fed back into the data line. This would normally drive the output high for all time $t$; thus a RC circuit is added of which the capacitor is charged by the not-Q output, and connected to the SET-line of the flip-flop. Once the capacitor charges to \SI{2.5}{V}, Q is pulled high and not-Q low until the next rising edge of the clock input inverts Q and not-Q. The result is a slightly delayed PWM signal, with a large duty cycle at high frequencies, and vice-versa. The PWM output is consistent as long as the capacitor charge time is selected to be shorter than the narrowest pulse of the clock signal. See section \ref{sec:heartResults}, figure \ref{subfig:pwm} for output. For the RC circuit, R1 = \SI{500}{k\Omega} gives $C = 1\mu$, according to the capacitor charge/discharge exponential equations - the extended solution (via Matlab scripting) is given in Appendix \ref{app:C} for the sake of brevity. Having obtained a PWM signal, a fourth order passive low-pass filter produces analogue values in the range of \numrange{0.95}{1.2} \si{V}. A cutoff frequency of \SI{0.3}{Hz} ensures maximal attenuation of noise while maintaining a 5\% settling time of 10 seconds. Therefore R = \SI{500}{k\Omega} and C = \SI{1}{\mu}. Finally, the analogue output is amplified by means of a TLC2272 differential amplifier with a negative input at \SI{0.938}{V}. A gain of 20 produces a sufficient output range. Resistor values were increased as to minimize loading effects - thus R2 = R12 = \SI{900}{k\Omega} and R11 = R13 = \SI{45}{k\Omega} according to ${V}_{{OUT}}=\frac{\mathrm{R}_{a}}{\mathrm{R}_{b}}\left({V}_{2}-{V}_{1}\right)$ \cite{opamp}. Loading effects still had a slight effect, and required adapting R11 and R13 to \SI{41}{k\Omega}. An analogue transducer is thus designed. \textbf{For microcontroller integration, a log-linear scale can linearise the analogue output, and the calibration constant is calculated. The slope is $\frac{0.8-2.5}{4.7-0.5} = -0.404$. Thus, for 150 BPM, $f = 2.5 = -0.404V + C = -0.404(0.5) + C \;\;\; \rightarrow \;\;\; C = 2.702$. ADC stuff here?????}\\
+	\subsection{Analogue Transducer}
+Obtaining an output suitable for a microcontroller presents itself as a problem of converting frequency to analogue. The decision was made to obtain a PWM signal from the FM pulse signal, as PWM signals readily lend themselves to conversion-to-analogue using a simple low-pass RC filter. Pulse-width modulation was achieved by means of a D flip-flop. The essence of the design is to continually keep the output high at first, but to then drive the output low for a fixed time, once per period. Since the period of the clock signal varies against BPM, driving low for a fixed amount of time results in a different ratio of the pulse being low at different frequencies, producing a varying duty cycle. Specifically, the previously generated pulse signal is used as a clock signal for the D flip-flop, and the not-Q output is fed back into the data line. This would normally drive the output high for all time $t$; thus a RC circuit is added of which the capacitor is charged by the not-Q output, and connected to the SET-line of the flip-flop. Once the capacitor charges to \SI{2.5}{V}, Q is pulled high and not-Q low until the next rising edge of the clock input inverts Q and not-Q. The result is a slightly delayed PWM signal, with a large duty cycle at high frequencies, and vice-versa. The PWM output is consistent as long as the capacitor charge time is selected to be shorter than the narrowest pulse of the clock signal. See section \ref{sec:heartResults}, figure \ref{subfig:pwm} for output. For the RC circuit, R1 = \SI{500}{k\Omega} gives $C = 1\mu$, according to the capacitor charge/discharge exponential equations - the extended solution (via Matlab scripting) is given in Appendix \ref{app:C} for the sake of brevity. Having obtained a PWM signal, a fourth order passive low-pass filter produces analogue values in the range of \numrange{0.95}{1.2} \si{V}. A cutoff frequency of \SI{0.3}{Hz} ensures maximal attenuation of noise while maintaining a 5\% settling time of 10 seconds. Therefore R = \SI{500}{k\Omega} and C = \SI{1}{\mu}. Finally, the analogue output is amplified by means of a TLC2272 differential amplifier with a negative input at \SI{0.938}{V}. A gain of 20 produces a sufficient output range. Resistor values were increased as to minimize loading effects - thus R2 = R12 = \SI{900}{k\Omega} and R11 = R13 = \SI{45}{k\Omega} according to ${V}_{{OUT}}=\frac{\mathrm{R}_{a}}{\mathrm{R}_{b}}\left({V}_{2}-{V}_{1}\right)$ \cite{opamp}. Loading effects still had a slight effect, and required adapting R11 and R13 to \SI{41}{k\Omega}. An analogue transducer is thus designed. For microcontroller integration, a log-linear scale can linearise the analogue output, and the calibration constant is calculated. The slope is $\frac{0.8-2.5}{4.7-0.5} = -0.404$. Thus, for 150 BPM, $f = 2.5 = -0.404V + C = -0.404(0.5) + C \;\;\; \rightarrow \;\;\; C = 2.702$.\\
+
 Total current is calculated using \SI{1.4}{mA} per TL081 \cite{tl081}, \SI{2.2}{mA} per TLC2272 \cite{tlc2272} and \SI{110}{\mu A} per LT1018 \cite{lt1018}. Non-trivial resistors are all approximated using \SI{5}{V} over, as to err on the side of caution: $4(1.4m) + (2.2m) + (110n) + 16\left(\frac{5}{500k}\right) + 3\left(\frac{5}{10k}\right) +
  2\left(\frac{5}{41k}\right) + \left(\frac{5}{100k}\right) =$ \SI{9.75}{mA}.
 
-%**********************************************
+\vspace{-0.3cm}
 \section{Results} \label{sec:heartResults}
-%**********************************************
-
-\begin{wrapfigure}{r}{0.38\textwidth}
-\centering
-\vspace{-.8cm}
-\includegraphics[width=0.38\textwidth]{./Figures/filtout}
-%\vspace*{1mm}
-\caption{Filter input and output}
-\label{fig:filtout}
-\end{wrapfigure}
 
 The frequency response of the high- and low-pass filters gives $-3dB$ at \SI{0.61}{Hz} and $-6dB$ at \SI{4.3}{Hz} respectively - see figures \ref{subfig:hpf} and \ref{subfig:lpf1}. This reflects design calculations near perfectly. Comparison of filter input and output in figure \ref{fig:filtout} shows a drastic noise reduction.
-\pagebreak
+
 
 \begin{figure}[h]
  \footnotesize
@@ -82,8 +76,18 @@ The frequency response of the high- and low-pass filters gives $-3dB$ at \SI{0.6
    \caption {Frequency response of filters}
    \label{fig:freqreq}
  \end{figure}
+ 
+ 
+\begin{wrapfigure}{r}{0.35\textwidth}
+\centering
+%\vspace{-.1cm}
+\includegraphics[width=0.35\textwidth]{./Figures/filtout}
+%\vspace*{1mm}
+\caption{Filter input and output}
+\label{fig:filtout}
+\end{wrapfigure}
 
-The filtered signal is passed through a differential amplifier; the input is shown in blue and the output in red in figure \ref{subfig:amplified}. The filtered signal has a \SI{50}{mV} amplitude (peak-to-peak), and the output \SI{1.747}{V}. Therefore $A_v \approx 35$, which, although smaller than calculated, is to be expected due to non-linear behaviour for high amplification factors. Input and output of a LT1018 comparator, used for thresholding, is shown in figure \ref{subfig:pulses}.  See UTP = \SI{2.75}{V} and LTP = {2.25}{V} in figure \ref{subfig:pulses}, giving a hysteresis width of \SI{0.5}{V}, exactly as calculated.
+The filtered signal is passed through a differential amplifier; input is shown in blue and output in red - figure \ref{subfig:amplified}. The filtered signal has a \SI{50}{mV} amplitude (peak-to-peak), and the output \SI{1.747}{V}. Therefore $A_v \approx 35$, which, although smaller than calculated, is to be expected due to non-linear behaviour for high amplification factors. Thresholding input and output of a LT1018 comparator is shown in figure \ref{subfig:pulses}.  See UTP = \SI{2.75}{V} and LTP = {2.25}{V} in figure \ref{subfig:pulses}, giving a hysteresis width of \SI{0.5}{V}, exactly as calculated.
 
 \begin{figure}[h]
  \footnotesize
@@ -98,8 +102,6 @@ The filtered signal is passed through a differential amplifier; the input is sho
    \end{subfigure}
    \caption{Signal Conditioning}
  \end{figure}
- 
-The output ranges from \numrange{0.026}{4.95}\si{V}, with a pulse duration in range \numrange{189}{584} \si{ms} in figures \ref{subfig:pulses2} and \ref{subfig:pulses1}, meeting the \SI{150}{ms} requirement. The design remains consistent for specification deviations of $\pm 10\%$ amplitude and a DC offset variation of $\pm$ \SI{0.2}{V}, as the high-pass filter removes the DC component and the filter has a cutoff frequency low enough to greatly attenuate noise.
 
 \begin{figure}[h]
  \footnotesize
@@ -117,7 +119,10 @@ The output ranges from \numrange{0.026}{4.95}\si{V}, with a pulse duration in ra
    \caption{Full input versus output range}
  \end{figure}
 
-\pagebreak
+\pagebreak 
+ 
+The output ranges from \numrange{0.026}{4.95}\si{V}, with a pulse duration in range \numrange{189}{584} \si{ms} in figures \ref{subfig:pulses2} and \ref{subfig:pulses1}, meeting the \SI{150}{ms} requirement. The design remains consistent for specification deviations of $\pm 10\%$ amplitude and a DC offset variation of $\pm$ \SI{0.2}{V}, as the high-pass filter removes the DC component and the filter has a cutoff frequency low enough to greatly attenuate noise.\\
+
 For the analogue transducer, a PWM signal is obtained. Section \ref{sec:heartDesign} explains the interrelation, where \texttt{voutbeatpulses, pwm} and \texttt{rc} in figure \ref{subfig:pwm} correspond to the clock signal, Q, and the charging capacitor voltage respectively. The 5\% settling time is \SI{9.45}{s}. The duty cycle is 73\% at 60 BPM and decreases to 56\% at 150 BPM. Finally, amplification and filtering of the PWM signal produces analogue output, range \SI{4.2}{V} (\ref{subfig:analog}).
 
 \begin{figure}[h]
@@ -135,17 +140,18 @@ For the analogue transducer, a PWM signal is obtained. Section \ref{sec:heartDes
    \end{subfigure}
  \end{figure}
 
-\begin{wrapfigure}{r}{0.55\textwidth}
+\begin{wrapfigure}{r}{0.35\textwidth}
 \centering
-\vspace{-0.3cm}
-\includegraphics[width=0.55\textwidth]{./Figures/current2}
+\vspace{-0.5cm}
+\includegraphics[width=0.35\textwidth]{./Figures/current2}
 \caption{Total current usage}
 \label{fig:current2}
 \end{wrapfigure}
-In figure \ref{fig:current2}, total current draw is measured through R\textsubscript{sense}, averaging \SI{13.0}{mA}, meeting the bonus requirement of \SI{15}{mA}. When combined with Assignment 1, the combined current of \SI{25.8}{mA} still is far less than the maximum current rating of \SI{100}{mA} for the voltage regulator \cite{prev}. 
+Total current draw is measured through R\textsubscript{sense}, averaging \SI{13.0}{mA}, meeting the bonus requirement of \SI{15}{mA} - see figure \ref{fig:current2}. Considered in conjunction with Assignment 1, the combined current of \SI{25.8}{mA} still is far less than the maximum current rating of \SI{100}{mA} for the voltage regulator - see section \ref{sec:voltDesign}. 
 
+%\vspace{0.2cm}
 %**********************************************
 \section{Summary}\label{sec:temp_summary}
 %**********************************************
-Concluding, it has been shown that the design performs as expected, meeting the all requirements. Output pulse width is broader than required, analogue output is generated with discrete, non-overlapping values exceeding the required range, while settling to a final value according to specification.  Current draw remains sub-\SI{15}{mA}. Upon implementation of the microcontroller, be cognizant of the fact that analogue output values scale in a slightly non-linear fashion. This is not a problem, as it can be easily accounted for in software. By design, the system is limited to the 50 to 150 BPM range, but could be expanded using the existing design as a proof-of-concept. 
-
+%\vspace{0.2cm}
+The design performs as expected, meeting all the requirements. Output pulse width is broader than required, analogue output is generated with discrete, non-overlapping values exceeding the required range, while settling to a final value according to specification.  Current draw remains sub-\SI{15}{mA}. Upon implementation of the microcontroller, be cognizant of the fact that analogue output values scale in a slightly non-linear fashion. This is not a problem, and can easily be accounted for in software. By design, the system is limited to the 50 to 150 BPM range, but could be expanded using the existing design as a proof-of-concept. 

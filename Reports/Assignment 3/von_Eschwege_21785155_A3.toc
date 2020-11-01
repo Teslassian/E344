@@ -18,6 +18,8 @@
 \contentsline {chapter}{\numberline {4}Heart rate sensor}{10}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{10}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Design}{10}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Signal Conditioning}{10}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Analogue Transducer}{12}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Results}{12}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Summary}{14}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Calibration and digitisation}{15}{chapter.5}%
@@ -25,14 +27,11 @@
 \contentsline {subsection}{\numberline {5.1.1}Analytical Design}{15}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Empirical Design}{15}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}Heart rate sensor}{16}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Analytical Design}{16}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Empirical Design}{16}{subsection.5.2.2}%
 \contentsline {chapter}{\numberline {6}System and conclusion}{17}{chapter.6}%
 \contentsline {section}{\numberline {6.1}System}{17}{section.6.1}%
-\contentsline {section}{\numberline {6.2}System}{17}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Lessons learnt}{18}{section.6.3}%
-\contentsline {chapter}{Bibliography}{19}{chapter*.25}%
-\contentsline {chapter}{\numberline {A}Social contract}{20}{appendix.A}%
-\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{21}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Stuff you want to include}{22}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Stuff you want to include}{23}{appendix.D}%
+\contentsline {section}{\numberline {6.2}Lessons learnt}{17}{section.6.2}%
+\contentsline {chapter}{Bibliography}{18}{chapter*.26}%
+\contentsline {chapter}{\numberline {A}Social contract}{19}{appendix.A}%
+\contentsline {chapter}{\numberline {B}GitHub Activity Heatmap}{20}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Stuff you want to include}{21}{appendix.C}%
+\contentsline {subsection}{\numberline {C.0.1}Calculation of transducer RC circuit}{21}{subsection.C.0.1}%

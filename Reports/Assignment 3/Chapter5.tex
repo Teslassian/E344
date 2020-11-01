@@ -40,6 +40,7 @@ for $V_{0} =$ \SI{440}{mV}, $\alpha =$ \SI{35}{mV}, $V_{offset} =$ \SI{1.63}{V},
 T = (1.6)\frac{\mathrm{ADC}(V_{ref})}{2^{10}-1} + 34
 \end{equation}
 
+The quantisation error is $f_{err} = \frac{2.5 - 0.8}{2^{10}} / (2.5 - 0.8) \times 100 = 0.1\%$. 
 
 
 	\subsection{Empirical Design} \label{sec:ADCTempEmp}
@@ -50,12 +51,15 @@ T = (1.6)\frac{\mathrm{ADC}(V_{ref})}{2^{10}-1} + 34
 \caption{Voltage against temperature}
 \label{fig:linreg}
 \end{wrapfigure}
-Simulation yields the data points in figure \ref{fig:linreg}. Linear regression results the empirical equation \ref{eq:linreg}, graphed in light blue, which is implemented in software as to provide a digital temperature reading - see pseudocode below. Equation \ref{eq:adctemp} corresponds closely to the analytical equation \ref{eq:comb}, graphed in red. Python implementation yields a 1\degree C temperature reading accuracy for the full input range. 
+Simulation yields the data points in figure \ref{fig:linreg}. Linear regression results the empirical equation \ref{eq:linreg}, graphed in light blue, which is implemented in software as to provide a digital temperature reading - see pseudocode below. Equation \ref{eq:adctemp} corresponds closely to the analytical equation \ref{eq:comb}, graphed in red. 
  
 \begin{equation}
+\vspace{0.2cm}
 \label{eq:linreg}
 T = 1.644985924\left(V_{out_{avg}}\right) + 33.92887739
 \end{equation}
+
+\pagebreak
 
 Pseudocode:
 \begin{algorithm}
@@ -63,21 +67,20 @@ V\textunderscore avg = V\textunderscore out / length(V\textunderscore out)\\
 T = 1.644985924*V\textunderscore avg + 33.92887739
 \end{algorithm}
 
+Python implementation yields a 1\degree C temperature reading accuracy for the full input range, which can, in part, be ascribed to the performance of the filters in section \ref{sec:temp_design}, which provide a signal almost completely devoid of noise. The accuracy requirement is met in less than 2 seconds, according to specification.
 
 
-
-
-\vspace{-0.7cm}
+%\vspace{-0.7cm}
 \section{Heart rate sensor}
 \label{sec:ADCHeart}
 
+\begin{wrapfigure}{r}{0.55\textwidth}
+	\centering
+	\vspace{-0.5cm}
+	\includegraphics[width=0.55\textwidth]{./Figures/pseudo}
+	\caption{Flow chart for heart-rate digitisation}
+	\label{fig:algo}
+\end{wrapfigure}
 
-	\subsection{Analytical Design} 					\label{sec:ADCTempAna}
-The heart-rate signal consists of square wave pulses of which the periods correspond to the heart-rate. 
+The heart-rate signal consists of square wave pulses of which the period correspond to the heart-rate (in BPM) according to $t = \frac{60}{BPM}$. For circuit output data in the form of an signal amplitude and a time array, the approach is to set the difference between rising pulse edges as the period, averaged over 6 seconds of simulated time for increased accuracy. The frequency is then obtained from the period. Analytically, the frequency ranges from 0.83 to \SI{2.5}{Hz} for heart-rates from 50 to 150 BPM. The heart-rate can thus be obtained by simply inverting the measured period and multiplying by 60: $BPM = \frac{60}{t}$. A flow-chart of the algorithm is provided in figure \ref{fig:algo}. Empirical design was unnecessary as analytic design yielded accuracy up to 1 BPM upon implementation in Python. The accuracy requirement was met in less than 6 seconds, according to specification. 
 
-
-
-	\subsection{Empirical Design} 					\label{sec:ADCTempEmp}
-
-Include flow diagram of code or pseudocode as a list.
-No need to include the 10-bit ADC in this section. 
