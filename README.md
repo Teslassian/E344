@@ -1,4 +1,4 @@
-# E344
+# Health Monitoring System
 
 I, Daniel von Eschwege, 21785155, declare that the entirety of the work contained here is my own work towards completing E344 at
 Stellenbosch University, and that I am the sole author thereof. I understand that copying someone else’s
